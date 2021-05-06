@@ -1,0 +1,11 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+.cover__radio_icon_1 {
+  background-image: url(../../../../../img/cover__radio-icon-1.svg);
+}
+
+.cover__radio_icon_2 {
+  background-image: url(../../../../../img/cover__radio-icon-2.svg);
+}
