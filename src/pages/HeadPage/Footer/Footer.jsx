@@ -16,20 +16,20 @@ export const Footer = (props) => {
             </div>
             <div className="col-lg-3 footer__links">
               <a href="https://wallet.xxp.group/" className="footer__link">Web-wallet</a>
-              <a href={paper_pdf} target="_blank" className="footer__link">White Paper</a>
+              <a href={paper_pdf} className="footer__link">White Paper</a>
             </div>
             <div className="col-lg-6">
               <div className="footer__socials">
-                <a href="https://t.me/xxplatform_en" target="_blank" className={`footer__socials-link ${style.xxplatform_en}`}></a>
-                <a href="https://www.facebook.com/XXPlatform/" target="_blank" className={`footer__socials-link ${style.XXPlatform_1}`}></a>
-                <a href="https://twitter.com/XXPlatform" target="_blank" className={`footer__socials-link ${style.XXPlatform_2}`}></a>
-                <a href="https://www.instagram.com/xxplatform/" target="_blank" className={`footer__socials-link ${style.xxplatform_1}`}></a>
-                <a href="https://www.youtube.com/channel/UCHmnVCzee_Ay8yxxMFtNd_A" target="_blank" className={`footer__socials-link ${style.socials_icon_4}`}></a>
-                <a href="https://www.reddit.com/user/XXPlatform" target="_blank" className={`footer__socials-link ${style.footer__socials_icon_5}`}></a>
-                <a href="https://discord.gg/9cU2hmxH9Q" target="_blank" className={`footer__socials-link ${style.footer__socials_icon_6}`} ></a>
-                <a href="https://bitcointalk.org/index.php?topic=5305384.0" target="_blank" className={`footer__socials-link ${style.footer__socials_icon_7}`}></a>
-                <a href="https://www.altcoinstalks.com/index.php?topic=186705.0" target="_blank" className={`footer__socials-link ${style.footer__socials_icon_8}`}></a>
-                <a href="https://cryptotalk.org/topic/337798-ann-xxp-xx-platform-investment-trading-platform-%F0%9F%93%89%F0%9F%93%8A%F0%9F%93%88/" target="_blank" className={`footer__socials-link ${style.footer__socials_icon_9}`}></a>
+                <a href="https://t.me/xxplatform_en" className={`footer__socials-link ${style.xxplatform_en}`}> </a>
+                <a href="https://www.facebook.com/XXPlatform/" className={`footer__socials-link ${style.XXPlatform_1}`}> </a>
+                <a href="https://twitter.com/XXPlatform" className={`footer__socials-link ${style.XXPlatform_2}`}> </a>
+                <a href="https://www.instagram.com/xxplatform/" className={`footer__socials-link ${style.xxplatform_1}`}> </a>
+                <a href="https://www.youtube.com/channel/UCHmnVCzee_Ay8yxxMFtNd_A" className={`footer__socials-link ${style.socials_icon_4}`}> </a>
+                <a href="https://www.reddit.com/user/XXPlatform" className={`footer__socials-link ${style.footer__socials_icon_5}`}> </a>
+                <a href="https://discord.gg/9cU2hmxH9Q" className={`footer__socials-link ${style.footer__socials_icon_6}`} > </a>
+                <a href="https://bitcointalk.org/index.php?topic=5305384.0" className={`footer__socials-link ${style.footer__socials_icon_7}`}> </a>
+                <a href="https://www.altcoinstalks.com/index.php?topic=186705.0" className={`footer__socials-link ${style.footer__socials_icon_8}`}> </a>
+                <a href="https://cryptotalk.org/topic/337798-ann-xxp-xx-platform-investment-trading-platform-%F0%9F%93%89%F0%9F%93%8A%F0%9F%93%88/" className={`footer__socials-link ${style.footer__socials_icon_9}`}> </a>
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ export const Footer = (props) => {
               XX Platform © 2021
             </div>
             <div className="col-auto footer__text">
-              <a href={policy_pdf} target="_blank" className="footer__policy">
+              <a href={policy_pdf} className="footer__policy">
                 Privacy policy
               </a>
             </div>

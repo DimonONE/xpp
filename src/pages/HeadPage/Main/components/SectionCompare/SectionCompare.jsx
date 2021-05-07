@@ -1,0 +1,93 @@
+import React from "react";
+
+import compare__item_icon_1 from "../../../../../img/compare__item-img-1.svg"
+import compare__item_icon_2 from "../../../../../img/compare__item-img-2.svg"
+
+export const SectionCompare = (props) => {
+    return(
+    <section className="section compare">
+      <div className="container compare__container">
+        <div className="pattern">
+          <div className="pattern__img pattern__img--6"></div>
+          <div className="pattern__img pattern__img--9"></div>
+          <div className="pattern__img pattern__img--11"></div>
+        </div>
+        <h2 className="heading font-size-40 compare__heading text-center wow animate__animated animate__fadeInDown">
+          <b className="font-weight-700">Cryptocurrency</b> or piramid?
+        </h2>
+        <div className="row compare__row">
+          <div className="col-lg-6 compare__item-wrap wow animate__animated animate__fadeInLeft">
+            <div className="compare__item-icon-wrap grit grit--green">
+              <div className="grit__bg"></div>
+              <img src="img/compare__item-icon-1.svg" alt="" className="grit__icon compare__item-icon" />
+            </div>
+            <img src={compare__item_icon_1} alt="" className="img-responsive compare__item-img compare__item-img--1" />
+            <div className="compare__item compare__item--green">
+              <div className="compare__item-heading compare__item-heading--green">
+                Cryptocurrency
+              </div>
+              <ul className="compare__item-list">
+                <li className="compare__item-list-item">
+                  Has a real digital Asset (coins or token with blockchain)
+                </li>
+                <li className="compare__item-list-item">
+                  Get an Asset
+                </li>
+                <li className="compare__item-list-item">
+                  Final Emission
+                </li>
+                <li className="compare__item-list-item">
+                  Asset decentralization
+                </li>
+                <li className="compare__item-list-item">
+                  Lack of referral schemes
+                </li>
+                <li className="compare__item-list-item">
+                  Open communication, transparency
+                </li>
+                <li className="compare__item-list-item">
+                  Technology inside
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-6 compare__item-wrap wow animate__animated animate__fadeInRight">
+            <div className="compare__item-icon-wrap grit grit--red">
+              <div className="grit__bg"></div>
+              <img src={compare__item_icon_2} alt="" className="grit__icon compare__item-icon" />
+            </div>
+            <img src={compare__item_icon_2} alt="" className="img-responsive compare__item-img compare__item-img--2" />
+            <div className="compare__item compare__item--red">
+              <div className="compare__item-heading compare__item-heading--red">
+                Pyramid
+              </div>
+              <ul className="compare__item-list">
+                <li className="compare__item-list-item">
+                  Has no real asset. Either an internal unit of account or a promise.
+                </li>
+                <li className="compare__item-list-item">
+                  Get a promise
+                </li>
+                <li className="compare__item-list-item">
+                  Constant fees and sales
+                </li>
+                <li className="compare__item-list-item">
+                  Everything is controlled by the organizer
+                </li>
+                <li className="compare__item-list-item">
+                  Multilevel referral programs
+                </li>
+                <li className="compare__item-list-item">
+                  Lack of common chats, nontransparency
+                </li>
+                <li className="compare__item-list-item">
+                  Marketing and promises
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    )
+}

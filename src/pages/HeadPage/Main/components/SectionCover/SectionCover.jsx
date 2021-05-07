@@ -29,7 +29,7 @@ export const SectionCover = (props) => {
                         <div className="cover__radio-wrap">
                             <div className={`cover__radio-icon ${style.cover__radio_icon_1}`}></div>
                             <label className="cover__radio">
-                                {/* <input type="radio" className="visually-hidden cover__radio-input" name="radio" checked> */}
+                                <input type="radio" className="visually-hidden cover__radio-input" name="radio" checked />
                                 <span className="cover__radio-window"></span>
                                 <span className="cover__radio-label"><p>I am new</p><p>to cryptocurrency</p> </span>
                             </label>
@@ -37,11 +37,11 @@ export const SectionCover = (props) => {
                         <div className="cover__radio-wrap">
                         <div className={`cover__radio-icon ${style.cover__radio_icon_1}`}></div>
                         <label className="cover__radio">
-                            {/* <input type="radio" className="visually-hidden cover__radio-input" name="radio"> */}
+                            <input type="radio" className="visually-hidden cover__radio-input" name="radio" />
                             <span className="cover__radio-window"></span>
                             <span className="cover__radio-label">
-                            <p>I am an experienced </p> 
-                            <p>crypto enthusiast and investor</p> 
+                                <p>I am an experienced </p> 
+                                <p>crypto enthusiast and investor</p> 
                             </span>
                         </label>
                         </div>
