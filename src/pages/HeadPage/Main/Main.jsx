@@ -21,15 +21,13 @@ export const Main = (props) => {
     <>
         <Element name="Up">
             <main id="sections" className="sections">
-                {/* <SectionCover /> */}
-                <Element name="cryptocurrency">
+                <SectionCover />
+                <Element name="currency">
                     <SectionCurrency />
                 </Element>
-                <Element name="">
-                    <SectionSteps />
-                </Element>
+                <SectionSteps />
                 <SectionWork />
-                <Element name="How_to_buy">
+                <Element name="guide">
                     <SectionGuide />
                 </Element>
                 <SectionCompare />

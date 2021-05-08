@@ -13,11 +13,12 @@ export const SectionCover = (props) => {
                     <div className="cover__title">
                         XX Platform
                     </div>
-                    <h1 className="heading font-size-54 cover__heading">
-                       <p> Cryptocurrency.</p>
-                       <p> Trading. </p>
-                        <b className="font-weight-700">Investments.</b>
-                    </h1>
+                    
+                        <h1 className="heading font-size-54 cover__heading">
+                            <p> Cryptocurrency.</p>
+                            <p> Trading. </p>
+                                <b className="font-weight-700">Investments.</b>
+                        </h1>
                     <div className="cover__text">
                         XX Platform is a system that combines a multifunctional cabinet with investment elements and a trading service with a set of analytical tools and an asset management program.
                     </div>
@@ -29,7 +30,7 @@ export const SectionCover = (props) => {
                         <div className="cover__radio-wrap">
                             <div className={`cover__radio-icon ${style.cover__radio_icon_1}`}></div>
                             <label className="cover__radio">
-                                <input type="radio" className="visually-hidden cover__radio-input" name="radio" checked />
+                                <input type="radio" className="visually-hidden cover__radio-input" name="radio" defaultChecked />
                                 <span className="cover__radio-window"></span>
                                 <span className="cover__radio-label"><p>I am new</p><p>to cryptocurrency</p> </span>
                             </label>
@@ -53,7 +54,7 @@ export const SectionCover = (props) => {
                         <p>who are you?</p> 
                     </div>
                     <svg className="cover__arrow" width="100" height="67" viewBox="0 0 100 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M96.6987 12.4998C44.6991 12.4998 24.3066 41.3641 8.75858 63.9285M8.75858 63.9285C8.75858 63.9285 7.97721 58.6184 7.96838 58.3439L8.75858 63.9285ZM8.75858 63.9285L15.0885 62.9864" stroke="#FF8225" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M96.6987 12.4998C44.6991 12.4998 24.3066 41.3641 8.75858 63.9285M8.75858 63.9285C8.75858 63.9285 7.97721 58.6184 7.96838 58.3439L8.75858 63.9285ZM8.75858 63.9285L15.0885 62.9864" stroke="#FF8225" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     </div>
                 </div>

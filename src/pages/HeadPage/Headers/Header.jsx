@@ -23,10 +23,10 @@ export const Header = (props) => {
             <nav className="header__nav">
               <ul className="header__nav-list">
                 <li className="header__nav-list-item">
-                  <Link to="cryptocurrency" spy={true} smooth={true}  duration={500} className={`header__nav-link ${style.cursor_pointer}`}>Cryptocurrency</Link>
+                  <Link to="currency" spy={true} smooth={true}  duration={500} className={`header__nav-link ${style.cursor_pointer}`}>Cryptocurrency</Link>
                 </li>
                 <li className="header__nav-list-item">
-                  <Link to="How_to_buy" spy={true} smooth={true} duration={500} className={`header__nav-link ${style.cursor_pointer}`}>How to buy</Link>
+                  <Link to="guide" spy={true} smooth={true} duration={500} className={`header__nav-link ${style.cursor_pointer}`}>How to buy</Link>
                 </li>
                 <li className="header__nav-list-item">
                   <Link to="advantages" spy={true} smooth={true} duration={500} className={`header__nav-link ${style.cursor_pointer}`}>Advantages</Link>
@@ -58,24 +58,24 @@ export const Header = (props) => {
         <div className="container mobile-menu__container">
           <ul className="mobile-menu__list">
             <li className="mobile-menu__list-item">
-              <a href="Cryptocurrency" data-href="currency" className="mobile-menu__list-link">Cryptocurrency</a>
+              <Link to="currency"  className="mobile-menu__list-link">Cryptocurrency</Link>
             </li>
             <li className="mobile-menu__list-item">
-              <a href="How_to_buy" data-href="guide" className="mobile-menu__list-link">How to buy</a>
+              <Link to="guide" className="mobile-menu__list-link">How to buy</Link>
             </li>
             <li className="mobile-menu__list-item">
-              <a href="Advantages" data-href="advantages" className="mobile-menu__list-link">Advantages</a>
+              <Link to="advantages" className="mobile-menu__list-link">Advantages</Link>
             </li>
             <li className="mobile-menu__list-item">
-              <a href="Tokenomics" data-href="tokenomics" className="mobile-menu__list-link">Tokenomics</a>
+              <Link to="Tokenomics" data-href="tokenomics" className="mobile-menu__list-link">Tokenomics</Link>
             </li>
             <li className="mobile-menu__list-item">
-              <a href="Team" data-href="team" className="mobile-menu__list-link">Team</a>
+              <Link to="team" className="mobile-menu__list-link">Team</Link>
             </li>
           </ul>
           <div className="mobile-menu__switcher">
             <span className="mobile-menu__switcher-item active">Eng</span>
-            <a href="/ru" className="mobile-menu__switcher-item">Ru</a>
+            <Link to="/ru" className="mobile-menu__switcher-item">Ru</Link>
           </div>
         </div>
     </div>
