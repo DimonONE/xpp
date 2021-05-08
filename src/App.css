@@ -9935,6 +9935,7 @@ a:hover {
 .header__dropdown-selected {
   position: relative;
   padding-right: 15px;
+  user-select: none;   
 }
 .header__dropdown-selected::after {
   content: "";

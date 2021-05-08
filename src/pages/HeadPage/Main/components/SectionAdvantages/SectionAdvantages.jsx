@@ -9,7 +9,7 @@ import advantages__item_icon_6 from "../../../../../img/advantages__item-icon-6.
 
 export const SectionAdvantages = (props) => {
     return(
-    <section id="advantages" className="section advantages">
+    <section id="advantages"  className="section advantages">
       <div className="container advantages__container wow animate__animated animate__fadeIn">
         <div className="pattern">
           <div className="pattern__img pattern__img--1"></div>

@@ -1,9 +1,12 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React, { useState } from 'react';
+import style from "./Header.module.css"
+
+import { Link } from 'react-scroll'
 
 import logo_svg from "../../../img/logo.svg"
 
 export const Header = (props) => {
+  const [folowign, setFolowign] = useState(false)
     return (
     <>
       <header className="header animate__animated animate__fadeIn fixed">
@@ -14,38 +17,38 @@ export const Header = (props) => {
               <span className="header__burger-line"></span>
               <span className="header__burger-line"></span>
             </button>
-            <NavLink to="Up" className="header__logo" data-href="sections">
+            <Link to="Up" spy={true} smooth={true}  duration={500} className={`header__logo ${style.cursor_pointer}`}>
               <img src={logo_svg} alt="XX Platform" className="img-responsive header__logo-img"/>
-            </NavLink>
+            </Link>
             <nav className="header__nav">
               <ul className="header__nav-list">
                 <li className="header__nav-list-item">
-                  <NavLink to="Cryptocurrency" data-href="currency" className="header__nav-link">Cryptocurrency</NavLink>
+                  <Link to="cryptocurrency" spy={true} smooth={true}  duration={500} className={`header__nav-link ${style.cursor_pointer}`}>Cryptocurrency</Link>
                 </li>
                 <li className="header__nav-list-item">
-                  <a href="How_to_buy" data-href="guide" className="header__nav-link">How to buy</a>
+                  <Link to="How_to_buy" spy={true} smooth={true} duration={500} className={`header__nav-link ${style.cursor_pointer}`}>How to buy</Link>
                 </li>
                 <li className="header__nav-list-item">
-                  <a href="Advantages" data-href="advantages" className="header__nav-link">Advantages</a>
+                  <Link to="advantages" spy={true} smooth={true} duration={500} className={`header__nav-link ${style.cursor_pointer}`}>Advantages</Link>
                 </li>
                 <li className="header__nav-list-item">
-                  <a href="Tokenomics" data-href="tokenomics" className="header__nav-link">Tokenomics</a>
+                  <Link to="tokenomics" spy={true} smooth={true} duration={500} className={`header__nav-link ${style.cursor_pointer}`}>Tokenomics</Link>
                 </li>
                 <li className="header__nav-list-item">
-                  <a href="Team" data-href="team" className="header__nav-link">Team</a>
+                  <Link to="team" spy={true} smooth={true} duration={500} className={`header__nav-link ${style.cursor_pointer}`}>Team</Link>
                 </li>
               </ul>
             </nav>
-            <div className="header__dropdown" data-dropdown>
-              <div className="header__dropdown-selected" data-dropdown-header>ENG</div>
-              <div className="header__dropdown-list-wrap" data-dropdown-hidden>
+            <span className={`header__dropdown ${style.cursor_pointer}`} onClick={() => setFolowign(!folowign && true) } >
+              <div className={`header__dropdown-selected ${folowign ? 'active' : ' '}`}>ENG</div>
+              <div className={`header__dropdown-list-wrap ${!folowign ? style.folowing_language : ' '}`} >
                 <ul className="header__dropdown-list">
                   <li className="header__dropdown-list-item">
                     <a href="/ru" className="header__dropdown-link">RU</a>
                   </li>
                 </ul>
               </div>
-            </div>
+            </span>
             <a href="https://wallet.xxp.group/" className="btn btn--bg-beige header__btn">Log in</a>
           </div>
         </div>
