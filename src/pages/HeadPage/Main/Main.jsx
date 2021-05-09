@@ -10,6 +10,7 @@ import { SectionFounder } from './components/SectionFounder/SectionFounder';
 import { SectionGuide } from './components/SectionGuide/SectionGuide';
 import { SectionMedia } from './components/SectionMedia/SectionMedia';
 import { SectionRoadmap } from './components/SectionRoadmap/SectionRoadmap';
+import { SectionRounds } from './components/SectionRounds/SectionRounds';
 import { SectionSteps } from './components/SectionSteps/SectionSteps';
 import { SectionTeam } from './components/SectionTeam/SectionTeam';
 import { SectionTokenomics } from './components/SectionTokenomics/SectionTokenomics';
@@ -41,7 +42,10 @@ export const Main = (props) => {
                 </Element>
                 <SectionRoadmap />
                 <SectionFounder />
-                <SectionTeam />
+                <Element name="team">
+                    <SectionTeam />
+                </Element>
+                <SectionRounds />
                 <SectionDelegates />
                 <SectionMedia />
             </main>
