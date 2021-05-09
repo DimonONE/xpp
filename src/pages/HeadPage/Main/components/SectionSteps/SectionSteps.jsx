@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import steps__slider_main_item_icon_1 from "../../../../../img/steps__slider-main-item-icon-1.svg";
 import steps__slider_main_item_icon_2 from "../../../../../img/steps__slider-main-item-icon-2.svg";
 import steps__slider_main_item_icon_little_1 from "../../../../../img/steps__slider-main-item-icon-little-1.svg";
@@ -10,6 +10,34 @@ import steps__slider_img_1 from "../../../../../img/steps__slider-img-1.png";
 import steps__slider_img_2 from "../../../../../img/steps__slider-img-2.png";
 
 export const SectionSteps = (props) => {
+    let [button_01, setButton_01 ] = useState(true)    
+    let [button_02, setButton_02 ] = useState(false)    
+    let [button_03, setButton_03 ] = useState(false)    
+    let [button_04, setButton_04 ] = useState(false)    
+
+    const resetButtonFolow = () => {
+        setButton_01(false)
+        setButton_02(false)
+        setButton_03(false)
+        setButton_04(false)
+    }
+
+    const logicButton_01 = () => {
+        resetButtonFolow()
+        setButton_01(true)
+    }
+    const logicButton_02 = () => {
+        resetButtonFolow()
+        setButton_02(true)
+    }
+    const logicButton_03 = () => {
+        resetButtonFolow()
+        setButton_03(true)
+    }
+    const logicButton_04 = () => {
+        resetButtonFolow()
+        setButton_04(true)
+    }
     return(
         <section className="section steps">
             <div className="container steps__container">
@@ -32,10 +60,10 @@ export const SectionSteps = (props) => {
                     </button>
 
                     <div className="steps__pagination swiper-pagination-clickable swiper-pagination-bullets">
-                        <span className={"steps__pagination-item swiper-pagination-bullet swiper-pagination-bullet-active"}>01</span>
-                        <span className={"steps__pagination-item swiper-pagination-bullet"}>02</span>
-                        <span className={"steps__pagination-item swiper-pagination-bullet"}>03</span>
-                        <span className={"steps__pagination-item swiper-pagination-bullet"}>04</span>
+                        <span onClick={logicButton_01} className={`steps__pagination-item swiper-pagination-bullet ${button_01 ? "swiper-pagination-bullet-active" : ' '}` }>01</span>
+                        <span onClick={logicButton_02} className={`steps__pagination-item swiper-pagination-bullet ${button_02 ? "swiper-pagination-bullet-active" : ' '}` }>02</span>
+                        <span onClick={logicButton_03} className={`steps__pagination-item swiper-pagination-bullet ${button_03 ? "swiper-pagination-bullet-active" : ' '}` }>03</span>
+                        <span onClick={logicButton_04} className={`steps__pagination-item swiper-pagination-bullet ${button_04 ? "swiper-pagination-bullet-active" : ' '}` }>04</span>
                     </div>
 
                     <button className="arrow arrow--next steps__arrow steps__arrow--next">
@@ -48,185 +76,185 @@ export const SectionSteps = (props) => {
                     <div className="steps__slider swiper-container">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide steps__slider-item">
-                        <div className="steps__slider-item-row row">
-                            <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
-                            <div className="steps__slider-counter font-size-24 font-weight-600">
-                                Step 1
-                            </div>
-                            <div className="steps__slider-main">
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--orange">
-                                    <div className="grit__bg"></div>
-                                    <img src={steps__slider_main_item_icon_1} alt="None" className="steps__slider-main-item-icon grit__icon" />
-                                </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
-                                    You
+                            <div className="steps__slider-item-row row">
+                                <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
+                                    <div className="steps__slider-counter font-size-24 font-weight-600">
+                                        Step 1
                                     </div>
-                                    <div className="steps__slider-main-item-text">
-                                    You <b className="font-weight-600">buy tokens</b> XXP
+                                    <div className="steps__slider-main">
+                                        <div className="steps__slider-main-item d-flex">
+                                        <div className="steps__slider-main-item-icon-wrap grit grit--orange">
+                                            <div className="grit__bg"></div>
+                                            <img src={steps__slider_main_item_icon_1} alt="None" className="steps__slider-main-item-icon grit__icon" />
+                                        </div>
+                                        <div className="steps__slider-main-item-texts">
+                                            <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
+                                            You
+                                            </div>
+                                            <div className="steps__slider-main-item-text">
+                                            You <b className="font-weight-600">buy tokens</b> XXP
+                                            </div>
+                                        </div>
+                                        <img src={steps__slider_main_item_icon_little_1} alt="None" className="img-responsive steps__slider-main-item-icon-little" />
+                                        </div>
                                     </div>
                                 </div>
-                                <img src={steps__slider_main_item_icon_little_1} alt="None" className="img-responsive steps__slider-main-item-icon-little" />
+                                <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
+                                    <img src={steps__slider_img_1} alt="Img" className="steps__slider-img steps__slider-img--1" />
+                                    <div className="steps__slider-circle"></div>
                                 </div>
                             </div>
+                        </div>
+                        <div className="swiper-slide steps__slider-item">
+                            <div className="steps__slider-item-row row">
+                                <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
+                                <div className="steps__slider-counter font-size-24 font-weight-600">
+                                    Step 2
+                                </div>
+                                <div className="steps__slider-main">
+                                    <div className="steps__slider-main-item d-flex">
+                                    <div className="steps__slider-main-item-icon-wrap grit grit--orange">
+                                        <div className="grit__bg"></div>
+                                        <img src={steps__slider_main_item_icon_1} alt="None" className="steps__slider-main-item-icon grit__icon" />
+                                    </div>
+                                    <div className="steps__slider-main-item-texts">
+                                        <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
+                                        You
+                                        </div>
+                                        <div className="steps__slider-main-item-text">
+                                        Place tokens on DPoS and earn up to <b className="font-weight-600">150% per year </b>
+                                        </div>
+                                    </div>
+                                    <img src={steps__slider_main_item_icon_little_2} alt="" className="img-responsive steps__slider-main-item-icon-little" />
+                                    </div>
+                                    <div className="steps__slider-main-item d-flex">
+                                    <div className="steps__slider-main-item-icon-wrap grit grit--pink">
+                                        <div className="grit__bg"></div>
+                                        <img src={steps__slider_main_item_icon_2} alt="" className="steps__slider-main-item-icon grit__icon" />
+                                    </div>
+                                    <div className="steps__slider-main-item-texts">
+                                        <div className="steps__slider-main-item-heading steps__slider-main-item-heading--pink font-size-20">
+                                        We
+                                        </div>
+                                        <div className="steps__slider-main-item-text">
+                                        Invest the received cryptocurrency in the <b className="font-weight-700">project development</b> and the creation of a Trading platform
+                                        </div>
+                                    </div>
+                                    <img src={steps__slider_main_item_icon_little_3} alt="" className="img-responsive steps__slider-main-item-icon-little" />
+                                    </div>
+                                </div>
+                                </div>
+                                <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
+                                    <img src={steps__slider_img_2} alt="Img" className="steps__slider-img steps__slider-img--2" />
+                                    <div className="steps__slider-circle"></div>
+                                </div>
                             </div>
-                            <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
-                                <img src={steps__slider_img_1} alt="Img" className="steps__slider-img steps__slider-img--1" />
+                        </div>
+                        <div className="swiper-slide steps__slider-item">
+                            <div className="steps__slider-item-row row">
+                                <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
+                                <div className="steps__slider-counter font-size-24 font-weight-600">
+                                    Step 3
+                                </div>
+                                <div className="steps__slider-main">
+                                    <div className="steps__slider-main-item d-flex">
+                                    <div className="steps__slider-main-item-icon-wrap grit grit--orange">
+                                        <div className="grit__bg"></div>
+                                        <img src={steps__slider_main_item_icon_1} alt="" className="steps__slider-main-item-icon grit__icon" />
+                                    </div>
+                                    <div className="steps__slider-main-item-texts">
+                                        <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
+                                        You
+                                        </div>
+                                        <div className="steps__slider-main-item-text">
+                                        Use your XXP on the <b className="font-weight-600">XX trading platform</b>
+                                        </div>
+                                    </div>
+                                    <img src={steps__slider_main_item_icon_little_4} alt="" className="img-responsive steps__slider-main-item-icon-little" />
+                                    </div>
+                                    <div className="steps__slider-main-item d-flex">
+                                    <div className="steps__slider-main-item-icon-wrap grit grit--pink">
+                                        <div className="grit__bg"></div>
+                                        <img src={steps__slider_main_item_icon_2} alt="" className="steps__slider-main-item-icon grit__icon" />
+                                    </div>
+                                    <div className="steps__slider-main-item-texts">
+                                        <div className="steps__slider-main-item-heading steps__slider-main-item-heading--pink font-size-20">
+                                        We
+                                        </div>
+                                        <div className="steps__slider-main-item-text">
+                                        Launch the XX trading platform. 
+                                        <p> The bridge between an investor and trader </p>
+                                        </div>
+                                    </div>
+                                    <img src={steps__slider_main_item_icon_little_5} alt="" className="img-responsive steps__slider-main-item-icon-little" />
+                                    </div>
+                                </div>
+                                </div>
+                                <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
+                                <img src="img/steps__slider-img-3.png" alt="Img" className="steps__slider-img steps__slider-img--3" />
                                 <div className="steps__slider-circle"></div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div className="swiper-slide steps__slider-item">
-                        <div className="steps__slider-item-row row">
-                            <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
-                            <div className="steps__slider-counter font-size-24 font-weight-600">
-                                Step 2
-                            </div>
-                            <div className="steps__slider-main">
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--orange">
-                                    <div className="grit__bg"></div>
-                                    <img src={steps__slider_main_item_icon_1} alt="None" className="steps__slider-main-item-icon grit__icon" />
+                            <div className="steps__slider-item-row row">
+                                <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
+                                <div className="steps__slider-counter font-size-24 font-weight-600">
+                                    Step 4
                                 </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
-                                    You
+                                <div className="steps__slider-main">
+                                    <div className="steps__slider-main-item d-flex">
+                                    <div className="steps__slider-main-item-icon-wrap grit grit--orange">
+                                        <div className="grit__bg"></div>
+                                        <img src="img/steps__slider-main-item-icon-1.svg" alt="" className="steps__slider-main-item-icon grit__icon" />
                                     </div>
-                                    <div className="steps__slider-main-item-text">
-                                    Place tokens on DPoS and earn up to <b className="font-weight-600">150% per year </b>
+                                    <div className="steps__slider-main-item-texts">
+                                        <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
+                                        You
+                                        </div>
+                                        <div className="steps__slider-main-item-text">
+                                        Get <b className="font-weight-600">profit</b>
+                                        </div>
+                                    </div>
+                                    <img src="img/steps__slider-main-item-icon-little-6.svg" alt="" className="img-responsive steps__slider-main-item-icon-little" />
+                                    </div>
+                                    <div className="steps__slider-main-item d-flex">
+                                    <div className="steps__slider-main-item-icon-wrap grit grit--pink">
+                                        <div className="grit__bg"></div>
+                                        <img src="img/steps__slider-main-item-icon-2.svg" alt="" className="steps__slider-main-item-icon grit__icon"/>
+                                    </div>
+                                    <div className="steps__slider-main-item-texts">
+                                        <div className="steps__slider-main-item-heading steps__slider-main-item-heading--pink font-size-20">
+                                        We
+                                        </div>
+                                        <div className="steps__slider-main-item-text">
+                                        Provide security and act as a guarantor with a <b className="font-weight-600">minimum commission</b>
+                                        </div>
+                                    </div>
+                                    <img src="img/steps__slider-main-item-icon-little-7.svg" alt="" className="img-responsive steps__slider-main-item-icon-little" />
+                                    </div>
+                                    <div className="steps__slider-main-item d-flex">
+                                    <div className="steps__slider-main-item-icon-wrap grit grit--dark-blue">
+                                        <div className="grit__bg"></div>
+                                        <img src="img/steps__slider-main-item-icon-3.svg" alt="" className="steps__slider-main-item-icon grit__icon" />
+                                    </div>
+                                    <div className="steps__slider-main-item-texts">
+                                        <div className="steps__slider-main-item-heading steps__slider-main-item-heading--dark-blue font-size-20">
+                                        Traders
+                                        </div>
+                                        <div className="steps__slider-main-item-text">
+                                        Get clients and scope of work
+                                        </div>
+                                    </div>
+                                    <img src="img/steps__slider-main-item-icon-little-8.svg" alt="" className="img-responsive steps__slider-main-item-icon-little" />
                                     </div>
                                 </div>
-                                <img src={steps__slider_main_item_icon_little_2} alt="" className="img-responsive steps__slider-main-item-icon-little" />
                                 </div>
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--pink">
-                                    <div className="grit__bg"></div>
-                                    <img src={steps__slider_main_item_icon_2} alt="" className="steps__slider-main-item-icon grit__icon" />
-                                </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--pink font-size-20">
-                                    We
-                                    </div>
-                                    <div className="steps__slider-main-item-text">
-                                    Invest the received cryptocurrency in the <b className="font-weight-700">project development</b> and the creation of a Trading platform
-                                    </div>
-                                </div>
-                                <img src={steps__slider_main_item_icon_little_3} alt="" className="img-responsive steps__slider-main-item-icon-little" />
-                                </div>
-                            </div>
-                            </div>
-                            <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
-                                <img src={steps__slider_img_2} alt="Img" className="steps__slider-img steps__slider-img--2" />
+                                <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
+                                <img src="img/steps__slider-img-4.png" alt="Img" className="steps__slider-img steps__slider-img--4" />
                                 <div className="steps__slider-circle"></div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="swiper-slide steps__slider-item">
-                        <div className="steps__slider-item-row row">
-                            <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
-                            <div className="steps__slider-counter font-size-24 font-weight-600">
-                                Step 3
-                            </div>
-                            <div className="steps__slider-main">
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--orange">
-                                    <div className="grit__bg"></div>
-                                    <img src={steps__slider_main_item_icon_1} alt="" className="steps__slider-main-item-icon grit__icon" />
-                                </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
-                                    You
-                                    </div>
-                                    <div className="steps__slider-main-item-text">
-                                    Use your XXP on the <b className="font-weight-600">XX trading platform</b>
-                                    </div>
-                                </div>
-                                <img src={steps__slider_main_item_icon_little_4} alt="" className="img-responsive steps__slider-main-item-icon-little" />
-                                </div>
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--pink">
-                                    <div className="grit__bg"></div>
-                                    <img src={steps__slider_main_item_icon_2} alt="" className="steps__slider-main-item-icon grit__icon" />
-                                </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--pink font-size-20">
-                                    We
-                                    </div>
-                                    <div className="steps__slider-main-item-text">
-                                    Launch the XX trading platform. 
-                                    <p> The bridge between an investor and trader </p>
-                                    </div>
-                                </div>
-                                <img src={steps__slider_main_item_icon_little_5} alt="" className="img-responsive steps__slider-main-item-icon-little" />
                                 </div>
                             </div>
-                            </div>
-                            <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
-                            <img src="img/steps__slider-img-3.png" alt="Img" className="steps__slider-img steps__slider-img--3" />
-                            <div className="steps__slider-circle"></div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="swiper-slide steps__slider-item">
-                        <div className="steps__slider-item-row row">
-                            <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
-                            <div className="steps__slider-counter font-size-24 font-weight-600">
-                                Step 4
-                            </div>
-                            <div className="steps__slider-main">
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--orange">
-                                    <div className="grit__bg"></div>
-                                    <img src="img/steps__slider-main-item-icon-1.svg" alt="" className="steps__slider-main-item-icon grit__icon" />
-                                </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--orange font-size-20">
-                                    You
-                                    </div>
-                                    <div className="steps__slider-main-item-text">
-                                    Get <b className="font-weight-600">profit</b>
-                                    </div>
-                                </div>
-                                <img src="img/steps__slider-main-item-icon-little-6.svg" alt="" className="img-responsive steps__slider-main-item-icon-little" />
-                                </div>
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--pink">
-                                    <div className="grit__bg"></div>
-                                    <img src="img/steps__slider-main-item-icon-2.svg" alt="" className="steps__slider-main-item-icon grit__icon"/>
-                                </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--pink font-size-20">
-                                    We
-                                    </div>
-                                    <div className="steps__slider-main-item-text">
-                                    Provide security and act as a guarantor with a <b className="font-weight-600">minimum commission</b>
-                                    </div>
-                                </div>
-                                <img src="img/steps__slider-main-item-icon-little-7.svg" alt="" className="img-responsive steps__slider-main-item-icon-little" />
-                                </div>
-                                <div className="steps__slider-main-item d-flex">
-                                <div className="steps__slider-main-item-icon-wrap grit grit--dark-blue">
-                                    <div className="grit__bg"></div>
-                                    <img src="img/steps__slider-main-item-icon-3.svg" alt="" className="steps__slider-main-item-icon grit__icon" />
-                                </div>
-                                <div className="steps__slider-main-item-texts">
-                                    <div className="steps__slider-main-item-heading steps__slider-main-item-heading--dark-blue font-size-20">
-                                    Traders
-                                    </div>
-                                    <div className="steps__slider-main-item-text">
-                                    Get clients and scope of work
-                                    </div>
-                                </div>
-                                <img src="img/steps__slider-main-item-icon-little-8.svg" alt="" className="img-responsive steps__slider-main-item-icon-little" />
-                                </div>
-                            </div>
-                            </div>
-                            <div className="col-xl-7 col-lg-6 steps__slider-img-wrap">
-                            <img src="img/steps__slider-img-4.png" alt="Img" className="steps__slider-img steps__slider-img--4" />
-                            <div className="steps__slider-circle"></div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                     </div>
