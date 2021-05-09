@@ -11,6 +11,7 @@ import { SectionGuide } from './components/SectionGuide/SectionGuide';
 import { SectionMedia } from './components/SectionMedia/SectionMedia';
 import { SectionRoadmap } from './components/SectionRoadmap/SectionRoadmap';
 import { SectionSteps } from './components/SectionSteps/SectionSteps';
+import { SectionTeam } from './components/SectionTeam/SectionTeam';
 import { SectionTokenomics } from './components/SectionTokenomics/SectionTokenomics';
 import { SectionWork } from './components/SectionWork/SectionWork';
 
@@ -40,6 +41,7 @@ export const Main = (props) => {
                 </Element>
                 <SectionRoadmap />
                 <SectionFounder />
+                <SectionTeam />
                 <SectionDelegates />
                 <SectionMedia />
             </main>
