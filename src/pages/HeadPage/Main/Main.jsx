@@ -6,6 +6,7 @@ import { SectionCompare } from './components/SectionCompare/SectionCompare';
 import { SectionCover } from './components/SectionCover/SectionCover';
 import { SectionCurrency } from './components/SectionCurrency/SectionCurrency';
 import { SectionDelegates } from './components/SectionDelegates/SectionDelegates';
+import { SectionFounder } from './components/SectionFounder/SectionFounder';
 import { SectionGuide } from './components/SectionGuide/SectionGuide';
 import { SectionMedia } from './components/SectionMedia/SectionMedia';
 import { SectionRoadmap } from './components/SectionRoadmap/SectionRoadmap';
@@ -38,6 +39,7 @@ export const Main = (props) => {
                     <SectionTokenomics />
                 </Element>
                 <SectionRoadmap />
+                <SectionFounder />
                 <SectionDelegates />
                 <SectionMedia />
             </main>
