@@ -14,7 +14,7 @@ export const SectionWork = (props) => {
             <div className="pattern__img pattern__img--10"></div>
             </div>
             <div className="row work__header">
-            <div className="col-xl-5 col-md-6 work__heading-wrap wow animate__animated animate__fadeInLeft">
+            <div className="col-xl-5 col-md-6 work__heading-wrap wow ">
                 <Fade direction="left" triggerOnce="true">
                     <h2 className="heading font-size-40 work__heading">
                     <p> How does XXP </p>
@@ -22,7 +22,7 @@ export const SectionWork = (props) => {
                     </h2>
                 </Fade>
             </div>
-            <div className="col-xl-5 col-md-6 work__header-card-wrap wow animate__animated animate__fadeInRight">
+            <div className="col-xl-5 col-md-6 work__header-card-wrap wow">
                 <Fade direction="right" triggerOnce="true">
                     <div className="work__header-card">
                     <p> List your coins on DPoS. </p>
@@ -35,8 +35,8 @@ export const SectionWork = (props) => {
             <div className="row work__cards">
             <div className="col-xl-10">
                 <div className="d-flex work__row work__row--1">
-                <div className="work__card-wrap wow animate__animated animate__fadeInDown">
-                <Fade direction="down" triggerOnce="true" delay={2}>
+                <div className="work__card-wrap wow">
+                <Fade direction="down" triggerOnce="true">
                         <div className="work__card work__card--small d-flex grit grit--orange">
                             <div className="grit__bg"></div>
                             <img src={work__card_icon_1} alt="" className="img-responsive work__card-icon" />
@@ -53,8 +53,8 @@ export const SectionWork = (props) => {
                     </Fade>
                     <div className="work__card-arrow"></div>
                 </div>
-                    <div className="work__card-wrap wow animate__animated animate__fadeInDown">
-                        <Fade direction="down" triggerOnce="true" delay={2} duration={1000}>
+                    <div className="work__card-wrap wow">
+                        <Fade direction="down" triggerOnce="true" delay={200} >
                             <div className="work__card work__card--small d-flex grit grit--orange">
                             <div className="grit__bg"></div>
                             <img src={work__card_icon_1} alt="" className="img-responsive work__card-icon" />
@@ -71,8 +71,8 @@ export const SectionWork = (props) => {
                         </Fade>
                         <div className="work__card-arrow"></div>
                     </div>
-                    <div className="work__card-wrap wow animate__animated animate__fadeInDown" >
-                        <Fade direction="down" triggerOnce="true" delay={2} duration={2000}>
+                    <div className="work__card-wrap wow" >
+                        <Fade direction="down" triggerOnce="true" delay={400} >
                             <div className="work__card work__card--small d-flex grit grit--orange">
                             <div className="grit__bg"></div>
                             <img src={work__card_icon_1} alt="" className="img-responsive work__card-icon" />
@@ -91,13 +91,13 @@ export const SectionWork = (props) => {
                     </div>
                 </div>
                 <div className="d-flex work__row work__row--2 justify-content-end">
-                <Fade direction="left" triggerOnce="true" delay={2} className="work__caption work__caption--1 font-weight-700 font-size-15 wow">
+                <Fade direction="left" triggerOnce="true" delay={400} className="work__caption work__caption--1 font-weight-700 font-size-15 wow">
                     <div>
                         No delegate
                     </div>
                 </Fade>
-                <div className="work__card-wrap work__card-wrap--medium wow animate__animated animate__fadeInDown">
-                    <Fade direction="down" triggerOnce="true" delay={2}duration={1200} >
+                <div className="work__card-wrap work__card-wrap--medium wow">
+                    <Fade direction="down" triggerOnce="true" delay={200} >
                         <div className="work__card work__card--medium d-flex align-items-center grit grit--pink">
                         <div className="grit__bg"></div>
                         <img src={work__card_icon_2} alt="" className="img-responsive work__card-icon" />
@@ -111,8 +111,8 @@ export const SectionWork = (props) => {
                     </Fade>
                     <div className="work__card-arrow"></div>
                 </div>
-                    <div className="work__card-wrap work__card-wrap--medium wow animate__animated animate__fadeInDown">
-                        <Fade direction="down" triggerOnce="true" delay={2} duration={1400}>
+                    <div className="work__card-wrap work__card-wrap--medium wow">
+                        <Fade direction="down" triggerOnce="true" delay={400}>
                             <div className="work__card work__card--medium d-flex align-items-center grit grit--pink">
                             <div className="grit__bg"></div>
                             <img src={work__card_icon_2} alt="" className="img-responsive work__card-icon" />
@@ -126,7 +126,7 @@ export const SectionWork = (props) => {
                         </Fade>
                         <div className="work__card-arrow"></div>
                     </div>
-                <Fade  direction="right" triggerOnce="true" delay={2} className="work__caption work__caption--2 font-weight-700 font-size-15 wow">
+                <Fade  direction="right" triggerOnce="true" delay={400} className="work__caption work__caption--2 font-weight-700 font-size-15 wow">
                     <div>
                         + Reinvest
                     </div>
