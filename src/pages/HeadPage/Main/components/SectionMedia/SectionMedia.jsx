@@ -6,7 +6,7 @@ export const SectionMedia = (props) => {
     return(
       <section className="section media">
         <div className="container media__container">
-          <Fade direction="down">
+          <Fade direction="down" triggerOnce="true">
             <h2 className="heading font-size-40 media__heading text-center wow animate__animated animate__fadeInDown">
               <b className="font-weight-700"> Mass media </b>
             </h2>
@@ -14,7 +14,7 @@ export const SectionMedia = (props) => {
           <div className="row media__row">
             {localState.map( (e) => 
               <div key={e.id} className="media__item-wrap col-auto wow animate__animated animate__fadeInUp">
-                <Fade direction="up" delay={e.delay}>
+                <Fade direction="up" triggerOnce="true" delay={e.delay}>
                   <div className="media__item">
                     <div className={`media__item-img`} style={e.dataStyle}></div>
                     <a href={e.link}
