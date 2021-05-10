@@ -12765,7 +12765,7 @@ a:hover {
   .delegates__cards-item {
     position: relative;
     z-index: 2;
-    display: none;
+    /* display: none; */
     margin-bottom: 40px;
     padding: 50px 45px 30px;
   }
