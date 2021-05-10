@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 
 import delegates__cards_list_item_icon_1 from "../../../../../img/delegates__cards-list-item-icon-1.svg";
@@ -11,13 +11,14 @@ import delegates__cards_list_item_icon_6 from "../../../../../img/delegates__car
 import delegates__img from "../../../../../img/delegates__img.png";
 
 export const SectionDelegates = (props) => {
+  const [folowing, setFolowing] = useState(false);
   return (
     <section className="section delegates">
       <div className="container delegates__container">
         <div className="row delegates__row">
           <div className="col-lg-7 delegates__main">
             <div className="delegates__main-texts wow">
-              <Fade direction="left">
+              <Fade direction="left" triggerOnce="true">
                 <h2 className="heading font-size-40 delegates__heading">
                   <b className="font-weight-700">Delegates</b>
                 </h2>
@@ -29,20 +30,21 @@ export const SectionDelegates = (props) => {
               </Fade>
             </div>
             <div className="delegates__cards" data-mobile-tabs>
-              <div
-                className="delegates__cards-pills d-flex"
-                id="delegatesPills"
-              ></div>
-              <Fade direction="left" delay={400}>
-                <div className="delegates__cards-item wow" data-mobile-tab="2">
-                  <div
-                    className="delegates__cards-type"
-                    data-mobile-pill="2"
-                    data-replace="delegatesPills"
+              <Fade direction="left" delay={400} triggerOnce="true">
+                <div className={`delegates__cards-item`}>
+                  <span
+                    onClick={() => setFolowing(true)}
+                    className={`delegates__cards-type ${
+                      folowing ? "active" : " "
+                    }`}
                   >
                     Type 1
-                  </div>
-                  <div className="delegates__cards-row row">
+                  </span>
+                  <div
+                    className={`delegates__cards-row row delegates__cards-row__hiden ${
+                      folowing ? "active" : " "
+                    }`}
+                  >
                     <ul className="delegates__cards-list col-auto">
                       <li className="delegates__cards-list-item">
                         <div className="delegates__cards-list-item-icon-wrap">
@@ -149,7 +151,7 @@ export const SectionDelegates = (props) => {
               className="delegates__img wow "
             />
             <div className="delegates__img-circle wow"></div>
-            <Fade direction="right">
+            <Fade direction="right" triggerOnce="true">
               <div className="delegates__img-card wow">
                 In order to create a Delegate account, <br />
                 it is necessary to “freeze”
@@ -157,7 +159,7 @@ export const SectionDelegates = (props) => {
                 and register in the user’s personal account.
               </div>
             </Fade>
-            <Fade direction="right" delay={200}>
+            <Fade direction="right" delay={200} triggerOnce="true">
               <div className="delegates__img-text wow">
                 The Delegate, being the creator of his staking pool, has the
                 right to independently set the size of commissions on payments,
