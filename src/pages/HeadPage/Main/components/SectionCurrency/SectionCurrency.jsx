@@ -7,6 +7,7 @@ export const SectionCurrency = (props) => {
   const [currency_accordion__1, setCurrency_accordion__1] = useState(true);
   const [currency_accordion__2, setCurrency_accordion__2] = useState(false);
   const [currency_accordion__3, setCurrency_accordion__3] = useState(false);
+
   const resetCurrencyAccordion = () => {
     setCurrency_accordion__1(false);
     setCurrency_accordion__2(false);
