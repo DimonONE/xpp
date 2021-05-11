@@ -17,3 +17,20 @@
 .currency__video {
   background-image: url(../../../../../img/video-image.svg);
 }
+.folow_active {
+  cursor: pointer;
+}
+.folow_active .is_active_1,
+.folow_active .is_active_2,
+.folow_active .is_active_3 {
+  display: none;
+}
+.folow_active.active .is_active_1 {
+  display: block;
+}
+.folow_active.active .is_active_2 {
+  display: block;
+}
+.folow_active.active .is_active_3 {
+  display: block;
+}

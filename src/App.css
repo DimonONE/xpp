@@ -10657,7 +10657,6 @@ a:hover {
 }
 .currency__accordion.active .currency__accordion-icon {
   position: absolute;
-  top: 25px;
   left: -15px;
 }
 .currency__accordion.active .currency__accordion-heading {
