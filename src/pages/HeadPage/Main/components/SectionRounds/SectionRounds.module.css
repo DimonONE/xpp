@@ -1,0 +1,17 @@
+.widthFrom0to100 {
+  width: 0%;
+  animation: widthFrom 3s ease-in-out 1;
+}
+
+@keyframes widthFrom {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.widthFrom0to100 {
+  width: 1000%;
+}
