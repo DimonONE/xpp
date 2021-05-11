@@ -298,9 +298,9 @@ html {
 .container-md,
 .container-sm,
 .container-xl {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  min-width: 100%;
+  padding-right: 19px;
+  padding-left: 19px;
   margin-right: auto;
   margin-left: auto;
 }
