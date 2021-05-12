@@ -1,3 +1,10 @@
 .tokenomics__chart_info_icon {
   background-image: url(../../../../../img/tokenomics__chart-info-icon.svg);
 }
+@media (min-width: 600px) {
+  .tokenomics__container {
+    padding-left: 45px;
+  }
+}
+.effect_on_72:hover {
+}
