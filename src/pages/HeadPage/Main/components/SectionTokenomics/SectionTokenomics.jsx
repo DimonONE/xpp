@@ -6,8 +6,8 @@ import { localState } from "./State";
 
 export const SectionTokenomics = (props) => {
   let [hoverID, setHoverID] = useState(1);
-  let [percent, setPercent] = useState(1);
-
+  let [percent, setPercent] = useState(72);
+  console.log("renders");
   return (
     <section id="tokenomics" className="section tokenomics">
       <div className={`container ${style.tokenomics__container}`}>
@@ -24,25 +24,35 @@ export const SectionTokenomics = (props) => {
             style={{ visibility: "visible" }}
           >
             <div className="tokenomics__list">
-              {localState.map((e) => (
-                <Fade
-                  direction="left"
-                  delay={e.delay}
-                  className={`tokenomics__list-item ${
-                    e.id === hoverID ? "active" : ""
-                  }`}
-                >
-                  <span className={`${style.span_items_position}`}>
-                    <div className="tokenomics__list-number">
-                      {e.tokenomics_number}
-                    </div>
-                    <div className="tokenomics__list-text">
-                      <b className="font-weight-700">{e.tokenomics_text__b}</b>{" "}
-                      {e.tokenomics_text}
-                    </div>
-                  </span>
-                </Fade>
-              ))}
+              {localState.map((e) => {
+                return (
+                  <Fade
+                    key={e.id}
+                    direction="left"
+                    delay={e.delay}
+                    onVisibilityChange={() =>
+                      setTimeout(() => {
+                        setHoverID(e.id);
+                      }, e.delay)
+                    }
+                    className={`tokenomics__list-item ${
+                      e.id === hoverID ? "active" : ""
+                    }`}
+                  >
+                    <span className={`${style.span_items_position}`}>
+                      <div className="tokenomics__list-number">
+                        {e.tokenomics_number}
+                      </div>
+                      <div className="tokenomics__list-text">
+                        <b className="font-weight-700">
+                          {e.tokenomics_text__b}
+                        </b>{" "}
+                        {e.tokenomics_text}
+                      </div>
+                    </span>
+                  </Fade>
+                );
+              })}
             </div>
           </div>
           <div className="tokenomics__charts col-lg-6 ">

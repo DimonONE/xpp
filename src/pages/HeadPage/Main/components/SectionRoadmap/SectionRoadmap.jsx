@@ -77,181 +77,199 @@ export const SectionRoadmap = (props) => {
             </button>
           </div>
         </div>
-        <div className="swiper-container roadmap__slider">
-          <div className={`swiper-wrapper ${style.swiper_wrapper}`}>
-            <div
-              className={`swiper-slide roadmap__slider-item ${
-                folowing ? "swiper-slide-active" : style.swiper_slide__none
-              } ${style.swiper_slide__width}`}
-            >
-              <div className="roadmap__slider-item-label">Q4 2020</div>
-              <ul className={`roadmap__slider-item-list ${style.line_through}`}>
-                <li className="roadmap__slider-item-list-item swiper-slide-active">
-                  Marketing activities in social media and on crypto forums
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Smart contract publication on Tron Network
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Start of the XXP token presale
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Alpha version of the investment platform
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  XX Delegate system activation
-                </li>
-              </ul>
-            </div>
-            <div
-              className={`swiper-slide roadmap__slider-item swiper-slide-next ${
-                !folowing ? style.swiper_slide__none : ""
-              } ${style.swiper_slide__width}`}
-            >
-              <div className="roadmap__slider-item-label">Q1 2021</div>
-              <ul className={`roadmap__slider-item-list ${style.line_through}`}>
-                <li
-                  className={`roadmap__slider-item-list-item swiper-slide-active`}
+        <Swiper className="swiper-container roadmap__slider">
+          <div className="swiper-container roadmap__slider">
+            <div className={`swiper-wrapper ${style.swiper_wrapper}`}>
+              <SwiperSlide
+                className={`swiper-wrapper ${
+                  folowing ? "swiper-slide-active" : style.swiper_slide__none
+                } ${style.swiper_wrapper}`}
+              >
+                <div
+                  className={`swiper-slide roadmap__slider-item ${
+                    folowing ? "swiper-slide-active" : style.swiper_slide__none
+                  } ${style.swiper_slide__width}`}
                 >
-                  Official website presentation
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Final stage of the XXP token presale
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Bounty campaign
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  1st stage of the trading platform development
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Launch of the investment platform beta version
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Release of the mobile application for Android
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Listing on the crypto exchange
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Participation in TOKEN2049 — The Premier Crypto
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Event ln Asia
-                </li>
-              </ul>
-            </div>
-            <div
-              className={`swiper-slide roadmap__slider-item ${
-                !folowing ? style.swiper_slide__none : ""
-              } ${style.swiper_slide__width}`}
-            >
-              <div className="roadmap__slider-item-label">Q2 2021</div>
-              <ul className="roadmap__slider-item-list">
-                <li className="roadmap__slider-item-list-item">
-                  2rd stage of the trading platform development
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  lnvestment platform update
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Start of linear token sales
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Appearance on Coingecko
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Launch of analytical service
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Participation in Blockchain Life 2021 Forum
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Start of token sales on the platform
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Marketing campaign targeting the Asian region
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Listing on the crypto exchange
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Appearance on Coinmarketcap
-                </li>
-              </ul>
-            </div>
-            <div
-              className={`swiper-slide roadmap__slider-item ${
-                !folowing ? "swiper-slide-active" : ""
-              } ${style.swiper_slide__width}`}
-            >
-              <div className="roadmap__slider-item-label">Q3 2021</div>
-              <ul className="roadmap__slider-item-list">
-                <li className="roadmap__slider-item-list-item">
-                  3rd stage of the trading platform development
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Participation in Singapore Blockchain Week 2021 (VC)
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Website update
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Release of the mobile application for iOS
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Marketing campaign targeting Latin America and
-                  Spanish-speaking users
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Participation in Malta Blockchain summit 2021 (BraziI)
-                </li>
-              </ul>
-            </div>
-            <div
-              className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
-            >
-              <div className="roadmap__slider-item-label">Q4 2021</div>
-              <ul className="roadmap__slider-item-list">
-                <li className="roadmap__slider-item-list-item">
-                  4th stage of the trading platform development
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  lnvestment platform update
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Marketing campaign targeting the North American market
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Participation in Blockchain Expo — North America 2020 (VC)
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Listing on the crypto exchange
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Participation in Hackathon Human DeFi Haeck (VC)
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Generation of the Roadmap for 2022
-                </li>
-              </ul>
-            </div>
-            <div
-              className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
-            >
-              <div className="roadmap__slider-item-label">Q1 2022</div>
-              <ul className="roadmap__slider-item-list">
-                <li className="roadmap__slider-item-list-item">
-                  5th stage of the trading platform development
-                </li>
-                <li className="roadmap__slider-item-list-item">
-                  Deflationary mechanism activation
-                </li>
-              </ul>
+                  <div className="roadmap__slider-item-label">Q4 2020</div>
+                  <ul
+                    className={`roadmap__slider-item-list ${style.line_through}`}
+                  >
+                    <li className="roadmap__slider-item-list-item swiper-slide-active">
+                      Marketing activities in social media and on crypto forums
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Smart contract publication on Tron Network
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Start of the XXP token presale
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Alpha version of the investment platform
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      XX Delegate system activation
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className={`swiper-slide roadmap__slider-item swiper-slide-next ${
+                    !folowing ? style.swiper_slide__none : ""
+                  } ${style.swiper_slide__width}`}
+                >
+                  <div className="roadmap__slider-item-label">Q1 2021</div>
+                  <ul
+                    className={`roadmap__slider-item-list ${style.line_through}`}
+                  >
+                    <li
+                      className={`roadmap__slider-item-list-item swiper-slide-active`}
+                    >
+                      Official website presentation
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Final stage of the XXP token presale
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Bounty campaign
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      1st stage of the trading platform development
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Launch of the investment platform beta version
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Release of the mobile application for Android
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Listing on the crypto exchange
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Participation in TOKEN2049 — The Premier Crypto
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Event ln Asia
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className={`swiper-slide roadmap__slider-item ${
+                    !folowing ? style.swiper_slide__none : ""
+                  } ${style.swiper_slide__width}`}
+                >
+                  <div className="roadmap__slider-item-label">Q2 2021</div>
+                  <ul className="roadmap__slider-item-list">
+                    <li className="roadmap__slider-item-list-item">
+                      2rd stage of the trading platform development
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      lnvestment platform update
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Start of linear token sales
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Appearance on Coingecko
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Launch of analytical service
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Participation in Blockchain Life 2021 Forum
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Start of token sales on the platform
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Marketing campaign targeting the Asian region
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Listing on the crypto exchange
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Appearance on Coinmarketcap
+                    </li>
+                  </ul>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide
+                className={`swiper-slide swiper-wrapper ${
+                  folowing ? "swiper-slide-active" : ""
+                } ${style.swiper_slide__width}`}
+              >
+                <div
+                  className={`swiper-slide roadmap__slider-item ${
+                    folowing ? "swiper-slide-active" : ""
+                  } ${style.swiper_slide__width}`}
+                >
+                  <div className="roadmap__slider-item-label">Q3 2021</div>
+                  <ul className="roadmap__slider-item-list">
+                    <li className="roadmap__slider-item-list-item">
+                      3rd stage of the trading platform development
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Participation in Singapore Blockchain Week 2021 (VC)
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Website update
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Release of the mobile application for iOS
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Marketing campaign targeting Latin America and
+                      Spanish-speaking users
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Participation in Malta Blockchain summit 2021 (BraziI)
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
+                >
+                  <div className="roadmap__slider-item-label">Q4 2021</div>
+                  <ul className="roadmap__slider-item-list">
+                    <li className="roadmap__slider-item-list-item">
+                      4th stage of the trading platform development
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      lnvestment platform update
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Marketing campaign targeting the North American market
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Participation in Blockchain Expo — North America 2020 (VC)
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Listing on the crypto exchange
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Participation in Hackathon Human DeFi Haeck (VC)
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Generation of the Roadmap for 2022
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
+                >
+                  <div className="roadmap__slider-item-label">Q1 2022</div>
+                  <ul className="roadmap__slider-item-list">
+                    <li className="roadmap__slider-item-list-item">
+                      5th stage of the trading platform development
+                    </li>
+                    <li className="roadmap__slider-item-list-item">
+                      Deflationary mechanism activation
+                    </li>
+                  </ul>
+                </div>
+              </SwiperSlide>
             </div>
           </div>
-        </div>
-        <div className="roadmap__scrollbar"></div>
+          <div className="roadmap__scrollbar"></div>
+        </Swiper>
       </div>
     </section>
   );
