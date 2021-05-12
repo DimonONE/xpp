@@ -1,7 +1,7 @@
 export const localState = [
   {
     id: 1,
-    delay: 100,
+    delay: 500,
     tokenomics_number: 72,
     tokenomics_text:
       "tokens are intended to pay rewards to investors in the form of interest rates from staking",
@@ -9,7 +9,7 @@ export const localState = [
   },
   {
     id: 2,
-    delay: 200,
+    delay: 1000,
     tokenomics_number: 10,
     tokenomics_text:
       "tokens — fund of the development team, is in a frozen state",
@@ -17,7 +17,7 @@ export const localState = [
   },
   {
     id: 3,
-    delay: 300,
+    delay: 1500,
 
     tokenomics_number: 9,
     tokenomics_text:
@@ -26,14 +26,14 @@ export const localState = [
   },
   {
     id: 4,
-    delay: 400,
+    delay: 2000,
     tokenomics_number: 4,
     tokenomics_text: "tokens — pre-ICO and ICO stage",
     tokenomics_text__b: "2,000,000 XXP",
   },
   {
     id: 5,
-    delay: 500,
+    delay: 2500,
     tokenomics_number: 4,
     tokenomics_text:
       "tokens — marketing fund for promoting and scaling the project",
@@ -41,7 +41,7 @@ export const localState = [
   },
   {
     id: 6,
-    delay: 600,
+    delay: 3000,
     tokenomics_number: 1,
     tokenomics_text:
       "tokens — fund for holding promotions, bounty campaigns, contests, quizzes and other events",

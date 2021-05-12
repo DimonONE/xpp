@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./SectionRoadmap.module.css";
 
 export const SectionRoadmap = (props) => {
+  const [folowing, setFolowing] = useState(true);
   return (
     <section className="section roadmap">
       <div className="container roadmap__container">
@@ -19,7 +21,10 @@ export const SectionRoadmap = (props) => {
             className="col-lg-6 roadmap__slider-controls wow"
             style={{ visibility: "visible" }}
           >
-            <button className="arrow arrow--prev roadmap__arrow roadmap__arrow--prev">
+            <button
+              onClick={() => setFolowing(true)}
+              className="arrow arrow--prev roadmap__arrow roadmap__arrow--prev"
+            >
               <svg
                 width="38"
                 height="19"
@@ -37,10 +42,23 @@ export const SectionRoadmap = (props) => {
               </svg>
             </button>
             <div className="roadmap__pagination swiper-pagination-clickable swiper-pagination-bullets">
-              <span className="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-              <span className="swiper-pagination-bullet"></span>
+              <span
+                onClick={() => setFolowing(true)}
+                className={`swiper-pagination-bullet ${
+                  folowing ? "swiper-pagination-bullet-active" : ""
+                }`}
+              ></span>
+              <span
+                onClick={() => setFolowing(false)}
+                className={`swiper-pagination-bullet ${
+                  !folowing ? "swiper-pagination-bullet-active" : ""
+                }`}
+              ></span>
             </div>
-            <button className="arrow arrow--next roadmap__arrow roadmap__arrow--next">
+            <button
+              onClick={() => setFolowing(false)}
+              className="arrow arrow--next roadmap__arrow roadmap__arrow--next"
+            >
               <svg
                 width="38"
                 height="19"
@@ -59,9 +77,13 @@ export const SectionRoadmap = (props) => {
             </button>
           </div>
         </div>
-        <div className="swiper-container roadmap__slider wow animate__animated animate__fadeInRight">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide roadmap__slider-item swiper-slide-active">
+        <div className="swiper-container roadmap__slider">
+          <div className={`swiper-wrapper ${style.swiper_wrapper}`}>
+            <div
+              className={`swiper-slide roadmap__slider-item ${
+                folowing ? "swiper-slide-active" : style.swiper_slide__none
+              } ${style.swiper_slide__width}`}
+            >
               <div className="roadmap__slider-item-label">Q4 2020</div>
               <ul className={`roadmap__slider-item-list ${style.line_through}`}>
                 <li className="roadmap__slider-item-list-item swiper-slide-active">
@@ -82,8 +104,9 @@ export const SectionRoadmap = (props) => {
               </ul>
             </div>
             <div
-              className="swiper-slide roadmap__slider-item swiper-slide-next"
-              style={{ width: 330, marginRight: 75 }}
+              className={`swiper-slide roadmap__slider-item swiper-slide-next ${
+                !folowing ? style.swiper_slide__none : ""
+              } ${style.swiper_slide__width}`}
             >
               <div className="roadmap__slider-item-label">Q1 2021</div>
               <ul className={`roadmap__slider-item-list ${style.line_through}`}>
@@ -118,7 +141,11 @@ export const SectionRoadmap = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="swiper-slide roadmap__slider-item">
+            <div
+              className={`swiper-slide roadmap__slider-item ${
+                !folowing ? style.swiper_slide__none : ""
+              } ${style.swiper_slide__width}`}
+            >
               <div className="roadmap__slider-item-label">Q2 2021</div>
               <ul className="roadmap__slider-item-list">
                 <li className="roadmap__slider-item-list-item">
@@ -153,7 +180,11 @@ export const SectionRoadmap = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="swiper-slide roadmap__slider-item">
+            <div
+              className={`swiper-slide roadmap__slider-item ${
+                !folowing ? "swiper-slide-active" : ""
+              } ${style.swiper_slide__width}`}
+            >
               <div className="roadmap__slider-item-label">Q3 2021</div>
               <ul className="roadmap__slider-item-list">
                 <li className="roadmap__slider-item-list-item">
@@ -177,7 +208,9 @@ export const SectionRoadmap = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="swiper-slide roadmap__slider-item">
+            <div
+              className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
+            >
               <div className="roadmap__slider-item-label">Q4 2021</div>
               <ul className="roadmap__slider-item-list">
                 <li className="roadmap__slider-item-list-item">
@@ -203,7 +236,9 @@ export const SectionRoadmap = (props) => {
                 </li>
               </ul>
             </div>
-            <div className="swiper-slide roadmap__slider-item">
+            <div
+              className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
+            >
               <div className="roadmap__slider-item-label">Q1 2022</div>
               <ul className="roadmap__slider-item-list">
                 <li className="roadmap__slider-item-list-item">
