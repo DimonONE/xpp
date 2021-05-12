@@ -331,7 +331,7 @@ html {
   .container-md,
   .container-sm,
   .container-xl {
-    max-width: 1170px;
+    min-width: 1170px;
   }
 }
 .row {
@@ -11893,6 +11893,7 @@ a:hover {
 .tokenomics__heading {
   margin-bottom: 35px;
 }
+
 .tokenomics__list-number {
   display: none;
   -webkit-box-flex: 0;
@@ -11928,12 +11929,7 @@ a:hover {
 .tokenomics__list-item:last-child {
   margin-bottom: 0;
 }
-.tokenomics__list-item.hidden {
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  opacity: 0;
-}
+
 .tokenomics__list-item.active {
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
