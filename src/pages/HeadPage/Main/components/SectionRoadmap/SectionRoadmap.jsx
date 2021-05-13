@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Fade } from "react-awesome-reveal";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./SectionRoadmap.module.css";
 
@@ -77,11 +79,17 @@ export const SectionRoadmap = (props) => {
             </button>
           </div>
         </div>
-        <Swiper className="swiper-container roadmap__slider">
+        <Swiper
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => setFolowing(folowing && false)}
+          className="swiper-container roadmap__slider"
+        >
           <div className="swiper-container roadmap__slider">
             <div className={`swiper-wrapper`}>
               <SwiperSlide
-                className={` ${
+                className={`${
                   folowing ? "swiper-slide-active" : style.swiper_slide__none
                 } `}
               >
@@ -154,6 +162,7 @@ export const SectionRoadmap = (props) => {
                   </ul>
                 </div>
               </SwiperSlide>
+
               <SwiperSlide>
                 <div
                   className={`roadmap__slider-item ${
