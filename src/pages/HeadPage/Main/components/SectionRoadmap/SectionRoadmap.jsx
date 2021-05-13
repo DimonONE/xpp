@@ -79,14 +79,14 @@ export const SectionRoadmap = (props) => {
         </div>
         <Swiper className="swiper-container roadmap__slider">
           <div className="swiper-container roadmap__slider">
-            <div className={`swiper-wrapper ${style.swiper_wrapper}`}>
+            <div className={`swiper-wrapper`}>
               <SwiperSlide
-                className={`swiper-wrapper ${
+                className={` ${
                   folowing ? "swiper-slide-active" : style.swiper_slide__none
-                } ${style.swiper_wrapper}`}
+                } `}
               >
                 <div
-                  className={`swiper-slide roadmap__slider-item ${
+                  className={`roadmap__slider-item ${
                     folowing ? "swiper-slide-active" : style.swiper_slide__none
                   } ${style.swiper_slide__width}`}
                 >
@@ -114,7 +114,7 @@ export const SectionRoadmap = (props) => {
               </SwiperSlide>
               <SwiperSlide>
                 <div
-                  className={`swiper-slide roadmap__slider-item swiper-slide-next ${
+                  className={` roadmap__slider-item swiper-slide-next ${
                     !folowing ? style.swiper_slide__none : ""
                   } ${style.swiper_slide__width}`}
                 >
@@ -156,7 +156,7 @@ export const SectionRoadmap = (props) => {
               </SwiperSlide>
               <SwiperSlide>
                 <div
-                  className={`swiper-slide roadmap__slider-item ${
+                  className={`roadmap__slider-item ${
                     !folowing ? style.swiper_slide__none : ""
                   } ${style.swiper_slide__width}`}
                 >
@@ -197,12 +197,14 @@ export const SectionRoadmap = (props) => {
               </SwiperSlide>
               <SwiperSlide
                 className={`swiper-slide swiper-wrapper ${
-                  folowing ? "swiper-slide-active" : ""
-                } ${style.swiper_slide__width}`}
+                  !folowing ? "swiper-slide-active" : style.swiper_slide__none
+                } `}
               >
                 <div
                   className={`swiper-slide roadmap__slider-item ${
-                    folowing ? "swiper-slide-active" : ""
+                    !folowing
+                      ? "swiper-slide-active"
+                      : `swiper-slide-active ${style.swiper_slide__none}`
                   } ${style.swiper_slide__width}`}
                 >
                   <div className="roadmap__slider-item-label">Q3 2021</div>
@@ -231,7 +233,11 @@ export const SectionRoadmap = (props) => {
               </SwiperSlide>
               <SwiperSlide>
                 <div
-                  className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
+                  className={`swiper-slide roadmap__slider-item ${
+                    !folowing
+                      ? "swiper-slide-active"
+                      : `swiper-slide-active ${style.swiper_slide__none}`
+                  } ${style.swiper_slide__width}`}
                 >
                   <div className="roadmap__slider-item-label">Q4 2021</div>
                   <ul className="roadmap__slider-item-list">
@@ -261,7 +267,11 @@ export const SectionRoadmap = (props) => {
               </SwiperSlide>
               <SwiperSlide>
                 <div
-                  className={`swiper-slide roadmap__slider-item ${style.swiper_slide__width}`}
+                  className={`swiper-slide roadmap__slider-item ${
+                    !folowing
+                      ? "swiper-slide-active"
+                      : `swiper-slide-active ${style.swiper_slide__none}`
+                  } ${style.swiper_slide__width}`}
                 >
                   <div className="roadmap__slider-item-label">Q1 2022</div>
                   <ul className="roadmap__slider-item-list">
