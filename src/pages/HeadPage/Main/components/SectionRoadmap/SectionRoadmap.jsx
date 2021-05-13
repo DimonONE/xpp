@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Fade } from "react-awesome-reveal";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./SectionRoadmap.module.css";
@@ -80,10 +79,7 @@ export const SectionRoadmap = (props) => {
           </div>
         </div>
         <Swiper
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => setFolowing(folowing && false)}
+          onSlideChange={() => setFolowing(folowing ? false : true)}
           className="swiper-container roadmap__slider"
         >
           <div className="swiper-container roadmap__slider">
