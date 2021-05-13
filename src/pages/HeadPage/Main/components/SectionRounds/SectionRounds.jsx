@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { Fade } from "react-awesome-reveal";
 import style from "./SectionRounds.module.css";
 
 export const SectionRounds = (props) => {
+  let [isAnimation, setIsAnimation] = useState(false);
+
   return (
     <section className="section rounds">
       <div className="container rounds__container wow ">
@@ -48,12 +51,16 @@ export const SectionRounds = (props) => {
                 <div className="rounds__info-item-heading">Pre-sale</div>
                 <div className="rounds__info-item-price">1$ * 750 000 XXP</div>
               </div>
-              <div className="rounds__info-item-progress">
-                <div
-                  className={`rounds__info-item-progress-line wow animate__animated ${style.widthFrom0to100}`}
-                  style={{ width: "100%" }}
-                ></div>
-              </div>
+              <Fade onVisibilityChange={() => setIsAnimation(!isAnimation)}>
+                <div className="rounds__info-item-progress">
+                  <div
+                    className={`rounds__info-item-progress-line wow animate__animated ${
+                      isAnimation ? style.widthFrom0to100 : ""
+                    }`}
+                    style={{ width: "100%" }}
+                  ></div>
+                </div>
+              </Fade>
               <div className="d-flex rounds__info-item-footer">
                 <div className="rounds__info-item-caption">100%</div>
                 <div className="rounds__info-item-caption">Completed</div>
