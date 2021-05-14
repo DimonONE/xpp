@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import style from "./SectionRounds.module.css";
 
 export const SectionRounds = (props) => {
-  let [isAnimation, setIsAnimation] = useState(false);
+  let [isAnimation, setIsAnimation] = useState(true);
 
   return (
     <section className="section rounds">
@@ -51,7 +51,10 @@ export const SectionRounds = (props) => {
                 <div className="rounds__info-item-heading">Pre-sale</div>
                 <div className="rounds__info-item-price">1$ * 750 000 XXP</div>
               </div>
-              <Fade onVisibilityChange={() => setIsAnimation(!isAnimation)}>
+              <Fade
+                triggerOnce="true"
+                onVisibilityChange={() => setIsAnimation(!isAnimation)}
+              >
                 <div className="rounds__info-item-progress">
                   <div
                     className={`rounds__info-item-progress-line wow animate__animated ${

@@ -79,7 +79,7 @@ export const SectionRoadmap = (props) => {
           </div>
         </div>
         <Swiper
-          onSlideChange={() => setFolowing(folowing ? false : true)}
+          onSlideChange={() => setFolowing(!folowing)}
           className="swiper-container roadmap__slider"
         >
           <div className="swiper-container roadmap__slider">
