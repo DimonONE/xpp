@@ -1,10 +1,15 @@
-import React, { useState } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import React from "react";
 import style from "./SectionRoadmap.module.css";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination } from "swiper/core";
+import "swiper/swiper-bundle.css";
+
+import { localState } from "./State";
+
+SwiperCore.use([Navigation, Pagination]);
+
 export const SectionRoadmap = (props) => {
-  const [folowing, setFolowing] = useState(true);
   return (
     <section className="section roadmap">
       <div className="container roadmap__container">
@@ -13,19 +18,13 @@ export const SectionRoadmap = (props) => {
           <div className="pattern__img pattern__img--3"></div>
         </div>
         <div className="roadmap__header row">
-          <div className="col-lg-6 roadmap__heading-wrap wow">
+          <div className="col-lg-6 roadmap__heading-wrap wow ">
             <h2 className="heading roadmap__heading font-size-40">
               Road <b className="font-weight-700">map</b>
             </h2>
           </div>
-          <div
-            className="col-lg-6 roadmap__slider-controls wow"
-            style={{ visibility: "visible" }}
-          >
-            <button
-              onClick={() => setFolowing(true)}
-              className="arrow arrow--prev roadmap__arrow roadmap__arrow--prev"
-            >
+          <div className="col-lg-6 roadmap__slider-controls wow">
+            <button className="arrow arrow--prev roadmap__arrow roadmap__arrow--prev">
               <svg
                 width="38"
                 height="19"
@@ -42,24 +41,8 @@ export const SectionRoadmap = (props) => {
                 ></path>
               </svg>
             </button>
-            <div className="roadmap__pagination swiper-pagination-clickable swiper-pagination-bullets">
-              <span
-                onClick={() => setFolowing(true)}
-                className={`swiper-pagination-bullet ${
-                  folowing ? "swiper-pagination-bullet-active" : ""
-                }`}
-              ></span>
-              <span
-                onClick={() => setFolowing(false)}
-                className={`swiper-pagination-bullet ${
-                  !folowing ? "swiper-pagination-bullet-active" : ""
-                }`}
-              ></span>
-            </div>
-            <button
-              onClick={() => setFolowing(false)}
-              className="arrow arrow--next roadmap__arrow roadmap__arrow--next"
-            >
+            <div className="roadmap__pagination "></div>
+            <button className="arrow arrow--next roadmap__arrow roadmap__arrow--next ">
               <svg
                 width="38"
                 height="19"
@@ -79,219 +62,53 @@ export const SectionRoadmap = (props) => {
           </div>
         </div>
         <Swiper
-          onSlideChange={() => setFolowing(!folowing)}
-          className="swiper-container roadmap__slider"
+          className={`roadmap__slider`}
+          navigation={{
+            nextEl: ".roadmap__arrow--next",
+            prevEl: ".roadmap__arrow--prev",
+          }}
+          pagination={{
+            el: ".roadmap__pagination",
+            clickable: "true",
+          }}
+          breakpoints={{
+            620: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
+            1300: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+          }}
+          spaceBetween={75}
+          style={{ overflow: "visible" }}
         >
-          <div className="swiper-container roadmap__slider">
-            <div className={`swiper-wrapper`}>
-              <SwiperSlide
-                className={`${
-                  folowing ? "swiper-slide-active" : style.swiper_slide__none
-                } `}
-              >
-                <div
-                  className={`roadmap__slider-item ${
-                    folowing ? "swiper-slide-active" : style.swiper_slide__none
-                  } ${style.swiper_slide__width}`}
-                >
-                  <div className="roadmap__slider-item-label">Q4 2020</div>
+          <div className="swiper-wrapper ">
+            {localState.map((e) => (
+              <SwiperSlide key={e.id}>
+                <div className={`roadmap__slider-item swiper-slide-next`}>
+                  <div className="roadmap__slider-item-label">{e.head}</div>
                   <ul
-                    className={`roadmap__slider-item-list ${style.line_through}`}
+                    className={`roadmap__slider-item-list ${
+                      e.id === 1 ? style.line_through : ""
+                    }`}
                   >
-                    <li className="roadmap__slider-item-list-item swiper-slide-active">
-                      Marketing activities in social media and on crypto forums
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Smart contract publication on Tron Network
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Start of the XXP token presale
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Alpha version of the investment platform
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      XX Delegate system activation
-                    </li>
+                    {e.texts.map((t) => (
+                      <li
+                        key={t.id}
+                        className={`roadmap__slider-item-list-item swiper-slide-active ${
+                          e.id === 2 && t.id === 1 ? style.line_through : ""
+                        }`}
+                      >
+                        {t.text}
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className={` roadmap__slider-item swiper-slide-next ${
-                    !folowing ? style.swiper_slide__none : ""
-                  } ${style.swiper_slide__width}`}
-                >
-                  <div className="roadmap__slider-item-label">Q1 2021</div>
-                  <ul
-                    className={`roadmap__slider-item-list ${style.line_through}`}
-                  >
-                    <li
-                      className={`roadmap__slider-item-list-item swiper-slide-active`}
-                    >
-                      Official website presentation
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Final stage of the XXP token presale
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Bounty campaign
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      1st stage of the trading platform development
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Launch of the investment platform beta version
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Release of the mobile application for Android
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Listing on the crypto exchange
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Participation in TOKEN2049 — The Premier Crypto
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Event ln Asia
-                    </li>
-                  </ul>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div
-                  className={`roadmap__slider-item ${
-                    !folowing ? style.swiper_slide__none : ""
-                  } ${style.swiper_slide__width}`}
-                >
-                  <div className="roadmap__slider-item-label">Q2 2021</div>
-                  <ul className="roadmap__slider-item-list">
-                    <li className="roadmap__slider-item-list-item">
-                      2rd stage of the trading platform development
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      lnvestment platform update
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Start of linear token sales
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Appearance on Coingecko
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Launch of analytical service
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Participation in Blockchain Life 2021 Forum
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Start of token sales on the platform
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Marketing campaign targeting the Asian region
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Listing on the crypto exchange
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Appearance on Coinmarketcap
-                    </li>
-                  </ul>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide
-                className={`swiper-slide swiper-wrapper ${
-                  !folowing ? "swiper-slide-active" : style.swiper_slide__none
-                } `}
-              >
-                <div
-                  className={`swiper-slide roadmap__slider-item ${
-                    !folowing
-                      ? "swiper-slide-active"
-                      : `swiper-slide-active ${style.swiper_slide__none}`
-                  } ${style.swiper_slide__width}`}
-                >
-                  <div className="roadmap__slider-item-label">Q3 2021</div>
-                  <ul className="roadmap__slider-item-list">
-                    <li className="roadmap__slider-item-list-item">
-                      3rd stage of the trading platform development
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Participation in Singapore Blockchain Week 2021 (VC)
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Website update
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Release of the mobile application for iOS
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Marketing campaign targeting Latin America and
-                      Spanish-speaking users
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Participation in Malta Blockchain summit 2021 (BraziI)
-                    </li>
-                  </ul>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className={`swiper-slide roadmap__slider-item ${
-                    !folowing
-                      ? "swiper-slide-active"
-                      : `swiper-slide-active ${style.swiper_slide__none}`
-                  } ${style.swiper_slide__width}`}
-                >
-                  <div className="roadmap__slider-item-label">Q4 2021</div>
-                  <ul className="roadmap__slider-item-list">
-                    <li className="roadmap__slider-item-list-item">
-                      4th stage of the trading platform development
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      lnvestment platform update
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Marketing campaign targeting the North American market
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Participation in Blockchain Expo — North America 2020 (VC)
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Listing on the crypto exchange
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Participation in Hackathon Human DeFi Haeck (VC)
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Generation of the Roadmap for 2022
-                    </li>
-                  </ul>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div
-                  className={`swiper-slide roadmap__slider-item ${
-                    !folowing
-                      ? "swiper-slide-active"
-                      : `swiper-slide-active ${style.swiper_slide__none}`
-                  } ${style.swiper_slide__width}`}
-                >
-                  <div className="roadmap__slider-item-label">Q1 2022</div>
-                  <ul className="roadmap__slider-item-list">
-                    <li className="roadmap__slider-item-list-item">
-                      5th stage of the trading platform development
-                    </li>
-                    <li className="roadmap__slider-item-list-item">
-                      Deflationary mechanism activation
-                    </li>
-                  </ul>
-                </div>
-              </SwiperSlide>
-            </div>
+            ))}
           </div>
-          <div className="roadmap__scrollbar"></div>
         </Swiper>
       </div>
     </section>

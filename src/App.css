@@ -333,6 +333,9 @@ html {
   .container-xl {
     min-width: 1170px;
   }
+  .media__container {
+    max-width: 1180px;
+  }
 }
 .row {
   display: -webkit-box;
@@ -10777,7 +10780,8 @@ a:hover {
   display: flex;
   margin: 0 auto;
 }
-.steps__pagination-item {
+
+.steps__pagination-item.swiper-pagination-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10801,6 +10805,7 @@ a:hover {
   transition: all 0.25s;
   opacity: 0.6;
   cursor: pointer;
+  background: #fff;
   font-family: Play;
 }
 .steps__pagination-item.swiper-pagination-bullet-active {
@@ -10990,7 +10995,7 @@ a:hover {
   left: -166px;
 }
 @media (max-width: 1199.98px) {
-  .steps__pagination-item {
+  .steps__pagination-item.swiper-pagination-bullet {
     -ms-flex-preferred-size: 50px;
     flex-basis: 50px;
     max-width: 50px;
@@ -11012,7 +11017,7 @@ a:hover {
   .steps__heading-wrap {
     margin-bottom: 30px;
   }
-  .steps__pagination-item {
+  .steps__pagination-item.swiper-pagination-bullet {
     -ms-flex-preferred-size: 70px;
     flex-basis: 70px;
     max-width: 70px;
@@ -11042,7 +11047,7 @@ a:hover {
   .steps__controls {
     margin-bottom: 34px;
   }
-  .steps__pagination-item {
+  .steps__pagination-item.swiper-pagination-bullet {
     -ms-flex-preferred-size: 48px;
     flex-basis: 48px;
     max-width: 48px;
