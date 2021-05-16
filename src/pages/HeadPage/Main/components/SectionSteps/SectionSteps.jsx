@@ -1,5 +1,4 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, EffectFade } from "swiper/core";
@@ -99,10 +98,8 @@ export const SectionSteps = (props) => {
                       </div>
                       <div className="steps__slider-main">
                         {e.blocks.map((texts_elements) => (
-                          <Fade
+                          <SwiperSlide
                             key={texts_elements.id}
-                            direction="down"
-                            delay={texts_elements.delay}
                             className="steps__slider-main-item d-flex"
                           >
                             <div>
@@ -139,7 +136,7 @@ export const SectionSteps = (props) => {
                                 className="img-responsive steps__slider-main-item-icon-little"
                               />
                             </div>
-                          </Fade>
+                          </SwiperSlide>
                         ))}
                       </div>
                     </div>
