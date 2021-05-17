@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
 
+import { Fade } from "react-awesome-reveal";
 import style from "./SectionCurrency.module.css";
 
 export const SectionCurrency = (props) => {
+  const { t } = useTranslation();
   const [currency_accordion__1, setCurrency_accordion__1] = useState(true);
   const [currency_accordion__2, setCurrency_accordion__2] = useState(false);
   const [currency_accordion__3, setCurrency_accordion__3] = useState(false);
@@ -37,8 +40,9 @@ export const SectionCurrency = (props) => {
         </div>
         <Fade direction="left" triggerOnce="true">
           <h2 className="heading font-size-40 currency__heading wow">
-            All the <b className="font-weight-700">best developments</b> -
-            <p> in one cryptocurrency </p>
+            {t("section_currency.heading.left_text")}{" "}
+            <b className="font-weight-700">{t("section_currency.heading.b")}</b>{" "}
+            -<p> {t("section_currency.heading.right_text")} </p>
           </h2>
         </Fade>
         <div className="row currency__row">
@@ -59,7 +63,7 @@ export const SectionCurrency = (props) => {
                       className={`currency__accordion-icon ${style.currency__accordion_icon_1}`}
                     ></div>
                     <div className="currency__accordion-heading font-size-20 font-weight-600">
-                      More beneficial than Bitcoin
+                      {t("section_currency.currency__accordion_1.header")}
                     </div>
                   </div>
                   <div
@@ -69,10 +73,7 @@ export const SectionCurrency = (props) => {
                     <div
                       className={`currency__accordion-text ${style.is_active_1}`}
                     >
-                      XX Platform is a system that combines a multifunctional
-                      cabinet with investment elements and a trading service
-                      with a set of analytical tools and an asset management
-                      program.
+                      {t("section_currency.currency__accordion_1.text")}
                     </div>
                   </div>
                 </div>
@@ -91,19 +92,14 @@ export const SectionCurrency = (props) => {
                       className={`currency__accordion-icon ${style.currency__accordion_icon_2}`}
                     ></div>
                     <div className="currency__accordion-heading font-size-20 font-weight-600">
-                      Safer than Altcoins
+                      {t("section_currency.currency__accordion_2.header")}
                     </div>
                   </div>
                   <div className="currency__accordion-hidden">
                     <div
                       className={`currency__accordion-text ${style.is_active_2}`}
                     >
-                      Most altcoins are worthless coins with no technology, no
-                      idea and no future. XXP is a native token of the
-                      investment trading platform and a tool for mutual
-                      settlements between investors and traders. And,
-                      accordingly, it has a fairly high level of liquidity and
-                      is a safe investment asset.
+                      {t("section_currency.currency__accordion_2.text")}
                     </div>
                   </div>
                 </div>
@@ -122,21 +118,14 @@ export const SectionCurrency = (props) => {
                       className={`currency__accordion-icon ${style.currency__accordion_icon_3}`}
                     ></div>
                     <div className="currency__accordion-heading font-size-20 font-weight-600">
-                      More prospective than Ethereum
+                      {t("section_currency.currency__accordion_2.header")}
                     </div>
                   </div>
                   <div className="currency__accordion-hidden">
                     <div
                       className={`currency__accordion-text ${style.is_active_3}`}
                     >
-                      In due time, Ethereum made a technological revolution in
-                      the crypto industry. It still remains one of the most
-                      prospective cryptocurrencies. However, ETH has an
-                      unlimited issue and its price has increased from $ 0.43 to
-                      $ 1,700 in the last 5 years, that's why the chances of
-                      further growth are significantly reduced. The issue of XXP
-                      is limited to 50 million and the price is at the only
-                      start of its journey.
+                      {t("section_currency.currency__accordion_3.text")}
                     </div>
                   </div>
                 </div>

@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import style from "./Header.module.css";
+import { useTranslation } from "react-i18next";
+import "../../../utils/i18next";
 
+import style from "./Header.module.css";
 import { Link } from "react-scroll";
 
 import logo_svg from "../../../img/logo.svg";
 
 export const Header = (props) => {
+  const { t, i18n } = useTranslation();
+  const CangleLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
   const [folowign, setFolowign] = useState(false);
   const [actives, setActives] = useState(false);
   return (
@@ -34,7 +40,7 @@ export const Header = (props) => {
             >
               <img
                 src={logo_svg}
-                alt="XX Platform"
+                alt={t("headers.header.alt_logo")}
                 className="img-responsive header__logo-img"
               />
             </Link>
@@ -48,7 +54,7 @@ export const Header = (props) => {
                     duration={500}
                     className={`header__nav-link ${style.cursor_pointer}`}
                   >
-                    Cryptocurrency
+                    {t("headers.header.nav_bar.cryptocurrency")}
                   </Link>
                 </li>
                 <li className="header__nav-list-item">
@@ -59,7 +65,7 @@ export const Header = (props) => {
                     duration={500}
                     className={`header__nav-link ${style.cursor_pointer}`}
                   >
-                    How to buy
+                    {t("headers.header.nav_bar.how_to_buy")}
                   </Link>
                 </li>
                 <li className="header__nav-list-item">
@@ -70,7 +76,7 @@ export const Header = (props) => {
                     duration={500}
                     className={`header__nav-link ${style.cursor_pointer}`}
                   >
-                    Advantages
+                    {t("headers.header.nav_bar.advantages")}
                   </Link>
                 </li>
                 <li className="header__nav-list-item">
@@ -81,7 +87,7 @@ export const Header = (props) => {
                     duration={500}
                     className={`header__nav-link ${style.cursor_pointer}`}
                   >
-                    Tokenomics
+                    {t("headers.header.nav_bar.tokenomics")}
                   </Link>
                 </li>
                 <li className="header__nav-list-item">
@@ -92,7 +98,7 @@ export const Header = (props) => {
                     duration={500}
                     className={`header__nav-link ${style.cursor_pointer}`}
                   >
-                    Team
+                    {t("headers.header.nav_bar.team")}
                   </Link>
                 </li>
               </ul>
@@ -106,7 +112,7 @@ export const Header = (props) => {
                   folowign ? "active" : " "
                 }`}
               >
-                ENG
+                {t("headers.header.languages.active_language")}
               </div>
               <div
                 className={`header__dropdown-list-wrap ${
@@ -115,9 +121,20 @@ export const Header = (props) => {
               >
                 <ul className="header__dropdown-list">
                   <li className="header__dropdown-list-item">
-                    <a href="/ru" className="header__dropdown-link">
+                    <button
+                      onClick={() => CangleLanguage("en")}
+                      className="header__dropdown-link"
+                    >
+                      {t("headers.header.languages.list_language.l1")}
+                    </button>
+                  </li>
+                  <li className="header__dropdown-list-item">
+                    <button
+                      onClick={() => CangleLanguage("ru")}
+                      className="header__dropdown-link"
+                    >
                       RU
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -126,7 +143,7 @@ export const Header = (props) => {
               href="https://wallet.xxp.group/"
               className="btn btn--bg-beige header__btn"
             >
-              Log in
+              {t("headers.header.login_in")}
             </a>
           </div>
         </div>
@@ -137,17 +154,17 @@ export const Header = (props) => {
           <ul className="mobile-menu__list">
             <li className="mobile-menu__list-item">
               <Link to="currency" className="mobile-menu__list-link">
-                Cryptocurrency
+                {t("headers.header.nav_bar.cryptocurrency")}
               </Link>
             </li>
             <li className="mobile-menu__list-item">
               <Link to="guide" className="mobile-menu__list-link">
-                How to buy
+                {t("headers.header.nav_bar.how_to_buy")}
               </Link>
             </li>
             <li className="mobile-menu__list-item">
               <Link to="advantages" className="mobile-menu__list-link">
-                Advantages
+                {t("headers.header.nav_bar.advantages")}
               </Link>
             </li>
             <li className="mobile-menu__list-item">
@@ -156,20 +173,57 @@ export const Header = (props) => {
                 data-href="tokenomics"
                 className="mobile-menu__list-link"
               >
-                Tokenomics
+                {t("headers.header.nav_bar.tokenomics")}
               </Link>
             </li>
             <li className="mobile-menu__list-item">
               <Link to="team" className="mobile-menu__list-link">
-                Team
+                {t("headers.header.nav_bar.team")}
               </Link>
             </li>
           </ul>
           <div className="mobile-menu__switcher">
-            <span className="mobile-menu__switcher-item active">Eng</span>
+            {/* <span className="mobile-menu__switcher-item active">Eng</span>
             <Link to="/ru" className="mobile-menu__switcher-item">
               Ru
-            </Link>
+            </Link> */}
+
+            <span
+              className={`mobile-menu__switcher-item active ${style.cursor_pointer}`}
+              onClick={() => setFolowign(!folowign && true)}
+            >
+              <div
+                className={`header__dropdown-selected ${
+                  folowign ? "active" : " "
+                }`}
+              >
+                {t("headers.header.languages.active_language")}
+              </div>
+              <div
+                className={`header__dropdown-list-wrap ${
+                  !folowign ? style.folowing_language : " "
+                }`}
+              >
+                <ul className="header__dropdown-list">
+                  <li className="header__dropdown-list-item">
+                    <button
+                      onClick={() => CangleLanguage("en")}
+                      className="mobile-menu__switcher-item"
+                    >
+                      {t("headers.header.languages.list_language.l1")}
+                    </button>
+                  </li>
+                  <li className="header__dropdown-list-item">
+                    <button
+                      onClick={() => CangleLanguage("ru")}
+                      className="mobile-menu__switcher-item"
+                    >
+                      RU
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </span>
           </div>
         </div>
       </div>

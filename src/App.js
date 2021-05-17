@@ -1,11 +1,14 @@
+import React, { Suspense } from "react";
 import "./App.css";
 import { HeadPage } from "./pages/HeadPage/HeadPage";
 
 function App() {
   return (
-    <div className="App">
-      <HeadPage />
-    </div>
+    <Suspense fallback="loading">
+      <div className="App">
+        <HeadPage />
+      </div>
+    </Suspense>
   );
 }
 

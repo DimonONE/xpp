@@ -1,0 +1,20 @@
+{
+    "headers": {
+        "header": {
+            "alt_logo": "XX Platform",
+            "nav_bar": {
+                "cryptocurrency": "Cryptocurrency",
+                "how_to_buy": "How to buy",
+                "advantages": "Advantages",
+                "tokenomics": "Tokenomics",
+                "team": "Team"
+            },
+            "languages": {
+                "active_language": "EN",
+                "list_language": {
+                    "l1": "RU"
+                }
+            }
+        }
+    }
+}
