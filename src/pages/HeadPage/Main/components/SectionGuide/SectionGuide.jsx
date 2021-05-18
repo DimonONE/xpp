@@ -1,9 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
+
 import { Fade } from "react-awesome-reveal";
 import style from "./SectionGuide.module.css";
 
 export const SectionGuide = (props) => {
-    return(
+  const { t } = useTranslation();
+
+  return (
     <section id="guide" className="section guide">
       <div className="container guide__container">
         <div className="pattern">
@@ -12,24 +17,31 @@ export const SectionGuide = (props) => {
           <div className="pattern__img pattern__img--5"></div>
           <div className="pattern__img pattern__img--6"></div>
         </div>
-        <Fade triggerOnce="true" direction="down"> 
+        <Fade triggerOnce="true" direction="down">
           <h2 className="heading guide__heading font-size-40 text-center wow">
-            How to <b className="font-weight-700">buy XXP</b>
+            {t("section_guide.head.left_text")}
+            <b className="font-weight-700">{t("section_guide.head.b")}</b>
           </h2>
         </Fade>
         <div className="row guide__row">
           <div className="col-lg-6 guide__item-wrap wow">
-          <Fade triggerOnce="true" direction="left">
+            <Fade triggerOnce="true" direction="left">
               <div className="guide__item">
-                <div className={`guide__item-img ${style.guide__item_img_1}`}></div>
+                <div
+                  className={`guide__item-img ${style.guide__item_img_1}`}
+                ></div>
                 <div className="guide__item-card-wrap">
                   <div className="guide__item-card">
                     <div className="guide__item-number grit grit--orange">
                       <div className="grit__bg"></div>
-                      01
+                      {t("section_guide.guide__item_text_1.num")}
                     </div>
                     <div className="guide__item-text">
-                      Enter the <b className="font-weight-600">XXP amount</b> and select the purchase type
+                      {t("section_guide.guide__item_text_1.left_text")}
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_1.b")}
+                      </b>
+                      {t("section_guide.guide__item_text_1.right_text")}
                     </div>
                   </div>
                 </div>
@@ -39,15 +51,25 @@ export const SectionGuide = (props) => {
           <div className="col-lg-6 guide__item-wrap wow">
             <Fade triggerOnce="true" direction="right">
               <div className="guide__item">
-                <div className={`guide__item-img ${style.guide__item_img_2}`}></div>
+                <div
+                  className={`guide__item-img ${style.guide__item_img_2}`}
+                ></div>
                 <div className="guide__item-card-wrap">
                   <div className="guide__item-card">
                     <div className="guide__item-number grit grit--orange">
                       <div className="grit__bg"></div>
-                      02
+                      {t("section_guide.guide__item_text_2.num")}
                     </div>
                     <div className="guide__item-text">
-                      Click on the <b className="font-weight-600">link</b> and <b className="font-weight-600">go to Coinbase</b> service
+                      {t("section_guide.guide__item_text_2.left_text")}
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_2.b_1")}
+                      </b>
+                      {t("section_guide.guide__item_text_2.text_and")}
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_2.b_2")}
+                      </b>
+                      {t("section_guide.guide__item_text_2.right_text")}
                     </div>
                   </div>
                 </div>
@@ -57,15 +79,24 @@ export const SectionGuide = (props) => {
           <div className="col-lg-6 guide__item-wrap wow">
             <Fade triggerOnce="true" direction="left">
               <div className="guide__item">
-                <div className={`guide__item-img ${style.guide__item_img_3}`}></div>
+                <div
+                  className={`guide__item-img ${style.guide__item_img_3}`}
+                ></div>
                 <div className="guide__item-card-wrap">
                   <div className="guide__item-card">
                     <div className="guide__item-number grit grit--orange">
                       <div className="grit__bg"></div>
-                      03
+                      {t("section_guide.guide__item_text_3.num")}
                     </div>
                     <div className="guide__item-text">
-                      Enter your <b className="font-weight-600">personal data</b> and select a <b className="font-weight-600">payment option</b>
+                      {t("section_guide.guide__item_text_3.left_text")}
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_3.b_1")}
+                      </b>
+                      {t("section_guide.guide__item_text_3.right_text")}
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_3.b_2")}
+                      </b>
                     </div>
                   </div>
                 </div>
@@ -75,15 +106,24 @@ export const SectionGuide = (props) => {
           <div className="col-lg-6 guide__item-wrap wow animate__animated animate__fadeInRight">
             <Fade triggerOnce="true" direction="right">
               <div className="guide__item">
-                <div className={`guide__item-img ${style.guide__item_img_4}`}></div>
+                <div
+                  className={`guide__item-img ${style.guide__item_img_4}`}
+                ></div>
                 <div className="guide__item-card-wrap">
                   <div className="guide__item-card">
                     <div className="guide__item-number grit grit--orange">
                       <div className="grit__bg"></div>
-                      04
+                      {t("section_guide.guide__item_text_4.num")}
                     </div>
                     <div className="guide__item-text">
-                      <b className="font-weight-600">Carry</b> out the <b className="font-weight-600">payment</b> with the stated bank details
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_4.b_1")}
+                      </b>
+                      {t("section_guide.guide__item_text_4.left_text")}
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_4.b_2")}
+                      </b>
+                      {t("section_guide.guide__item_text_4.right_text")}
                     </div>
                   </div>
                 </div>
@@ -93,15 +133,20 @@ export const SectionGuide = (props) => {
           <div className="col-lg-6 guide__item-wrap wow animate__animated animate__fadeInLeft">
             <Fade triggerOnce="true" direction="left">
               <div className="guide__item">
-                <div className={`guide__item-img ${style.guide__item_img_5}`}></div>
+                <div
+                  className={`guide__item-img ${style.guide__item_img_5}`}
+                ></div>
                 <div className="guide__item-card-wrap">
                   <div className="guide__item-card">
                     <div className="guide__item-number grit grit--orange">
                       <div className="grit__bg"></div>
-                      05
+                      {t("section_guide.guide__item_text_5.num")}
                     </div>
                     <div className="guide__item-text">
-                      <b className="font-weight-600">Wait</b> for payment confirmation
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_5.b")}
+                      </b>
+                      {t("section_guide.guide__item_text_5.left_text")}
                     </div>
                   </div>
                 </div>
@@ -111,15 +156,23 @@ export const SectionGuide = (props) => {
           <div className="col-lg-6 guide__item-wrap wow animate__animated animate__fadeInRight">
             <Fade triggerOnce="true" direction="right">
               <div className="guide__item">
-                <div className={`guide__item-img ${style.guide__item_img_6}`}></div>
+                <div
+                  className={`guide__item-img ${style.guide__item_img_6}`}
+                ></div>
                 <div className="guide__item-card-wrap">
                   <div className="guide__item-card">
                     <div className="guide__item-number grit grit--orange">
                       <div className="grit__bg"></div>
-                      06
+                      {t("section_guide.guide__item_text_6.num")}
                     </div>
                     <div className="guide__item-text">
-                      <b className="font-weight-600">Congratulations</b>, you’ve become the owner of the <b className="font-weight-600">XXP cryptocurrency!</b>
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_6.b_1")}
+                      </b>
+                      {t("section_guide.guide__item_text_6.left_text")}
+                      <b className="font-weight-600">
+                        {t("section_guide.guide__item_text_6.b_2")}
+                      </b>
                     </div>
                   </div>
                 </div>
@@ -130,11 +183,11 @@ export const SectionGuide = (props) => {
         <Fade triggerOnce="true" direction="up">
           <div className="text-center guide__btn-wrap wow animate__animated animate__fadeInUp">
             <a href="https://wallet.xxp.group/buy" className="btn guide__btn">
-              Buy XXP
+              {t("section_guide.buy")}
             </a>
           </div>
         </Fade>
       </div>
     </section>
-    )
-}
+  );
+};

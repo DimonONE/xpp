@@ -66,14 +66,15 @@
     "section_steps": {
         "heading": {
             "left_text": "How it",
-            "b": "works?"
+            "b": " works?"
         },
         "step_1": {
             "step": "Step 1",
             "main_1": {
                 "head": "You",
-                "left_text": "You",
-                "b": "buy tokens",
+                "left_text": "",
+                "b_1": " buy tokens",
+                "b_2": "",
                 "right_text": "XXP"
             }
         },
@@ -82,13 +83,14 @@
             "main_1": {
                 "head": "You",
                 "left_text": "Place tokens on DPoS and earn up to",
-                "b": "150% per year",
+                "b_1": " 150% per year",
+                "b_2": "",
                 "right_text": ""
             },
             "main_2": {
                 "head": "We",
                 "left_text": "Invest the received cryptocurrency in the",
-                "b_1": "project development",
+                "b_1": " project development",
                 "b_2": "",
                 "right_text": "and the creation of a Trading platform"
             }
@@ -98,13 +100,16 @@
             "main_1": {
                 "head": "You",
                 "left_text": "Use your XXP on the",
-                "b": "XX trading platform",
+                "b_1": " XX trading platform",
+                "b_2": "",
                 "right_text": ""
             },
             "main_2": {
                 "head": "We",
                 "left_text": "Launch the XX trading platform.",
-                "right_text": "The bridge between an investor and trader"
+                "right_text": "The bridge between an investor and trader",
+                "b_1": "",
+                "b_2": ""
             }
         },
         "step_4": {
@@ -112,12 +117,16 @@
             "main_1": {
                 "head": "You",
                 "left_text": "Get",
-                "b": "Profit"
+                "b_1": " Profit",
+                "b_2": "",
+                "right_text": ""
             },
             "main_2": {
                 "head": "We",
+                "b_1": "",
                 "left_text": "Provide security and act as a guarantor with a",
-                "right_text": "minimum commission"
+                "b_2": "minimum commission",
+                "right_text": ""
             },
             "main_3": {
                 "head": "Traders",
@@ -182,35 +191,35 @@
     "section_guide": {
         "head": {
             "left_text": "How to",
-            "b": "buy XXP"
+            "b": " buy XXP"
         },
         "guide__item_text_1": {
             "num": "01",
             "left_text": "Enter the",
-            "b": "XXP amount",
-            "right_text": "and select the purchase type"
+            "b": " XXP amount",
+            "right_text": " and select the purchase type"
         },
         "guide__item_text_2": {
             "num": "02",
             "left_text": "Click on the",
-            "b_1": "link",
-            "text_and": "and",
-            "b_2": "go to Coinbase",
+            "b_1": " link",
+            "text_and": " and ",
+            "b_2": " go to Coinbase",
             "right_text": " service "
         },
         "guide__item_text_3": {
             "num": "03",
             "left_text": "Enter your",
-            "b_1": "personal data",
-            "b_2": "payment option",
-            "right_text": "and select a"
+            "b_1": " personal data",
+            "b_2": " payment option",
+            "right_text": " and select a"
         },
         "guide__item_text_4": {
             "num": "04",
-            "left_text": "out the",
+            "left_text": " out the",
             "b_1": "Carry",
-            "b_2": "payment",
-            "right_text": "with the stated bank details"
+            "b_2": " payment",
+            "right_text": " with the stated bank details"
         },
         "guide__item_text_5": {
             "num": "05",
@@ -219,7 +228,7 @@
         },
         "guide__item_text_6": {
             "num": "06",
-            "left_text": " you’ve become the owner of the",
+            "left_text": ", you’ve become the owner of the",
             "b_1": "Congratulations",
             "b_2": "XXP cryptocurrency!"
         },
@@ -322,18 +331,18 @@
             "b": "500,000 XXP",
             "right_text": "tokens — fund for holding promotions, bounty campaigns, contests, quizzes and other events"
         },
-        "info-text": {
+        "info_text": {
             "p_1": "The total emission of XXP cryptocurrency",
-            "p_2": "is",
-            "p_3": "distributed on",
-            "b_1": "50,000,000 tokens",
-            "b_2": "8 special system wallets"
+            "p_2": " is",
+            "p_3": " distributed on",
+            "b_1": " 50,000,000 tokens",
+            "b_2": " 8 special system wallets"
         }
     },
     "section_roadmap": {
         "header": {
             "left_text": "Road",
-            "b": "map"
+            "b": " map"
         },
         "block_1": {
             "head": "Q4 2020",
@@ -396,7 +405,7 @@
     "section_founder": {
         "header": {
             "left_text": "The founder’s",
-            "b": "statement"
+            "b": " statement"
         },
         "texts": {
             "founder__text_1": "Trading and investments are trending today. Thousands of stocks of various companies are represented on hundreds of markets...  it is difficult to process such a volume of information even for professionals, and it is almost impossible for beginning traders or investors. Moreover, such activities take a lot of time and effort, and the results often leave much to be desired...",
@@ -413,7 +422,7 @@
     "section_team": {
         "header": {
             "left_text": "ХХР",
-            "b": "team"
+            "b": " team"
         },
         "info": "The project is being created involving an international team:",
         "team_item": {

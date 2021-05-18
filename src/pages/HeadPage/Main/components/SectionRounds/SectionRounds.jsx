@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
+
 import { Fade } from "react-awesome-reveal";
 import style from "./SectionRounds.module.css";
 
 export const SectionRounds = (props) => {
   let [isAnimation, setIsAnimation] = useState(true);
+  const { t } = useTranslation();
 
   return (
     <section className="section rounds">
@@ -13,7 +17,8 @@ export const SectionRounds = (props) => {
           <div className="pattern__img pattern__img--12"></div>
         </div>
         <h2 className="heading font-size-40 text-center rounds__heading">
-          <b className="font-weight-700">Rounds</b> of sales
+          <b className="font-weight-700"> {t("section_rounds.header.b")}</b>
+          {t("section_rounds.header.right_text")}
         </h2>
         <div className="row rounds__row">
           <div className="col-lg-5 rounds__chart-wrap">
@@ -39,17 +44,21 @@ export const SectionRounds = (props) => {
               />
             </svg>
             <div className="rounds__chart-caption rounds__chart-caption--1">
-              sales
+              {t("section_rounds.rounds_caption_1")}
             </div>
             <div className="rounds__chart-caption rounds__chart-caption--2">
-              figures
+              {t("section_rounds.rounds_caption_2")}
             </div>
           </div>
           <div className="col-lg-6 col-xl-6 rounds__info">
             <div className="rounds__info-item">
               <div className="d-flex rounds__info-item-header">
-                <div className="rounds__info-item-heading">Pre-sale</div>
-                <div className="rounds__info-item-price">1$ * 750 000 XXP</div>
+                <div className="rounds__info-item-heading">
+                  {t("section_rounds.rounds__info_item_1.head")}
+                </div>
+                <div className="rounds__info-item-price">
+                  {t("section_rounds.rounds__info_item_1.info_item_price")}
+                </div>
               </div>
               <Fade
                 triggerOnce="true"
@@ -65,15 +74,21 @@ export const SectionRounds = (props) => {
                 </div>
               </Fade>
               <div className="d-flex rounds__info-item-footer">
-                <div className="rounds__info-item-caption">100%</div>
-                <div className="rounds__info-item-caption">Completed</div>
+                <div className="rounds__info-item-caption">
+                  {t("section_rounds.rounds__info_item_1.left_text")}
+                </div>
+                <div className="rounds__info-item-caption">
+                  {t("section_rounds.rounds__info_item_1.right_text")}
+                </div>
               </div>
             </div>
             <div className="rounds__info-item">
               <div className="d-flex rounds__info-item-header">
-                <div className="rounds__info-item-heading">ICO</div>
+                <div className="rounds__info-item-heading">
+                  {t("section_rounds.rounds__info_item_2.head")}
+                </div>
                 <div className="rounds__info-item-price">
-                  1$ * 1 250 000 XXP
+                  {t("section_rounds.rounds__info_item_2.info_item_price")}
                 </div>
               </div>
               <div className="rounds__info-item-progress">
@@ -83,8 +98,12 @@ export const SectionRounds = (props) => {
                 ></div>
               </div>
               <div className="d-flex rounds__info-item-footer">
-                <div className="rounds__info-item-caption">15%</div>
-                <div className="rounds__info-item-caption">Start 05.02.21</div>
+                <div className="rounds__info-item-caption">
+                  {t("section_rounds.rounds__info_item_2.left_text")}
+                </div>
+                <div className="rounds__info-item-caption">
+                  {t("section_rounds.rounds__info_item_2.right_text")}
+                </div>
               </div>
             </div>
           </div>

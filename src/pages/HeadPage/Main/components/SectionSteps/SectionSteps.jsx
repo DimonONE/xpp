@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, EffectFade } from "swiper/core";
@@ -9,6 +11,8 @@ import { localState } from "./State";
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
 export const SectionSteps = (props) => {
+  const { t } = useTranslation();
+
   return (
     <section className="section steps">
       <div className="container steps__container">
@@ -20,7 +24,8 @@ export const SectionSteps = (props) => {
         <div className="row steps__row">
           <div className="col-lg-6 steps__heading-wrap wow animate__animated animate__fadeInLeft">
             <h2 className="heading steps__heading font-size-40">
-              How it <b className="font-weight-700">works?</b>
+              {t("section_steps.heading.left_text")}
+              <b className="font-weight-700">{t("section_steps.heading.b")}</b>
             </h2>
           </div>
           <div className="col-lg-6 col-md-9 d-flex steps__controls wow animate__animated animate__fadeInRight">
@@ -94,7 +99,7 @@ export const SectionSteps = (props) => {
                   <div className="steps__slider-item-row row">
                     <div className="col-xl-5 col-lg-6 col-md-9 steps__slider-main-wrap">
                       <div className="steps__slider-counter font-size-24 font-weight-600">
-                        {e.text_step}
+                        {t(`section_steps.step_${e.id}.step`)}
                       </div>
                       <div className="steps__slider-main">
                         {e.blocks.map((texts_elements) => (
@@ -117,17 +122,30 @@ export const SectionSteps = (props) => {
                                 <div
                                   className={`steps__slider-main-item-heading ${texts_elements.text_color_class} font-size-20`}
                                 >
-                                  {texts_elements.head_text}
+                                  {t(
+                                    `section_steps.step_${e.id}.main_${texts_elements.id}.head`
+                                  )}
                                 </div>
                                 <div
                                   className="steps__slider-main-item-text"
                                   style={{ fontSize: 18 }}
                                 >
-                                  {texts_elements.steps__slider_texts_left}{" "}
+                                  {t(
+                                    `section_steps.step_${e.id}.main_${texts_elements.id}.left_text`
+                                  )}
                                   <b className="font-weight-600">
-                                    {texts_elements.head_text_b}
+                                    {t(
+                                      `section_steps.step_${e.id}.main_${texts_elements.id}.b_1`
+                                    )}
                                   </b>{" "}
-                                  {texts_elements.steps__slider_texts_rigth}
+                                  <b className="font-weight-600">
+                                    {t(
+                                      `section_steps.step_${e.id}.main_${texts_elements.id}.b_2`
+                                    )}
+                                  </b>
+                                  {t(
+                                    `section_steps.step_${e.id}.main_${texts_elements.id}.right_text`
+                                  )}
                                 </div>
                               </div>
                               <img

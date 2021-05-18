@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
+
 import { Fade } from "react-awesome-reveal";
 
 import style from "./SectionTokenomics.module.css";
 import { localState } from "./State";
 
 export const SectionTokenomics = (props) => {
+  const { t } = useTranslation();
+
   let [hoverID, setHoverID] = useState(1);
   let [percent, setPercent] = useState(72);
 
@@ -16,7 +21,7 @@ export const SectionTokenomics = (props) => {
           <div className="pattern__img pattern__img--10"></div>
         </div>
         <h2 className="heading tokenomics__heading font-size-40 wow">
-          <b className="font-weight-700">Tokenomics</b>
+          <b className="font-weight-700">{t("section_tokenomics.head")}</b>
         </h2>
         <div className="row tokenomics__row">
           <div
@@ -45,8 +50,10 @@ export const SectionTokenomics = (props) => {
                       {e.tokenomics_number}
                     </div>
                     <div className="tokenomics__list-text">
-                      <b className="font-weight-700">{e.tokenomics_text__b}</b>{" "}
-                      {e.tokenomics_text}
+                      <b className="font-weight-700">
+                        {t(`section_tokenomics.items_${e.id}.b`)}
+                      </b>{" "}
+                      {t(`section_tokenomics.items_${e.id}.right_text`)}
                     </div>
                   </span>
                 </Fade>
@@ -158,10 +165,16 @@ export const SectionTokenomics = (props) => {
               ></div>
               <div className="tokenomics__chart-info">
                 <div className="tokenomics__chart-info-text">
-                  The total emission of XXP cryptocurrency <br />
-                  is <b className="accent">50,000,000 tokens</b> distributed on
-                  <br />
-                  <b className="accent">8 special system wallets</b>.
+                  {t("section_tokenomics.info_text.p_1")}
+                  <b className="accent">
+                    {t("section_tokenomics.info_text.b_1")}
+                  </b>
+                  {t("section_tokenomics.info_text.p_2")}
+                  {t("section_tokenomics.info_text.p_3")}
+                  <b className="accent">
+                    {t("section_tokenomics.info_text.b_2")}
+                  </b>
+                  .
                 </div>
               </div>
             </div>

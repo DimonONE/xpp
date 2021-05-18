@@ -7,6 +7,7 @@ import style from "./SectionCurrency.module.css";
 
 export const SectionCurrency = (props) => {
   const { t } = useTranslation();
+
   const [currency_accordion__1, setCurrency_accordion__1] = useState(true);
   const [currency_accordion__2, setCurrency_accordion__2] = useState(false);
   const [currency_accordion__3, setCurrency_accordion__3] = useState(false);
@@ -42,7 +43,7 @@ export const SectionCurrency = (props) => {
           <h2 className="heading font-size-40 currency__heading wow">
             {t("section_currency.heading.left_text")}{" "}
             <b className="font-weight-700">{t("section_currency.heading.b")}</b>{" "}
-            -<p> {t("section_currency.heading.right_text")} </p>
+            -<p>{t("section_currency.heading.right_text")}</p>
           </h2>
         </Fade>
         <div className="row currency__row">

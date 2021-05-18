@@ -1,4 +1,7 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
+
 import { Fade } from "react-awesome-reveal";
 
 import team__item_img_1 from "../../../../../img/team__item-img-1.jpg";
@@ -8,6 +11,8 @@ import team__item_img_4 from "../../../../../img/team__item-img-4.jpg";
 import team__item_img_5 from "../../../../../img/team__item-img-5.jpg";
 
 export const SectionTeam = (props) => {
+  const { t } = useTranslation();
+
   return (
     <section id="team" className="section team">
       <div className="container team__container">
@@ -17,12 +22,13 @@ export const SectionTeam = (props) => {
         </div>
         <Fade direction="down" triggerOnce="true">
           <h2 className="heading font-size-40 team__heading text-center wow">
-            ХХР <b className="font-weight-700">team</b>
+            {t("section_team.header.left_text")}
+            <b className="font-weight-700">{t("section_team.header.b")}</b>
           </h2>
         </Fade>
         <Fade direction="down" triggerOnce="true">
           <div className="team__subheading text-center wow">
-            The project is being created involving an international team:
+            {t("section_team.info")}
           </div>
         </Fade>
         <div className="row team__row">
@@ -34,8 +40,12 @@ export const SectionTeam = (props) => {
                   alt="Img"
                   className="team__item-img team__item-img--large img-responsive"
                 />
-                <div className="team__item-heading">Yuriy Draganov</div>
-                <div className="team__item-text">Founder XX Platform</div>
+                <div className="team__item-heading">
+                  {t("section_team.team_item.first_last_name")}
+                </div>
+                <div className="team__item-text">
+                  {t("section_team.team_item.team_item_text")}
+                </div>
               </div>
             </Fade>
           </div>
@@ -51,8 +61,12 @@ export const SectionTeam = (props) => {
                         className="team__item-img img-responsive"
                       />
                     </div>
-                    <div className="team__item-heading">Devgent company</div>
-                    <div className="team__item-text">Development</div>
+                    <div className="team__item-heading">
+                      {t("section_team.item_1.head")}
+                    </div>
+                    <div className="team__item-text">
+                      {t("section_team.item_1.p")}
+                    </div>
                   </div>
                 </Fade>
               </div>
@@ -66,8 +80,12 @@ export const SectionTeam = (props) => {
                         className="team__item-img team__item-img--shadow-none img-responsive"
                       />
                     </div>
-                    <div className="team__item-heading">Gunbounty company</div>
-                    <div className="team__item-text">Marketing support</div>
+                    <div className="team__item-heading">
+                      {t("section_team.item_2.head")}
+                    </div>
+                    <div className="team__item-text">
+                      {t("section_team.item_2.p")}
+                    </div>
                   </div>
                 </Fade>
               </div>
@@ -82,9 +100,11 @@ export const SectionTeam = (props) => {
                       />
                     </div>
                     <div className="team__item-heading">
-                      Qwertydesign company
+                      {t("section_team.item_3.head")}
                     </div>
-                    <div className="team__item-text">Design and decoration</div>
+                    <div className="team__item-text">
+                      {t("section_team.item_3.p")}
+                    </div>
                   </div>
                 </Fade>
               </div>
@@ -98,8 +118,12 @@ export const SectionTeam = (props) => {
                         className="team__item-img team__item-img--shadow-none img-responsive"
                       />
                     </div>
-                    <div className="team__item-heading">Mediaband company</div>
-                    <div className="team__item-text">Video content</div>
+                    <div className="team__item-heading">
+                      {t("section_team.item_4.head")}
+                    </div>
+                    <div className="team__item-text">
+                      {t("section_team.item_4.p")}
+                    </div>
                   </div>
                 </Fade>
               </div>

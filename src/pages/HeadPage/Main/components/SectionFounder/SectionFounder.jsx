@@ -1,10 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
+
 import { Fade } from "react-awesome-reveal";
 
 import founder__img from "../../../../../img/founder__img.jpg";
 import founder__info_icon from "../../../../../img/founder__info-icon.svg";
 
 export const SectionFounder = (props) => {
+  const { t } = useTranslation();
+
   return (
     <section className="section founder">
       <div className="container founder__container">
@@ -28,11 +33,15 @@ export const SectionFounder = (props) => {
             <Fade direction="up" triggerOnce="true" duration={600}>
               <div className="founder__info-wrap wow ">
                 <div className="founder__info">
-                  <div className="founder__info-heading">Yuriy Draganov</div>
+                  <div className="founder__info-heading">
+                    {t("section_founder.founder_info.head")}
+                  </div>
                   <div className="founder__info-text">
-                    Founder of XX Platform <br />
-                    Professional trader, financial analyst. <br />8 years on the
-                    market.
+                    {t("section_founder.founder_info.p_1")}
+                    <br />
+                    {t("section_founder.founder_info.p_2")}
+                    <br />
+                    {t("section_founder.founder_info.p_3")}
                   </div>
                 </div>
                 <div
@@ -49,27 +58,19 @@ export const SectionFounder = (props) => {
                   className="heading font-size-40 founder__heading"
                   data-replace="founderMobileHeading"
                 >
-                  The founder’s <b className="font-weight-700">statement</b>
+                  {t("section_founder.header.left_text")}
+                  <b className="font-weight-700">
+                    {t("section_founder.header.b")}
+                  </b>
                 </h2>
                 <div className="founder__text">
-                  Trading and investments are trending today. Thousands of
-                  stocks of various companies are represented on hundreds of
-                  markets... it is difficult to process such a volume of
-                  information even for professionals, and it is almost
-                  impossible for beginning traders or investors. Moreover, such
-                  activities take a lot of time and effort, and the results
-                  often leave much to be desired...
+                  {t("section_founder.texts.founder__text_1")}
                 </div>
                 <div className="founder__text">
-                  Therefore, we decided to create a platform that will allow you
-                  to succeed not wasting your time on reading economic and
-                  business reports. Surely you have neither the time nor the
-                  desire for this, and much “iron nerves”.
+                  {t("section_founder.texts.founder__text_2")}
                 </div>
                 <div className="founder__text">
-                  It is better to spend this time with your family, while the
-                  professionals from XX Platform will do everything on your
-                  behalf!
+                  {t("section_founder.texts.founder__text_3")}
                 </div>
               </div>
             </Fade>

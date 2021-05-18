@@ -10,7 +10,6 @@ i18n
   .init({
     fallbackLng: "ru",
     whitelist: ["ru", "en"],
-    debug: true,
     detection: {
       order: ["localStorage", "cookie"],
       caches: ["localStorage", "cookie"],

@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+
 import "./App.css";
 import { HeadPage } from "./pages/HeadPage/HeadPage";
 

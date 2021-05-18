@@ -1,10 +1,15 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
+
 import { Fade } from "react-awesome-reveal";
-import compare__item_icon_1 from "../../../../../img/compare__item-img-1.svg"
-import compare__item_icon_2 from "../../../../../img/compare__item-img-2.svg"
+import compare__item_icon_1 from "../../../../../img/compare__item-img-1.svg";
+import compare__item_icon_2 from "../../../../../img/compare__item-img-2.svg";
 
 export const SectionCompare = (props) => {
-    return(
+  const { t } = useTranslation();
+
+  return (
     <section className="section compare">
       <div className="container compare__container">
         <div className="pattern">
@@ -14,82 +19,99 @@ export const SectionCompare = (props) => {
         </div>
         <Fade triggerOnce="true" direction="up">
           <h2 className="heading font-size-40 compare__heading text-center wow animate__animated animate__fadeInDown">
-            <b className="font-weight-700">Cryptocurrency</b> or piramid?
+            <b className="font-weight-700">{t("section_compare.head.b")}</b>
+            {t("section_compare.head.right_text")}
           </h2>
         </Fade>
         <div className="row compare__row">
           <div className="col-lg-6 compare__item-wrap wow">
             <Fade triggerOnce="true" direction="left">
               <div>
-                  <div className="compare__item-icon-wrap grit grit--green">
-                    <div className="grit__bg"></div>
-                    <img src="img/compare__item-icon-1.svg" alt="" className="grit__icon compare__item-icon" />
-                  </div>
-                  <img src={compare__item_icon_1} alt="" className="img-responsive compare__item-img compare__item-img--1" />
-                  <div className="compare__item compare__item--green">
-                    <div className="compare__item-heading compare__item-heading--green">
-                      Cryptocurrency
-                    </div>
-                    <ul className="compare__item-list">
-                      <li className="compare__item-list-item">
-                        Has a real digital Asset (coins or token with blockchain)
-                      </li>
-                      <li className="compare__item-list-item">
-                        Get an Asset
-                      </li>
-                      <li className="compare__item-list-item">
-                        Final Emission
-                      </li>
-                      <li className="compare__item-list-item">
-                        Asset decentralization
-                      </li>
-                      <li className="compare__item-list-item">
-                        Lack of referral schemes
-                      </li>
-                      <li className="compare__item-list-item">
-                        Open communication, transparency
-                      </li>
-                      <li className="compare__item-list-item">
-                        Technology inside
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-            </Fade>
-          </div>
-          <div className="col-lg-6 compare__item-wrap wow ">
-          <Fade triggerOnce="true" direction="right">
-            <div>
-                <div className="compare__item-icon-wrap grit grit--red">
+                <div className="compare__item-icon-wrap grit grit--green">
                   <div className="grit__bg"></div>
-                  <img src={compare__item_icon_2} alt="" className="grit__icon compare__item-icon" />
+                  <img
+                    src="img/compare__item-icon-1.svg"
+                    alt=""
+                    className="grit__icon compare__item-icon"
+                  />
                 </div>
-                <img src={compare__item_icon_2} alt="" className="img-responsive compare__item-img compare__item-img--2" />
-                <div className="compare__item compare__item--red">
-                  <div className="compare__item-heading compare__item-heading--red">
-                    Pyramid
+                <img
+                  src={compare__item_icon_1}
+                  alt=""
+                  className="img-responsive compare__item-img compare__item-img--1"
+                />
+                <div className="compare__item compare__item--green">
+                  <div className="compare__item-heading compare__item-heading--green">
+                    {t("section_compare.cryptocurrency.head")}
                   </div>
                   <ul className="compare__item-list">
                     <li className="compare__item-list-item">
-                      Has no real asset. Either an internal unit of account or a promise.
+                      {t("section_compare.cryptocurrency.items.item_1")}
                     </li>
                     <li className="compare__item-list-item">
-                      Get a promise
+                      {t("section_compare.cryptocurrency.items.item_2")}
                     </li>
                     <li className="compare__item-list-item">
-                      Constant fees and sales
+                      {t("section_compare.cryptocurrency.items.item_3")}
                     </li>
                     <li className="compare__item-list-item">
-                      Everything is controlled by the organizer
+                      {t("section_compare.cryptocurrency.items.item_4")}
                     </li>
                     <li className="compare__item-list-item">
-                      Multilevel referral programs
+                      {t("section_compare.cryptocurrency.items.item_5")}
                     </li>
                     <li className="compare__item-list-item">
-                      Lack of common chats, nontransparency
+                      {t("section_compare.cryptocurrency.items.item_6")}
                     </li>
                     <li className="compare__item-list-item">
-                      Marketing and promises
+                      {t("section_compare.cryptocurrency.items.item_7")}
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Fade>
+          </div>
+          <div className="col-lg-6 compare__item-wrap wow ">
+            <Fade triggerOnce="true" direction="right">
+              <div>
+                <div className="compare__item-icon-wrap grit grit--red">
+                  <div className="grit__bg"></div>
+                  <img
+                    src={compare__item_icon_2}
+                    alt=""
+                    className="grit__icon compare__item-icon"
+                  />
+                </div>
+                <img
+                  src={compare__item_icon_2}
+                  alt=""
+                  className="img-responsive compare__item-img compare__item-img--2"
+                />
+                <div className="compare__item compare__item--red">
+                  <div className="compare__item-heading compare__item-heading--red">
+                    {t("section_compare.pyramid.head")}
+                  </div>
+                  <ul className="compare__item-list">
+                    <li className="compare__item-list-item">
+                      {t("section_compare.pyramid.items.item_1")}
+                    </li>
+                    <li className="compare__item-list-item">
+                      {t("section_compare.pyramid.items.item_2")}
+                    </li>
+                    <li className="compare__item-list-item">
+                      {t("section_compare.pyramid.items.item_3")}
+                    </li>
+                    <li className="compare__item-list-item">
+                      {t("section_compare.pyramid.items.item_4")}
+                    </li>
+                    <li className="compare__item-list-item">
+                      {t("section_compare.pyramid.items.item_5")}
+                    </li>
+                    <li className="compare__item-list-item">
+                      {t("section_compare.pyramid.items.item_6")}
+                    </li>
+                    <li className="compare__item-list-item">
+                      {t("section_compare.pyramid.items.item_7")}
                     </li>
                   </ul>
                 </div>
@@ -99,5 +121,5 @@ export const SectionCompare = (props) => {
         </div>
       </div>
     </section>
-    )
-}
+  );
+};

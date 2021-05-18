@@ -1,6 +1,8 @@
 import React from "react";
-import style from "./SectionRoadmap.module.css";
+import { useTranslation } from "react-i18next";
+import "../../../../../utils/i18next";
 
+import style from "./SectionRoadmap.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper/core";
 import "swiper/swiper-bundle.css";
@@ -10,6 +12,8 @@ import { localState } from "./State";
 SwiperCore.use([Navigation, Pagination]);
 
 export const SectionRoadmap = (props) => {
+  const { t } = useTranslation();
+
   return (
     <section className="section roadmap">
       <div className="container roadmap__container">
@@ -20,7 +24,8 @@ export const SectionRoadmap = (props) => {
         <div className="roadmap__header row">
           <div className="col-lg-6 roadmap__heading-wrap wow ">
             <h2 className="heading roadmap__heading font-size-40">
-              Road <b className="font-weight-700">map</b>
+              {t("section_roadmap.header.left_text")}
+              <b className="font-weight-700">{t("section_roadmap.header.b")}</b>
             </h2>
           </div>
           <div className="col-lg-6 roadmap__slider-controls wow">
@@ -88,20 +93,22 @@ export const SectionRoadmap = (props) => {
             {localState.map((e) => (
               <SwiperSlide key={e.id}>
                 <div className={`roadmap__slider-item swiper-slide-next`}>
-                  <div className="roadmap__slider-item-label">{e.head}</div>
+                  <div className="roadmap__slider-item-label">
+                    {t(`section_roadmap.block_${e.id}.head`)}
+                  </div>
                   <ul
                     className={`roadmap__slider-item-list ${
                       e.id === 1 ? style.line_through : ""
                     }`}
                   >
-                    {e.texts.map((t) => (
+                    {e.texts.map((c) => (
                       <li
-                        key={t.id}
+                        key={c.id}
                         className={`roadmap__slider-item-list-item swiper-slide-active ${
-                          e.id === 2 && t.id === 1 ? style.line_through : ""
+                          e.id === 2 && c.id === 1 ? style.line_through : ""
                         }`}
                       >
-                        {t.text}
+                        {t(`section_roadmap.block_${e.id}.item_${c.id}`)}
                       </li>
                     ))}
                   </ul>
