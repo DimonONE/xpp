@@ -16,5 +16,497 @@
                 }
             }
         }
+    },
+    "section_cover": {
+        "head": {
+            "cover__title": "XX Platform",
+            "cryptocurrency": "Cryptocurrency",
+            "trading": "Trading.",
+            "investments": "Investments.",
+            "text": "XX Platform is a system that combines a multifunctional cabinet with investment elements and a trading service with a set of analytical tools and an asset management program."
+        },
+        "buttons": {
+            "buy": "Buy ХХР",
+            "wallet": "Wallet"
+        },
+        "cover__radio": {
+            "cover__arrow_text": {
+                "r_1": "Tell us",
+                "r_2": "who are you?"
+            },
+            "cover__radio_label_1": {
+                "r_1": "I am new",
+                "r_2": "to cryptocurrency"
+            },
+            "cover__radio_label_2": {
+                "r_1": "I am an experienced",
+                "r_2": "crypto enthusiast and investor"
+            }
+        }
+    },
+    "section_currency": {
+        "heading": {
+            "left_text": "All the",
+            "b": "best developments",
+            "right_text": "in one cryptocurrency"
+        },
+        "currency__accordion_1": {
+            "header": "More beneficial than Bitcoin",
+            "text": "XX Platform is a system that combines a multifunctional cabinet with investment elements and a trading service with a set of analytical tools and an asset management program."
+        },
+        "currency__accordion_2": {
+            "header": "Safer than Altcoins",
+            "text": "Most altcoins are worthless coins with no technology, no idea and no future. XXP is a native token of the investment trading platform and a tool for mutual settlements between investors and traders. And, accordingly, it has a fairly high level of liquidity and is a safe investment asset."
+        },
+        "currency__accordion_3": {
+            "header": "More prospective than Ethereum",
+            "text": "In due time, Ethereum made a technological revolution in the crypto industry. It still remains one of the most prospective cryptocurrencies. However, ETH has an unlimited issue and its price has increased from $ 0.43 to $ 1,700 in the last 5 years, that's why the chances of further growth are significantly reduced. The issue of XXP is limited to 50 million and the price is at the only start of its journey."
+        }
+    },
+    "section_steps": {
+        "heading": {
+            "left_text": "How it",
+            "b": "works?"
+        },
+        "step_1": {
+            "step": "Step 1",
+            "main_1": {
+                "head": "You",
+                "left_text": "You",
+                "b": "buy tokens",
+                "right_text": "XXP"
+            }
+        },
+        "step_2": {
+            "step": "Step 2",
+            "main_1": {
+                "head": "You",
+                "left_text": "Place tokens on DPoS and earn up to",
+                "b": "150% per year",
+                "right_text": ""
+            },
+            "main_2": {
+                "head": "We",
+                "left_text": "Invest the received cryptocurrency in the",
+                "b_1": "project development",
+                "b_2": "",
+                "right_text": "and the creation of a Trading platform"
+            }
+        },
+        "step_3": {
+            "step": "Step 3",
+            "main_1": {
+                "head": "You",
+                "left_text": "Use your XXP on the",
+                "b": "XX trading platform",
+                "right_text": ""
+            },
+            "main_2": {
+                "head": "We",
+                "left_text": "Launch the XX trading platform.",
+                "right_text": "The bridge between an investor and trader"
+            }
+        },
+        "step_4": {
+            "step": "Step 4",
+            "main_1": {
+                "head": "You",
+                "left_text": "Get",
+                "b": "Profit"
+            },
+            "main_2": {
+                "head": "We",
+                "left_text": "Provide security and act as a guarantor with a",
+                "right_text": "minimum commission"
+            },
+            "main_3": {
+                "head": "Traders",
+                "left_text": "Get clients and scope of work",
+                "b_1": "",
+                "b_2": "",
+                "right_text": ""
+            }
+        }
+    },
+    "section_work": {
+        "head": {
+            "left_text": "How does XXP",
+            "b": "DPoS Platform",
+            "right_text": "work?"
+        },
+        "work__header_card": {
+            "p_1": "List your coins on DPoS.",
+            "p_2": "Get a reward for them.",
+            "b": "% depends",
+            "p_3": "on the Amount and Time."
+        },
+        "work__cards": {
+            "work__card_text_1": {
+                "p_1": "1000 XXP",
+                "p_2": "30 d.",
+                "b": "7.24%",
+                "p_3": "PROFIT"
+            },
+            "work__card_text_2": {
+                "p_1": "1000 XXP",
+                "p_2": "30 d.",
+                "b": "8.91%",
+                "p_3": "PROFIT"
+            },
+            "work__card_text_3": {
+                "p_1": "1000 XXP",
+                "p_2": "30 d.",
+                "b": "9.21%",
+                "p_3": "PROFIT"
+            },
+            "work__card_text_4": {
+                "p_1": "5%",
+                "b": "comission",
+                "p_2": "XXP Delegate"
+            },
+            "work__card_text_5": {
+                "p_1": "5%",
+                "b": "comission",
+                "p_2": "XXP Delegate"
+            }
+        },
+        "work__caption": {
+            "left": "No delegate",
+            "right": "+ Reinvest"
+        },
+        "footer": {
+            "p_1": "DPoS pool",
+            "p_2": "36_000_000"
+        }
+    },
+    "section_guide": {
+        "head": {
+            "left_text": "How to",
+            "b": "buy XXP"
+        },
+        "guide__item_text_1": {
+            "num": "01",
+            "left_text": "Enter the",
+            "b": "XXP amount",
+            "right_text": "and select the purchase type"
+        },
+        "guide__item_text_2": {
+            "num": "02",
+            "left_text": "Click on the",
+            "b_1": "link",
+            "text_and": "and",
+            "b_2": "go to Coinbase",
+            "right_text": " service "
+        },
+        "guide__item_text_3": {
+            "num": "03",
+            "left_text": "Enter your",
+            "b_1": "personal data",
+            "b_2": "payment option",
+            "right_text": "and select a"
+        },
+        "guide__item_text_4": {
+            "num": "04",
+            "left_text": "out the",
+            "b_1": "Carry",
+            "b_2": "payment",
+            "right_text": "with the stated bank details"
+        },
+        "guide__item_text_5": {
+            "num": "05",
+            "left_text": "for payment confirmation",
+            "b": "Wait"
+        },
+        "guide__item_text_6": {
+            "num": "06",
+            "left_text": " you’ve become the owner of the",
+            "b_1": "Congratulations",
+            "b_2": "XXP cryptocurrency!"
+        },
+        "buy": "Buy XXP"
+    },
+    "section_compare": {
+        "head": {
+            "b": "Cryptocurrency",
+            "right_text": "or piramid?"
+        },
+        "cryptocurrency": {
+            "head": "Cryptocurrency",
+            "items": {
+                "item_1": "Has a real digital Asset (coins or token with blockchain)",
+                "item_2": "Get an Asset",
+                "item_3": "Final Emission",
+                "item_4": "Asset decentralization",
+                "item_5": "Lack of referral schemes",
+                "item_6": "Open communication, transparency",
+                "item_7": "Technology inside"
+            }
+        },
+        "pyramid": {
+            "head": "Pyramid",
+            "items": {
+                "item_1": "Has no real asset. Either an internal unit of account or a promise.",
+                "item_2": "Get a promise",
+                "item_3": "Constant fees and sales",
+                "item_4": "Everything is controlled by the organizer",
+                "item_5": "Multilevel referral programs",
+                "item_6": "Lack of common chats, nontransparency",
+                "item_7": "Marketing and promises"
+            }
+        }
+    },
+    "section_advantages": {
+        "head": {
+            "b": "Advantages",
+            "right_text": "of cryptocurrency XXP"
+        },
+        "items": {
+            "item_1": {
+                "head": "Safety",
+                "p_1": "Purchase insurance system with a 100% refund"
+            },
+            "item_2": {
+                "head": "Decentralization",
+                "p_1": "ХХР official token in the Tron network.",
+                "p_2": "All transactions are recorded",
+                "p_3": "on the Blockchain"
+            },
+            "item_3": {
+                "head": "Relevance",
+                "p_1": "ХХР was created in the crypto investment",
+                "p_2": "market to solve the problems",
+                "p_3": "of traditional investments."
+            },
+            "item_4": {
+                "head": "High profitability",
+                "p_1": "DPoS provides up",
+                "p_2": "to 150% profit per year."
+            },
+            "item_5": {
+                "head": "Halving & Helix",
+                "p_1": "A smart economic model",
+                "p_2": "that balances supply and demand.",
+                "p_3": ""
+            },
+            "item_6": {
+                "head": "Control",
+                "p_1": "You possess a real token which",
+                "p_2": "you can transfer whenever",
+                "p_3": "and to anyone you want."
+            }
+        }
+    },
+    "section_tokenomics": {
+        "head": "Tokenomics",
+        "items_1": {
+            "b": "36,000,000 XXP",
+            "right_text": "tokens are intended to pay rewards to investors in the form of interest rates from staking"
+        },
+        "items_2": {
+            "b": "5,000,000 XXP",
+            "right_text": "tokens — fund of the development team, is in a frozen state"
+        },
+        "items_3": {
+            "b": "4,500,000 XXP",
+            "right_text": "tokens — main operational wallet to pay the expenses for the project functioning and promotion"
+        },
+        "items_4": {
+            "b": "2,000,000 XXP",
+            "right_text": "tokens — pre-ICO and ICO stage"
+        },
+        "items_5": {
+            "b": "2,000,000 XXP",
+            "right_text": "tokens — marketing fund for promoting and scaling the project"
+        },
+        "items_6": {
+            "b": "500,000 XXP",
+            "right_text": "tokens — fund for holding promotions, bounty campaigns, contests, quizzes and other events"
+        },
+        "info-text": {
+            "p_1": "The total emission of XXP cryptocurrency",
+            "p_2": "is",
+            "p_3": "distributed on",
+            "b_1": "50,000,000 tokens",
+            "b_2": "8 special system wallets"
+        }
+    },
+    "section_roadmap": {
+        "header": {
+            "left_text": "Road",
+            "b": "map"
+        },
+        "block_1": {
+            "head": "Q4 2020",
+            "item_1": "Marketing activities in social media and on crypto forums",
+            "item_2": "Smart contract publication on Tron Network",
+            "item_3": "Start of the XXP token presale",
+            "item_4": "Alpha version of the investment platform",
+            "item_5": "XX Delegate system activation"
+        },
+        "block_2": {
+            "head": "Q1 2021",
+            "item_1": "Official website presentation",
+            "item_2": "Final stage of the XXP token presale",
+            "item_3": "Bounty campaign",
+            "item_4": "Start of the 1st round of sales",
+            "item_5": "1st stage of the trading platform development",
+            "item_6": "Launch of the investment platform beta version",
+            "item_7": "Release of the mobile application for Android",
+            "item_8": "Listing on the crypto exchange",
+            "item_9": "Participation in TOKEN2049 — The Premier Crypto"
+        },
+        "block_3": {
+            "head": "Q2 2021",
+            "item_1": "2rd stage of the trading platform development",
+            "item_2": "lnvestment platform update",
+            "item_3": "Start of linear token sales",
+            "item_4": "Appearance on Coingecko",
+            "item_5": "Launch of analytical service",
+            "item_6": "Participation in Blockchain Life 2021 Forum",
+            "item_7": "Start of token sales on the platform",
+            "item_8": "Marketing campaign targeting the Asian region",
+            "item_9": "Listing on the crypto exchange",
+            "item_10": "Appearance on Coinmarketcap"
+        },
+        "block_4": {
+            "head": "Q3 2021",
+            "item_1": "3rd stage of the trading platform development",
+            "item_2": "Participation in Singapore Blockchain Week 2021 (VC)",
+            "item_3": "Website update",
+            "item_4": "Release of the mobile application for iOS",
+            "item_5": "Marketing campaign targeting Latin America and Spanish-speaking users",
+            "item_6": "Participation in Malta Blockchain summit 2021 (BraziI)"
+        },
+        "block_5": {
+            "head": "Q4 2021",
+            "item_1": "4th stage of the trading platform development",
+            "item_2": "lnvestment platform update",
+            "item_3": "Marketing campaign targeting the North American market",
+            "item_4": "Participation in Blockchain Expo — North America 2020 (VC)",
+            "item_5": "Listing on the crypto exchange",
+            "item_6": "Participation in Hackathon Human DeFi Haeck (VC)",
+            "item_7": "Generation of the Roadmap for 2022"
+        },
+        "block_6": {
+            "head": "Q1 2022",
+            "item_1": "5th stage of the trading platform development",
+            "item_2": "Deflationary mechanism activation"
+        }
+    },
+    "section_founder": {
+        "header": {
+            "left_text": "The founder’s",
+            "b": "statement"
+        },
+        "texts": {
+            "founder__text_1": "Trading and investments are trending today. Thousands of stocks of various companies are represented on hundreds of markets...  it is difficult to process such a volume of information even for professionals, and it is almost impossible for beginning traders or investors. Moreover, such activities take a lot of time and effort, and the results often leave much to be desired...",
+            "founder__text_2": "Therefore, we decided to create a platform that will allow you to succeed not wasting your time on reading economic and business reports. Surely you have neither the time nor the desire for this, and much “iron nerves”.",
+            "founder__text_3": "It is better to spend this time with your family, while the professionals from XX Platform will do everything on your behalf!"
+        },
+        "founder_info": {
+            "head": "Yuriy Draganov",
+            "p_1": "Founder of XX Platform",
+            "p_2": "Professional trader, financial analyst. ",
+            "p_3": "8 years on the market.."
+        }
+    },
+    "section_team": {
+        "header": {
+            "left_text": "ХХР",
+            "b": "team"
+        },
+        "info": "The project is being created involving an international team:",
+        "team_item": {
+            "first_last_name": "Yuriy Draganov",
+            "team_item_text": "Founder XX Platform"
+        },
+        "item_1": {
+            "head": "Devgent company",
+            "p": "Development"
+        },
+        "item_2": {
+            "head": "Gunbounty company",
+            "p": "Marketing support"
+        },
+        "item_3": {
+            "head": "Qwertydesign company",
+            "p": "Design and decoration"
+        },
+        "item_4": {
+            "head": "Mediaband company",
+            "p": "Video content"
+        }
+    },
+    "section_rounds": {
+        "header": {
+            "b": "Rounds",
+            "right_text": "of sales"
+        },
+        "rounds_caption_1": "sales",
+        "rounds_caption_2": "figures",
+        "rounds__info_item_1": {
+            "head": "Pre-sale",
+            "info_item_price": "1$ * 750 000 XXP",
+            "left_text": "100%",
+            "right_text": "Completed"
+        },
+        "rounds__info_item_2": {
+            "head": "ICO",
+            "info_item_price": "1$ * 1 250 000 XXP",
+            "left_text": "Less than 500,000 XXP left",
+            "right_text": "Start 05.02.21"
+        }
+    },
+    "section_delegates": {
+        "head": "Delegates",
+        "delegates_subheading": {
+            "left_text": "The XX Platform implements a system of delegated distribution of bets —",
+            "b": "XX Delegate."
+        },
+        "delegates_cards": {
+            "head": "Type 1",
+            "item_1": {
+                "h": "Commission size",
+                "p": "from 1% to 10%"
+            },
+            "item_2": {
+                "h": "Contract duration",
+                "p": "12 months"
+            },
+            "item_3": {
+                "h": "Automatic renewal",
+                "p": "active"
+            },
+            "item_4": {
+                "h": "Deposit defrost",
+                "p": "33% every 12 months"
+            },
+            "item_5": {
+                "h": "Participation in conferences, meetups",
+                "p": "yes"
+            },
+            "item_6": {
+                "h": "Participation in voting",
+                "p": "yes"
+            }
+        },
+        "delegates_img_card": {
+            "p_1": "In order to create a Delegate account,‎",
+            "p_2": "it is necessary to “freeze”",
+            "p_3": "and register in the user’s personal account.",
+            "b_1": "10,000 XXP tokens",
+            "b_2": ""
+        },
+        "delegates_img_text": "The Delegate, being the creator of his staking pool, has the right to independently set the size of commissions on payments, the percentage of which can vary from 1% to 10%."
+    },
+    "section_media": {
+        "header": "Mass media",
+        "media_item": "Read"
+    },
+    "footer": {
+        "footer_link_1": "Web-wallet",
+        "footer_link_2": "White Paper",
+        "footer_text": "XX Platform © 2021",
+        "footer_policy": "Privacy policy"
     }
 }
