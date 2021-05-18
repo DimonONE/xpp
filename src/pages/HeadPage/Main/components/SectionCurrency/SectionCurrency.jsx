@@ -118,7 +118,7 @@ export const SectionCurrency = (props) => {
                       className={`currency__accordion-icon ${style.currency__accordion_icon_3}`}
                     ></div>
                     <div className="currency__accordion-heading font-size-20 font-weight-600">
-                      {t("section_currency.currency__accordion_2.header")}
+                      {t("section_currency.currency__accordion_3.header")}
                     </div>
                   </div>
                   <div className="currency__accordion-hidden">
