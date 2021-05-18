@@ -125,7 +125,7 @@ export const Header = (props) => {
                       onClick={() => CangleLanguage("en")}
                       className="header__dropdown-link"
                     >
-                      {t("headers.header.languages.list_language.l1")}
+                      EN
                     </button>
                   </li>
                   <li className="header__dropdown-list-item">
