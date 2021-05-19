@@ -1,0 +1,8 @@
+@media (min-width: 600px) {
+  .max_content {
+    width: max-content;
+  }
+  .margin_right {
+    margin-right: -30px;
+  }
+}

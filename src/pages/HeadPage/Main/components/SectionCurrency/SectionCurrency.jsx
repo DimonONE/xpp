@@ -135,7 +135,7 @@ export const SectionCurrency = (props) => {
           </div>
           <div className="col-lg-6 currency__video-wrap wow ">
             <a
-              href="https://www.youtube.com/embed/_INE-0NiGGY"
+              href="https://youtu.be/dBftHN6ksPI"
               className={`currency__video glightbox ${style.currency__video}`}
               data-gallery="video"
             >

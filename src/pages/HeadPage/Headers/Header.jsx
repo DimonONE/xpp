@@ -183,11 +183,6 @@ export const Header = (props) => {
             </li>
           </ul>
           <div className="mobile-menu__switcher">
-            {/* <span className="mobile-menu__switcher-item active">Eng</span>
-            <Link to="/ru" className="mobile-menu__switcher-item">
-              Ru
-            </Link> */}
-
             <span
               className={`mobile-menu__switcher-item active ${style.cursor_pointer}`}
               onClick={() => setFolowign(!folowign && true)}
@@ -210,7 +205,7 @@ export const Header = (props) => {
                       onClick={() => CangleLanguage("en")}
                       className="mobile-menu__switcher-item"
                     >
-                      {t("headers.header.languages.list_language.l1")}
+                      EN
                     </button>
                   </li>
                   <li className="header__dropdown-list-item">

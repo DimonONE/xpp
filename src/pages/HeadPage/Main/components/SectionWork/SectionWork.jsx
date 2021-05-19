@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../../../../../utils/i18next";
-
+import style from "./SectionWork.module.css";
 import { Fade } from "react-awesome-reveal";
 
 import work__card_icon_1 from "../../../../../img/work__card-icon-1.svg";
@@ -134,11 +134,15 @@ export const SectionWork = (props) => {
                 delay={400}
                 className="work__caption work__caption--1 font-weight-700 font-size-15 wow"
               >
-                <div>{t("section_work.work__caption.left")}</div>
+                <div className={style.max_content}>
+                  {t("section_work.work__caption.left")}
+                </div>
               </Fade>
               <div className="work__card-wrap work__card-wrap--medium wow">
                 <Fade direction="down" triggerOnce="true" delay={200}>
-                  <div className="work__card work__card--medium d-flex align-items-center grit grit--pink">
+                  <div
+                    className={`work__card work__card--medium d-flex align-items-center grit grit--pink ${style.max_content}`}
+                  >
                     <div className="grit__bg"></div>
                     <img
                       src={work__card_icon_2}
@@ -162,7 +166,9 @@ export const SectionWork = (props) => {
               </div>
               <div className="work__card-wrap work__card-wrap--medium wow">
                 <Fade direction="down" triggerOnce="true" delay={400}>
-                  <div className="work__card work__card--medium d-flex align-items-center grit grit--pink">
+                  <div
+                    className={`work__card work__card--medium d-flex align-items-center grit grit--pink ${style.max_content}`}
+                  >
                     <div className="grit__bg"></div>
                     <img
                       src={work__card_icon_2}
@@ -190,7 +196,9 @@ export const SectionWork = (props) => {
                 delay={400}
                 className="work__caption work__caption--2 font-weight-700 font-size-15 wow"
               >
-                <div>{t("section_work.work__caption.right")}</div>
+                <div className={`${style.max_content} ${style.margin_right}`}>
+                  {t("section_work.work__caption.right")}
+                </div>
               </Fade>
             </div>
             <Fade direction="up" triggerOnce="true" delay={2}>

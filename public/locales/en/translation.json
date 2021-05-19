@@ -14,7 +14,8 @@
                 "list_language": {
                     "l1": "RU"
                 }
-            }
+            },
+            "login_in": "Log in"
         }
     },
     "section_cover": {
@@ -170,12 +171,12 @@
             },
             "work__card_text_4": {
                 "p_1": "5%",
-                "b": "comission",
+                "b": " comission",
                 "p_2": "XXP Delegate"
             },
             "work__card_text_5": {
                 "p_1": "5%",
-                "b": "comission",
+                "b": " comission",
                 "p_2": "XXP Delegate"
             }
         },
