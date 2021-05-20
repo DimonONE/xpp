@@ -46,6 +46,7 @@
         }
     },
     "section_currency": {
+        "language": "EN",
         "heading": {
             "left_text": "All the",
             "b": "best developments",

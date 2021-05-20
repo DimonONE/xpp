@@ -46,6 +46,7 @@
         }
     },
     "section_currency": {
+        "language": "RU",
         "heading": {
             "left_text": "Все",
             "b": "лучшие разработки",
