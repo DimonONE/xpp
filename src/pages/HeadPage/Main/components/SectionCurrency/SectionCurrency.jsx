@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { useTranslation } from "react-i18next";
 import "../../../../../utils/i18next";
 
@@ -134,13 +135,14 @@ export const SectionCurrency = (props) => {
             </Fade>
           </div>
           <div className="col-lg-6 currency__video-wrap wow ">
-            <a
-              href="https://youtu.be/dBftHN6ksPI"
+            <div
               className={`currency__video glightbox ${style.currency__video}`}
-              data-gallery="video"
             >
-              <div className="play"></div>
-            </a>
+              <span
+                onClick={() => props.setFullVideo(!props.fullVideo)}
+                className={`play ${style.folow_active}`}
+              ></span>
+            </div>
           </div>
         </div>
       </div>

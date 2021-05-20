@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Element } from "react-scroll";
 
 import { SectionAdvantages } from "./components/SectionAdvantages/SectionAdvantages";
@@ -23,7 +24,7 @@ export const Main = (props) => {
         <main id="sections" className="sections">
           <SectionCover />
           <Element name="currency">
-            <SectionCurrency />
+            <SectionCurrency {...props} />
           </Element>
           <SectionSteps />
           <SectionWork />

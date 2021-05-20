@@ -8556,7 +8556,7 @@ html {
   will-change: opacity;
 }
 .glightbox-mobile .goverlay {
-  background: #000;
+  background: rgba(15, 15, 15, 0.575);
 }
 .gclose,
 .gnext,
@@ -8908,14 +8908,34 @@ iframe.wait-autoplay {
     opacity: 0;
   }
 }
+
+.plyr_poster__mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .plyr__poster {
+    width: 100%;
+    min-width: 80%;
+    height: 80%;
+  }
+}
 @media (min-width: 769px) {
+  .plyr__poster {
+    min-width: 900px;
+    height: auto;
+  }
   .glightbox-container .ginner-container {
     width: auto;
     height: auto;
+    min-height: 507px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+  .plyr__poster {
+    height: auto;
   }
   .glightbox-container .ginner-container.desc-top .gslide-description {
     -webkit-box-ordinal-group: 1;
@@ -8964,7 +8984,7 @@ iframe.wait-autoplay {
     height: auto;
   }
   .goverlay {
-    background: rgba(0, 0, 0, 0.92);
+    background: rgba(15, 15, 15, 0.575);
   }
   .glightbox-clean .gslide-media {
     -webkit-box-shadow: 1px 2px 9px 0 rgba(0, 0, 0, 0.65);
@@ -8999,11 +9019,7 @@ iframe.wait-autoplay {
     right: 20px;
   }
 }
-@media screen and (max-height: 420px) {
-  .goverlay {
-    background: #000;
-  }
-}
+
 @font-face {
   font-family: OpenSans;
   font-style: normal;

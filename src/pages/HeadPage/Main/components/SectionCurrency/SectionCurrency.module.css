@@ -20,6 +20,7 @@
 .folow_active {
   cursor: pointer;
 }
+
 .folow_active .is_active_1,
 .folow_active .is_active_2,
 .folow_active .is_active_3 {
@@ -33,4 +34,37 @@
 }
 .folow_active.active .is_active_3 {
   display: block;
+}
+
+.fullVideo {
+  display: none;
+  visibility: hidden;
+}
+
+.full_window {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.full_window .window__full_video {
+  margin: 0 auto;
+  max-height: 80%;
+}
+
+.full_window .conttainer_video {
+  width: 100%;
+  /* height: 100%; */
+  height: 200px;
+}
+
+.cancel {
+  color: red;
+}
+
+.blures {
+  filter: blur(6px);
 }
