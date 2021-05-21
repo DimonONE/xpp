@@ -37,14 +37,14 @@ export const Footer = (props) => {
             <div className="col-lg-6">
               <div className="footer__socials">
                 <a
-                  href="https://t.me/xxplatform_en"
-                  className={`footer__socials-link ${style.xxplatform_en}`}
+                  href="https://www.facebook.com/XXPlatform/"
+                  className={`footer__socials-link ${style.XXPlatform_1}`}
                 >
                   {" "}
                 </a>
                 <a
-                  href="https://www.facebook.com/XXPlatform/"
-                  className={`footer__socials-link ${style.XXPlatform_1}`}
+                  href="https://vk.com/xxplatform"
+                  className={`footer__socials-link ${style.footer__vk_icon}`}
                 >
                   {" "}
                 </a>
