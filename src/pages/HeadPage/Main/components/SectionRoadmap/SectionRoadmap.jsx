@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../../../../../utils/i18next";
 
@@ -13,6 +13,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export const SectionRoadmap = (props) => {
   const { t } = useTranslation();
+  const [hidden, setHidden] = useState(true);
 
   return (
     <section className="section roadmap">
@@ -81,17 +82,28 @@ export const SectionRoadmap = (props) => {
               slidesPerView: 3,
               slidesPerGroup: 3,
             },
-            1300: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
+            1600: {
+              slidesPerView: 3,
             },
           }}
           spaceBetween={75}
+          onSlideChange={() => setHidden(!hidden)}
           style={{ overflow: "visible" }}
         >
           <div className="swiper-wrapper ">
             {localState.map((e) => (
-              <SwiperSlide key={e.id}>
+              <SwiperSlide
+                key={e.id}
+                className={`${
+                  hidden
+                    ? e.id > 3
+                      ? style.hiddens
+                      : ""
+                    : e.id <= 3
+                    ? style.hiddens
+                    : ""
+                }`}
+              >
                 <div className={`roadmap__slider-item swiper-slide-next`}>
                   <div className="roadmap__slider-item-label">
                     {t(`section_roadmap.block_${e.id}.head`)}
@@ -104,7 +116,7 @@ export const SectionRoadmap = (props) => {
                     {e.texts.map((c) => (
                       <li
                         key={c.id}
-                        className={`roadmap__slider-item-list-item swiper-slide-active ${
+                        className={`roadmap__slider-item-list-item ${
                           e.id === 2 && c.id === 1 ? style.line_through : ""
                         }`}
                       >
