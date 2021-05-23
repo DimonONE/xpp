@@ -3,8 +3,11 @@ import { useTranslation } from "react-i18next";
 import "../../../../../utils/i18next";
 
 import { Fade } from "react-awesome-reveal";
-import compare__item_icon_1 from "../../../../../img/compare__item-img-1.svg";
-import compare__item_icon_2 from "../../../../../img/compare__item-img-2.svg";
+
+import compare__item_icon_1 from "../../../../../img/compare__item-icon-1.svg";
+import compare__item_icon_2 from "../../../../../img/compare__item-icon-2.svg";
+import compare__item_img_1 from "../../../../../img/compare__item-img-1.svg";
+import compare__item_img_2 from "../../../../../img/compare__item-img-2.svg";
 
 export const SectionCompare = (props) => {
   const { t } = useTranslation();
@@ -30,13 +33,13 @@ export const SectionCompare = (props) => {
                 <div className="compare__item-icon-wrap grit grit--green">
                   <div className="grit__bg"></div>
                   <img
-                    src="img/compare__item-icon-1.svg"
+                    src={compare__item_icon_1}
                     alt=""
                     className="grit__icon compare__item-icon"
                   />
                 </div>
                 <img
-                  src={compare__item_icon_1}
+                  src={compare__item_img_1}
                   alt=""
                   className="img-responsive compare__item-img compare__item-img--1"
                 />
@@ -83,7 +86,7 @@ export const SectionCompare = (props) => {
                   />
                 </div>
                 <img
-                  src={compare__item_icon_2}
+                  src={compare__item_img_2}
                   alt=""
                   className="img-responsive compare__item-img compare__item-img--2"
                 />
