@@ -18,10 +18,7 @@ export const SectionMedia = (props) => {
         </Fade>
         <div className="row media__row">
           {localState.map((e) => (
-            <div
-              key={e.id}
-              className="media__item-wrap col-auto wow animate__animated animate__fadeInUp"
-            >
+            <div key={e.id} className={`${style.block_icon}`}>
               <Fade direction="up" triggerOnce="true" delay={e.delay}>
                 <div className="media__item">
                   <div className={`media__item-img`} style={e.dataStyle}></div>
