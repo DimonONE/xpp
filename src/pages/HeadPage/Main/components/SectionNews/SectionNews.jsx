@@ -20,13 +20,13 @@ export const SectionNews = (props) => {
                 <div className={`${style.news_nav__icon}`}>
                   <img src={e.icon} alt="non" />
                 </div>
-                <p>HotBit</p>
+                <p className={`${style.head_text}`}>HotBit</p>
               </div>
               <div className={`${style.infos}`}>
                 <img src={e.litl_ico} alt="NoN" />
                 <p className={`${style.valute}`}>XXP / BTC</p>
                 <p className={`${style.sum}`}>${e.sum}</p>
-                <p className={`${style.arrival}`}>${e.arrival}</p>
+                <p className={`${style.arrival}`}>{e.arrival}</p>
                 <div className={`${style.arrow}`}>
                   <img src={e.id < 3 ? e.arrowUp : e.arrowDown} alt="/\" />
                 </div>
@@ -34,6 +34,10 @@ export const SectionNews = (props) => {
               </div>
             </span>
           ))}
+        </div>
+        <div className={`${style.block_content}`}>
+          <div className={`${style.nav}`}></div>
+          <div></div>
         </div>
       </div>
     </section>
