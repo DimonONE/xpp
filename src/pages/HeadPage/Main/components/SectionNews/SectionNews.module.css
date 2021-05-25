@@ -1,0 +1,54 @@
+.news_nav,
+.infos {
+  display: flex;
+}
+
+.news_nav .block {
+  width: 380px;
+  height: 138px;
+  padding: 14px 0 17px 33px;
+  border: 1px solid #eee8e0;
+  box-sizing: border-box;
+}
+.block_head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.block_head .news_nav__icon {
+  margin-right: 16px;
+}
+
+.infos {
+  text-align: center;
+  align-items: center;
+  font-style: normal;
+  color: #292f45;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.infos .valute {
+  font-family: Play;
+  font-weight: bold;
+  margin-left: 6px;
+  margin-right: 7px;
+}
+.infos .sum {
+  width: 60px;
+  height: 21px;
+  font-family: Open Sans;
+  font-weight: bold;
+  margin-right: 3px;
+}
+.infos .arrival {
+  height: 18px;
+  font-family: Open Sans;
+  font-weight: normal;
+  font-size: 14px;
+  color: #26a33a;
+}
+.infos .arrow {
+  margin: 0 4px;
+}

@@ -16,7 +16,7 @@ export const SectionMedia = (props) => {
   const { t } = useTranslation();
 
   return (
-    <section className={`section media ${style.section_media}`}>
+    <section className={`section media`}>
       <div className="container media__container">
         <Fade direction="down" triggerOnce="true">
           <h2 className="heading font-size-40 media__heading text-center wow animate__animated animate__fadeInDown">

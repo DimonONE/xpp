@@ -10,6 +10,7 @@ import { SectionDelegates } from "./components/SectionDelegates/SectionDelegates
 import { SectionFounder } from "./components/SectionFounder/SectionFounder";
 import { SectionGuide } from "./components/SectionGuide/SectionGuide";
 import { SectionMedia } from "./components/SectionMedia/SectionMedia";
+import { SectionNews } from "./components/SectionNews/SectionNews";
 import { SectionRoadmap } from "./components/SectionRoadmap/SectionRoadmap";
 import { SectionRounds } from "./components/SectionRounds/SectionRounds";
 import { SectionSteps } from "./components/SectionSteps/SectionSteps";
@@ -23,6 +24,9 @@ export const Main = (props) => {
       <Element name="Up">
         <main id="sections" className="sections">
           <SectionCover />
+          <Element name="news">
+            <SectionNews />
+          </Element>
           <Element name="currency">
             <SectionCurrency {...props} />
           </Element>
