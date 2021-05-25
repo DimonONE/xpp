@@ -9317,7 +9317,6 @@ a:hover {
   }
 }
 .swiper-slide {
-  
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -11010,6 +11009,7 @@ a:hover {
   bottom: -103px;
   left: -166px;
 }
+
 @media (max-width: 1199.98px) {
   .steps__pagination-item.swiper-pagination-bullet {
     -ms-flex-preferred-size: 50px;
