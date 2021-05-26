@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import style from "./SectionNews.module.css";
 import { useTranslation } from "react-i18next";
-import "../../../../../utils/i18next";
-import { localState } from "./LocalState";
+import "../../../../../../utils/i18next";
+import { localState } from "../LocalState";
 
-import big_img from "../../../../../img/big_img.png";
+import big_img from "../../../../../../img/big_img.png";
 
 export const SectionNews = (props) => {
   const { t } = useTranslation();
@@ -165,7 +166,10 @@ export const SectionNews = (props) => {
                 </div>
               ))}
 
-              <a href="/" className={`${style.all_news} ${style.block}`}>
+              <NavLink
+                to="/news"
+                className={`${style.all_news} ${style.block}`}
+              >
                 <div className={style.all_news}>
                   <div>
                     <img src={localState.icon_all_news} alt="icon_all_news" />
@@ -189,7 +193,7 @@ export const SectionNews = (props) => {
                     />
                   </svg>
                 </div>
-              </a>
+              </NavLink>
             </span>
           </div>
         </div>
