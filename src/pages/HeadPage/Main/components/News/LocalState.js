@@ -46,6 +46,9 @@ export const localState = {
   page_news: [
     { id: 1, img: bigImgIlon, date: "18.05.2021" },
     { id: 2, img: bigImgIlon, date: "18.01.2021" },
+    { id: 3, img: bigImgIlon, date: "18.01.2021" },
+    { id: 4, img: bigImgIlon, date: "18.01.2021" },
+    { id: 5, img: bigImgIlon, date: "18.01.2021" },
   ],
   news: [{ id: 1 }, { id: 2 }, { id: 3 }],
   icon_all_news: icon__all_news,

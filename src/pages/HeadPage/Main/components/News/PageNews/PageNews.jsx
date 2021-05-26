@@ -73,22 +73,31 @@ export const PageNews = (props) => {
               Трейдинг
             </span>
           </div>
-          <span className={style.section_right}>
+          <span className={`${style.section_right} `}>
             <Swiper
               className="steps__slider swiper-container"
+              direction="vertical"
               navigation={{
-                nextEl: ".steps__arrow_news--next",
-                prevEl: ".steps__arrow_news--prev",
+                nextEl: ".steps__arrow_p_news--next",
+                prevEl: ".steps__arrow_p_news--prev",
               }}
               pagination={{
                 el: ".steps__pagination",
                 clickable: "true",
+                renderBullet: (index, className) => {
+                  return (
+                    '<span class="steps__pagination-item ' +
+                    className +
+                    '">0' +
+                    (index + 1) +
+                    "</span>"
+                  );
+                },
               }}
               effect={"fade"}
               fadeEffect={{ crossFade: true }}
-              slidesPerView={1}
               speed={500}
-              style={{ overflow: "visible" }}
+              style={{ overflow: "visible", height: 700 }}
             >
               {localState.page_news.map((e) => (
                 <SwiperSlide
@@ -157,7 +166,7 @@ export const PageNews = (props) => {
           </span>
           <span className={style_page.pos_slide_button}>
             <div className="col-lg-6 col-md-9 d-flex steps__controls wow animate__animated animate__fadeInRight">
-              <button className="arrow arrow--prev steps__arrow steps__arrow--prev">
+              <button className="arrow arrow--prev steps__arrow steps__arrow_p_news--prev">
                 <svg
                   width="38"
                   height="19"
@@ -175,7 +184,7 @@ export const PageNews = (props) => {
                 </svg>
               </button>
               <div className="steps__pagination"></div>
-              <button className="arrow arrow--next steps__arrow steps__arrow--next">
+              <button className="arrow arrow--next steps__arrow steps__arrow_p_news--next">
                 <svg
                   width="38"
                   height="19"
