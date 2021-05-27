@@ -6,6 +6,7 @@ import style from "./Header.module.css";
 import { Link } from "react-scroll";
 
 import logo_svg from "../../../img/logo.svg";
+import { NavLink } from "react-router-dom";
 
 export const Header = (props) => {
   const { t, i18n } = useTranslation();
@@ -44,8 +45,8 @@ export const Header = (props) => {
                 className="img-responsive header__logo-img"
               />
             </Link>
-            <nav className="header__nav">
-              <ul className="header__nav-list">
+            <nav className={`header__nav ${style.header__nav}`}>
+              <ul className={style.header__nav_list}>
                 <li className="header__nav-list-item">
                   <Link
                     to="currency"
@@ -100,6 +101,14 @@ export const Header = (props) => {
                   >
                     {t("headers.header.nav_bar.team")}
                   </Link>
+                </li>
+                <li className="header__nav-list-item">
+                  <NavLink
+                    to="/news"
+                    className={`header__nav-link ${style.cursor_pointer}`}
+                  >
+                    {t("headers.header.nav_bar.news")}
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -180,6 +189,11 @@ export const Header = (props) => {
               <Link to="team" className="mobile-menu__list-link">
                 {t("headers.header.nav_bar.team")}
               </Link>
+            </li>
+            <li className="header__nav-list-item">
+              <NavLink to="/news" className={`${style.cursor_pointer}`}>
+                {t("headers.header.nav_bar.news")}
+              </NavLink>
             </li>
           </ul>
           <div className="mobile-menu__switcher">

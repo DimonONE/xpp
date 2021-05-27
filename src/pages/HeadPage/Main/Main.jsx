@@ -18,11 +18,15 @@ import { SectionTeam } from "./components/SectionTeam/SectionTeam";
 import { SectionTokenomics } from "./components/SectionTokenomics/SectionTokenomics";
 import { SectionWork } from "./components/SectionWork/SectionWork";
 import { PageNews } from "./components/News/PageNews/PageNews";
+import { PageArticle } from "./components/News/PageArticle/PageArticle";
 
 export const Main = (props) => {
   return (
     <>
       <Switch>
+        <Route path="/news/1">
+          <PageArticle />
+        </Route>
         <Route path="/news">
           <PageNews />
         </Route>
