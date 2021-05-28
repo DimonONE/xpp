@@ -132,6 +132,9 @@
   line-height: 150%;
   color: #ff8225;
 }
+.block_link {
+  margin-right: 10px;
+}
 
 .section_right {
   font-family: Open Sans;

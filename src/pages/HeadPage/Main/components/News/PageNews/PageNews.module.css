@@ -1,6 +1,6 @@
 .contents {
   width: 100%;
-  max-height: 370px;
+  height: auto;
   margin-top: 60px;
   padding: 31px 40px 42px 44px;
   background: #ffffff;
@@ -11,7 +11,6 @@
 .text_link__news {
   height: auto;
   font-size: 14px;
-  margin-left: 15px;
 }
 
 .contents .data {

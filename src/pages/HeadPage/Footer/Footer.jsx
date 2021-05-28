@@ -18,7 +18,11 @@ export const Footer = (props) => {
         <div className="container footer__container wow animate__animated animate__fadeIn">
           <div className="row footer__row">
             <div className="col-lg-3">
-              <a href="Up" className="footer__logo">
+              <a
+                href="Up"
+                className="footer__logo"
+                style={{ userSelect: "none" }}
+              >
                 <img
                   src={logo_footer}
                   alt="XX Platform"
@@ -27,10 +31,18 @@ export const Footer = (props) => {
               </a>
             </div>
             <div className="col-lg-3 footer__links">
-              <a href="https://wallet.xxp.group/" className="footer__link">
+              <a
+                href="https://wallet.xxp.group/"
+                className="footer__link"
+                style={{ userSelect: "none" }}
+              >
                 {t("footer.footer_link_1")}
               </a>
-              <a href={paper_pdf} className="footer__link">
+              <a
+                href={paper_pdf}
+                className="footer__link"
+                style={{ userSelect: "none" }}
+              >
                 {t("footer.footer_link_2")}
               </a>
             </div>

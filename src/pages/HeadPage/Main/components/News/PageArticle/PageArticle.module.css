@@ -1,0 +1,11 @@
+.head {
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+  color: #292f45;
+}
+.text_info {
+  float: right;
+}
