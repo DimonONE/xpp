@@ -80,7 +80,7 @@
   border-bottom: 5px solid #ff8225;
   border-radius: 5px;
 }
-.block_content .contents {
+.contents {
   width: 100%;
   height: auto;
   margin-top: -5px;
@@ -161,6 +161,9 @@
 }
 .section_right .news_item__img img {
   border-radius: 10px;
+}
+.news_item__img {
+  float: left;
 }
 
 .section_right .news_item__info {

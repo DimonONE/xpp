@@ -15,7 +15,7 @@ export const NewsContainer = (pagesVisited, newsPerPage, news) => {
         </span>
         <span className={style_page.news_item__info}>
           <div>
-            <div className={style_page.data}>
+            <div className={style_page.date}>
               <svg
                 width="15"
                 height="15"
