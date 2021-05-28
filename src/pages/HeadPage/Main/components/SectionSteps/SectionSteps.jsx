@@ -107,53 +107,51 @@ export const SectionSteps = (props) => {
                             key={texts_elements.id}
                             className="steps__slider-main-item d-flex"
                           >
-                            <div>
-                              <div
-                                className={`steps__slider-main-item-icon-wrap grit ${texts_elements.grit_color_class}`}
-                              >
-                                <div className="grit__bg"></div>
-                                <img
-                                  src={texts_elements.img_steps__slider}
-                                  alt="None"
-                                  className="steps__slider-main-item-icon grit__icon"
-                                />
-                              </div>
-                              <div className="steps__slider-main-item-texts">
-                                <div
-                                  className={`steps__slider-main-item-heading ${texts_elements.text_color_class} font-size-20`}
-                                >
-                                  {t(
-                                    `section_steps.step_${e.id}.main_${texts_elements.id}.head`
-                                  )}
-                                </div>
-                                <div
-                                  className="steps__slider-main-item-text"
-                                  style={{ fontSize: 18 }}
-                                >
-                                  {t(
-                                    `section_steps.step_${e.id}.main_${texts_elements.id}.left_text`
-                                  )}
-                                  <b className="font-weight-600">
-                                    {t(
-                                      `section_steps.step_${e.id}.main_${texts_elements.id}.b_1`
-                                    )}
-                                  </b>{" "}
-                                  <b className="font-weight-600">
-                                    {t(
-                                      `section_steps.step_${e.id}.main_${texts_elements.id}.b_2`
-                                    )}
-                                  </b>
-                                  {t(
-                                    `section_steps.step_${e.id}.main_${texts_elements.id}.right_text`
-                                  )}
-                                </div>
-                              </div>
+                            <div
+                              className={`steps__slider-main-item-icon-wrap grit ${texts_elements.grit_color_class}`}
+                            >
+                              <div className="grit__bg"></div>
                               <img
-                                src={texts_elements.icon_little}
+                                src={texts_elements.img_steps__slider}
                                 alt="None"
-                                className="img-responsive steps__slider-main-item-icon-little"
+                                className="steps__slider-main-item-icon grit__icon"
                               />
                             </div>
+                            <div className="steps__slider-main-item-texts">
+                              <div
+                                className={`steps__slider-main-item-heading ${texts_elements.text_color_class} font-size-20`}
+                              >
+                                {t(
+                                  `section_steps.step_${e.id}.main_${texts_elements.id}.head`
+                                )}
+                              </div>
+                              <div
+                                className="steps__slider-main-item-text"
+                                style={{ fontSize: 18 }}
+                              >
+                                {t(
+                                  `section_steps.step_${e.id}.main_${texts_elements.id}.left_text`
+                                )}
+                                <b className="font-weight-600">
+                                  {t(
+                                    `section_steps.step_${e.id}.main_${texts_elements.id}.b_1`
+                                  )}
+                                </b>{" "}
+                                <b className="font-weight-600">
+                                  {t(
+                                    `section_steps.step_${e.id}.main_${texts_elements.id}.b_2`
+                                  )}
+                                </b>
+                                {t(
+                                  `section_steps.step_${e.id}.main_${texts_elements.id}.right_text`
+                                )}
+                              </div>
+                            </div>
+                            <img
+                              src={texts_elements.icon_little}
+                              alt="None"
+                              className="img-responsive steps__slider-main-item-icon-little"
+                            />
                           </SwiperSlide>
                         ))}
                       </div>
