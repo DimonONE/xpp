@@ -1,0 +1,546 @@
+{
+    "headers": {
+        "header": {
+            "alt_logo": "XX Platform",
+            "nav_bar": {
+                "cryptocurrency": "Şifreli para",
+                "how_to_buy": "Nasıl alınabilir?",
+                "advantages": "Üstünlükler",
+                "tokenomics": "Tokenomik",
+                "team": "Ekibimiz",
+                "news": "Haberler"
+            },
+            "languages": {
+                "active_language": "TUR",
+                "list_language": {
+                    "l1": "EN",
+                    "l2": "RU"
+                }
+            },
+            "login_in": "Gir"
+        }
+    },
+    "section_cover": {
+        "head": {
+            "cover__title": "XX Platform",
+            "cryptocurrency": "Kripto para",
+            "trading": "Alım satım.",
+            "investments": "Yatırımlar.",
+            "text": "Yatırım unsurlarını içeren, çok amaçlı bir hesap ve varlık yönetim hizmetini içeren analitik araçlı alım satım platformu."
+        },
+        "buttons": {
+            "buy": "ХХР Al",
+            "wallet": "Cüzdanım"
+        },
+        "cover__radio": {
+            "cover__arrow_text": {
+                "r_1": " Bize söyle",
+                "r_2": "kimsin?"
+            },
+            "cover__radio_label_1": {
+                "r_1": "Ben şifreli ",
+                "r_2": "paralarda amatörüm"
+            },
+            "cover__radio_label_2": {
+                "r_1": "Ben tecrübeli bir kripto para meraklısıyım",
+                "r_2": "ve yatırımcıyım"
+            }
+        }
+    },
+    "section_currency": {
+        "language": "TUR",
+        "heading": {
+            "left_text": "Tüm",
+            "b": "en iyi gelişimler",
+            "right_text": "bir şifreli dövizde"
+        },
+        "currency__accordion_1": {
+            "header": "Bitcoin'den faydalı ",
+            "text": "Yatırım unsurlarını içeren, çok amaçlı bir hesap ve varlık yönetim hizmetini içeren analitik araçlı alım satım platformu."
+        },
+        "currency__accordion_2": {
+            "header": "Altcoin'den güvenli",
+            "text": "Altcoinlerin çoğu teknolojisiz, yararsız, fikirsiz ve geleceksiz tokenlerdir. XXP ise yatırımcı ile borsacı arasındaki karşılıklı ödeme yöntemi olan yatırım alım satım. "
+        },
+        "currency__accordion_3": {
+            "header": "Ethereum'dan perspektifli",
+            "text": "Bir zamanda Ethereum kripto para endüstrisinde teknolojik devrim yapmıştı. ETH günümüzde de en perspektifli kripto dövizlerden biridir. Ancak ETH sınırsız emisyona sahip. "
+        }
+    },
+    "section_steps": {
+        "heading": {
+            "left_text": "Bu nasıl",
+            "b": "işler? "
+        },
+        "step_1": {
+            "key": 1,
+            "step": "Aşama 1",
+            "main_1": {
+                "head": "Siz",
+                "left_text": "",
+                "b_1": "Tokenler alırsınız",
+                "right_text": "XXP",
+                "b_2": ""
+            }
+        },
+        "step_2": {
+            "step": "Aşama 2",
+            "main_1": {
+                "head": "Siz",
+                "left_text": "Tokenler yatırıp",
+                "b_1": "  kazanırsınız  ",
+                "right_text": "",
+                "b_2": " yıllık faizin %150'ye kadar "
+            },
+            "main_2": {
+                "head": "Biz aldığımız para projenin ",
+                "left_text": "yaparız",
+                "b_1": " geliştirilmesine ve alım satım ",
+                "b_2": " ",
+                "right_text": "platformunun oluşturulmasına yatırım "
+            }
+        },
+        "step_3": {
+            "step": "Aşama 3",
+            "main_1": {
+                "head": "Siz",
+                "left_text": "XXP'lerinizi",
+                "b_1": " XXP alım satım platformunda",
+                "right_text": "",
+                "b_2": ""
+            },
+            "main_2": {
+                "head": "Biz",
+                "left_text": "Yatırımcı ile borsacı arasındaki.",
+                "right_text": "Alım satım platformunu başlatırız.",
+                "b_1": "",
+                "b_2": ""
+            }
+        },
+        "step_4": {
+            "step": "Aşama 4",
+            "main_1": {
+                "head": "Siz",
+                "left_text": "Gelir",
+                "b_1": " alırsınız",
+                "b_2": "",
+                "right_text": ""
+            },
+            "main_2": {
+                "head": "Biz",
+                "left_text": "Güvenlik sağlayıp ",
+                "b_2": "asgari ücretli kefil haline geliriz",
+                "b_1": "",
+                "right_text": ""
+            },
+            "main_3": {
+                "head": "Borsacılar",
+                "left_text": "Müşteriler ve işe yaran para miktarını",
+                "b_1": "",
+                "b_2": "",
+                "right_text": "alırlar"
+            }
+        }
+    },
+    "section_work": {
+        "head": {
+            "left_text": "Nasıl işler?",
+            "b": "XXP DPoS Platform",
+            "right_text": ""
+        },
+        "work__header_card": {
+            "p_1": "DPoS'ta tokenlerinizi koyarsınız. ",
+            "p_2": "Onlar ödül kazanır.",
+            "b": " Faiz üç faktöre ",
+            "p_3": "bağlı: XXP miktarı, staking zamanı ve ortak ücreti."
+        },
+        "work__cards": {
+            "work__card_text_1": {
+                "p_1": "1000 XXP",
+                "p_2": "30 ortak ",
+                "b": " 7.24%",
+                "p_3": "FAYDA"
+            },
+            "work__card_text_2": {
+                "p_1": "1000 XXP",
+                "p_2": "30 ortak ",
+                "b": " 8.91%",
+                "p_3": "FAYDA"
+            },
+            "work__card_text_3": {
+                "p_1": "1000 XXP",
+                "p_2": "30 ortak ",
+                "b": " 9.21%",
+                "p_3": "FAYDA"
+            },
+            "work__card_text_4": {
+                "p_1": "5%",
+                "b": " ücreti",
+                "p_2": "XXP Delegate"
+            },
+            "work__card_text_5": {
+                "p_1": "5%",
+                "b": " ücreti",
+                "p_2": "XXP Delegate"
+            }
+        },
+        "work__caption": {
+            "left": "Ortak yok",
+            "right": " +Yeniden Yatırım"
+        },
+        "footer": {
+            "p_1": "DPoS pool",
+            "p_2": "36_000_000"
+        }
+    },
+    "section_guide": {
+        "head": {
+            "left_text": "XXP",
+            "b": " Nasıl alınabilir?"
+        },
+        "guide__item_text_1": {
+            "num": "01",
+            "left_text": "XXP miktarını",
+            "b": " girin",
+            "right_text": " ve alış tipıni seçin"
+        },
+        "guide__item_text_2": {
+            "num": "02",
+            "left_text": "Oluşturulmuş bağlantıyla ",
+            "text_and": "",
+            "b_1": " hizmete",
+            "b_2": " Coinbase",
+            "right_text": " geçin"
+        },
+        "guide__item_text_3": {
+            "num": "03",
+            "left_text": "Kişisel bilgilerinizi",
+            "b_1": " girin ve ",
+            "b_2": " ödeme yöntemini",
+            "right_text": " seçin"
+        },
+        "guide__item_text_4": {
+            "num": "04",
+            "left_text": "",
+            "b_1": "Belirtilen banka bilgilere göre",
+            "b_2": "",
+            "right_text": " ödeme yapın"
+        },
+        "guide__item_text_5": {
+            "num": "05",
+            "left_text": " Ödemenin doğrulanmasını",
+            "b": "bekleyin"
+        },
+        "guide__item_text_6": {
+            "num": "06",
+            "left_text": " Tebrikler! ",
+            "b_1": "XXP kripto parasına",
+            "b_2": "sahip oldunuz!"
+        },
+        "buy": "XXP Al"
+    },
+    "section_compare": {
+        "head": {
+            "b": "Şifreli para mı",
+            "right_text": " yoksa saadet zinciri mi?"
+        },
+        "cryptocurrency": {
+            "head": "Şifreli para mı",
+            "items": {
+                "item_1": "Gerçek dijital varlık (coinler ya da blok zinciri tokenleri)",
+                "item_2": "Varlık alırsınız",
+                "item_3": "Sınırlı emisyon",
+                "item_4": "Merkezsizleşmiş varlık",
+                "item_5": "Referal şemasının olmaması",
+                "item_6": "Açık ve saydam iletişim",
+                "item_7": "İç teknolojiler"
+            }
+        },
+        "pyramid": {
+            "head": "Saadet zinciri",
+            "items": {
+                "item_1": "Gerçek dijital varlığı veya iç ödeme birimi yok, sadece vaatleri var.",
+                "item_2": "Vaat alırsınız",
+                "item_3": "Sürekli para toplama ve satışlar",
+                "item_4": "Her şey yönetmenin elinde",
+                "item_5": "Çok seviyeli referal programları",
+                "item_6": "Açık sohbetlerin olmaması, saydamsızlık",
+                "item_7": "Pazarlama ve vaatler"
+            }
+        }
+    },
+    "section_advantages": {
+        "head": {
+            "b": "XXP'nin",
+            "right_text": " üstünlükleri"
+        },
+        "items": {
+            "item_1": {
+                "head": "Güvenlik",
+                "p_1": "Yüzde yüz iadeli alış sigorta sistemi."
+            },
+            "item_2": {
+                "head": "Merkezsizlik",
+                "p_1": "XXP, Tron ağının resmi tokenidir.",
+                "p_2": "Tüm işlemler blok zincirine ",
+                "p_3": "kaydedilir. "
+            },
+            "item_3": {
+                "head": "Aktüalite",
+                "p_1": "XXP Platform geneliksel yatırım problemlerinin çözülmesi için borsada oluşturulmuştu.",
+                "p_2": "",
+                "p_3": ""
+            },
+            "item_4": {
+                "head": "Yüksek gelirler",
+                "p_1": "DPoS sayesinde",
+                "p_2": "yıllık faizin %150'e kadar alabilirsiniz."
+            },
+            "item_5": {
+                "head": "Halving & Helix",
+                "p_1": "Arz ve talep dengede tutan ",
+                "p_2": "akıllı ekonomik",
+                "p_3": "model."
+            },
+            "item_6": {
+                "head": "Kontrol",
+                "p_1": "Gerçek tokene sahipsiniz",
+                "p_2": "ve onu herhangi bir insana ",
+                "p_3": "herhangi bir zaman aktarabilirsiniz."
+            }
+        }
+    },
+    "section_tokenomics": {
+        "head": "Tokenomik",
+        "items_1": {
+            "b": "36,000,000 XXP",
+            "right_text": " token — staking faizleri şeklinde yatırımcılara ödüller için"
+        },
+        "items_2": {
+            "b": "5,000,000 XXP",
+            "right_text": " token — ekibimizin kilitlenen para fonu için"
+        },
+        "items_3": {
+            "b": "4,500,000 XXP",
+            "right_text": " token — projenin oluşması ve geliştirilmesine yönelik temel cüzdan için"
+        },
+        "items_4": {
+            "b": "2,000,000 XXP",
+            "right_text": "token —  pre-ICO ve ICO aşamaları için"
+        },
+        "items_5": {
+            "b": "2,000,000 XXP",
+            "right_text": " token — promosyon para fonu için"
+        },
+        "items_6": {
+            "b": "500,000 XXP",
+            "right_text": " token —  promosyonlar, bounty etkinlikleri, yarışmalar, bilmeceler ve diğer faaliyetler için."
+        },
+        "info_text": {
+            "p_1": "XXP'in genel emisyon",
+            "p_2": " Bu paralar ",
+            "p_3": " ve ",
+            "b_1": " 50,000,000 tokene",
+            "b_2": " 6 sistem cüzdanlarına dağıtılır."
+        }
+    },
+    "section_roadmap": {
+        "header": {
+            "left_text": "Yol",
+            "b": " haritası"
+        },
+        "block_1": {
+            "head": "Q4 2020",
+            "item_1": "Sosyal medyalarda ve kriptopara forumlarında pazarlama faaliyetleri",
+            "item_2": "Tron ağında akıllı anlaşmaların yayınlanması",
+            "item_3": "XXP tokeninin ön satışı",
+            "item_4": "Yatırım platformunun alfa sürümü",
+            "item_5": "XX Delegate sisteminin sisteminin etkinleştirilmesi"
+        },
+        "block_2": {
+            "head": "Q1 2021",
+            "item_1": "Resmi sitenin tanıtımı",
+            "item_2": "XXP tokeninin ön satışının son aşaması",
+            "item_3": "Bounty campaign",
+            "item_4": "Satışın 1. turunun başlaması",
+            "item_5": "Alım satım platformunun geliştirilmesinin 1. aşaması",
+            "item_6": "Yatırım platformunun beta sürümü ",
+            "item_7": "Android için mobil uygulamanın yayınlanması ",
+            "item_8": "Dijital borsadaki listelenme",
+            "item_9": "TOKEN2049 — The Premier Crypto Event ln Asia forumuna katılım"
+        },
+        "block_3": {
+            "head": "Q2 2021",
+            "item_1": "Alım satım platformunun geliştirilmesinin 2. aşaması",
+            "item_2": "Yatırım platformunun tanıtımı ",
+            "item_3": "Token satışlarının başlaması",
+            "item_4": "Coingecko'ya eklenme",
+            "item_5": "Analitik hizmetin başlatılması ",
+            "item_6": "Blockchain Life 2021 Forumu'na katılım",
+            "item_7": "Token satışlarının platformda başlaması",
+            "item_8": "Asyalılara yönelik pazarlama promosu ",
+            "item_9": "Dijital borsadaki listelenme",
+            "item_10": "Coinmarketcap'e eklenme"
+        },
+        "block_4": {
+            "head": "Q3 2021",
+            "item_1": "Alım satım platformunun geliştirilmesinin 3. aşaması",
+            "item_2": "Singapore Blockchain Week 2021 (VС) Forumu'na katılım",
+            "item_3": "Sitenin yenilenmesi",
+            "item_4": "iOS için mobil uygulamanın tanıtımı",
+            "item_5": "Latin Amerikalılara ve İspanyolca konuşanlara yönelik pazarlama promosu",
+            "item_6": "Malta Blockchain Summit 2021 Forumu'na katılım"
+        },
+        "block_5": {
+            "head": "Q4 2021",
+            "item_1": "Alım satım platformunun geliştirilmesinin 4. aşaması",
+            "item_2": "Yatırım platformunun yenilenmesi",
+            "item_3": "Kuzey Amerikalılara yönelik pazarlama promosu",
+            "item_4": "Blockchain Expo – North America 2021 (VC) Forumu'na katılım",
+            "item_5": "Dijital borsadaki listelenme",
+            "item_6": "Hackathon Human DeFi Hæck (VC) Forumu'na katılım",
+            "item_7": "2022 için yol haritasının oluşturulması"
+        },
+        "block_6": {
+            "head": "Q1 2022",
+            "item_1": "Alım satım platformunun geliştirilmesinin 5. aşaması",
+            "item_2": "Deflasyon mekanizmasının etkinleştirilmesi "
+        }
+    },
+    "section_founder": {
+        "header": {
+            "left_text": "Oluşturucunun",
+            "b": " sözü"
+        },
+        "texts": {
+            "founder__text_1": "Alım satım ve yatırımlar günümüzde çok popüler. Çeşitli firmaların binlerce hissesi yüzlerce borsada serilmiş...Uzmanlar bile tüm bilgileri zorla izleyebilir, amatör borsacılar veya yatırımcılar da adeta yetişemezler haberlere. Üstelik, bu şekil faaliyet çok zaman ve çaba alır, sonuçlar ise sıkça  yetersiz...",
+            "founder__text_2": "O yüzden hem yetişebildiğiniz, hem de ekonomik haberlere ve iş raporlarına zaman harcamayabildiğiz platform oluşturmaya karar verdik. Eminiz ki bunun için ne zamanınız, ne arzunuz, ne de çelik gibi sinirleriniz var.",
+            "founder__text_3": "Bu zaman ailenizle geçirmenizi tavsiye ederiz,  XX Platform uzmanları ise alım satım işleriyle uğraşsınlar."
+        },
+        "founder_info": {
+            "head": "Yuri Draganov",
+            "p_1": "XX Platformu'nun oluşturucusu",
+            "p_2": "Profesyonel borsacı ve finansman analitik uzmanı. ",
+            "p_3": "8 yıl borsada."
+        }
+    },
+    "section_team": {
+        "header": {
+            "left_text": "Ekibimiz",
+            "b": " ХХР"
+        },
+        "info": "Projenin üzerinde çalışan uluslararası ekibimiz şudur:",
+        "team_item": {
+            "first_last_name": "Yuri Draganov",
+            "team_item_text": "XX Platformu'nun oluşturucusu"
+        },
+        "item_1": {
+            "head": "Devgent firması",
+            "p": "Gelişim"
+        },
+        "item_2": {
+            "head": "Gunbounty firması",
+            "p": "Pazarlama"
+        },
+        "item_3": {
+            "head": "Qwertydesign firması",
+            "p": "Tasarım"
+        },
+        "item_4": {
+            "head": "Mediaband firması",
+            "p": "Görsel içerikler"
+        }
+    },
+    "section_rounds": {
+        "header": {
+            "b": "Satış",
+            "right_text": " turları"
+        },
+        "rounds_caption_1": "Satış",
+        "rounds_caption_2": "miktarı",
+        "rounds__info_item_1": {
+            "head": "Pre-sale",
+            "info_item_price": "1$ * 750 000 XXP",
+            "left_text": "100%",
+            "right_text": "Tamamlanmış"
+        },
+        "rounds__info_item_2": {
+            "head": "ICO",
+            "info_item_price": "1$ * 1 250 000 XXP",
+            "left_text": "Less than 500,000 XXP left",
+            "right_text": "Başlangıç 05.02.21"
+        }
+    },
+    "section_delegates": {
+        "head": "Ortaklar",
+        "delegates_subheading": {
+            "left_text": "XX Platform'un ortaklar arasında dağıtılan faiz sistemi var — ",
+            "b": "XX Delegate."
+        },
+        "delegates_cards": {
+            "head": "Tip 1",
+            "item_1": {
+                "h": "Ücret miktarı",
+                "p": "%1'den %10'a kadar"
+            },
+            "item_2": {
+                "h": "Anlaşmanın süresi",
+                "p": "12 ay"
+            },
+            "item_3": {
+                "h": "Otomatik uzatma",
+                "p": "etkinleştirilmiş"
+            },
+            "item_4": {
+                "h": "Yatırımın çözülmesi",
+                "p": "%33 her 12 ay"
+            },
+            "item_5": {
+                "h": "Görüşmelere katılım",
+                "p": "Var"
+            },
+            "item_6": {
+                "h": "Oy vermesine katılım",
+                "p": "Var"
+            }
+        },
+        "delegates_img_card": {
+            "p_1": "Ortak hesabını oluşturmak için cüzdanınızı kilitleyip",
+            "p_2": " kullanıcı hesabında",
+            "p_3": " kayıt olun.",
+            "b_1": "10 000 XXP tokeni",
+            "b_2": "kayıt"
+        },
+        "delegates_img_text": "Kendi staking pool oluşturan ortağın faizi %1'den %10'a kadar olabilir ücretlerin miktarını tek başına belirtme hakkı var."
+    },
+    "section_media": {
+        "header": "Криптотрекеры",
+        "media_item_1": "Coingecko",
+        "media_item_2": "Coinpaprika",
+        "media_item_3": "Coincodex",
+        "media_item_4": "Livecoinwatch",
+        "media_item_5": "Coinranking",
+        "media_item_6": "Coincheckup",
+        "media_item_7": "Coinlib",
+        "media_item_8": "Coinpare",
+        "media_item_9": "Foundico",
+        "media_item_10": "Icolink",
+        "media_item_11": "Icoholder",
+        "media_item_12": "Coincost",
+        "media_item_13": "Coindar",
+        "media_item_14": "Coinmarketcal",
+        "media_item_15": "Cryptonews",
+        "media_item_16": "Coindataflow",
+        "media_item_17": "Bankomatfinder",
+        "media_item_18": "Cryptopro",
+        "media_item_19": "Nomics",
+        "media_item_20": "Coincost",
+        "media_item_21": "Cryptfolio"
+    },
+    "footer": {
+        "footer_link_1": "Web-wallet",
+        "footer_link_2": "White Paper",
+        "footer_text": "XX Platform © 2021",
+        "footer_policy": "Gizlilik ilkesi"
+    }
+}

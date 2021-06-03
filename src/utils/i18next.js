@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "ru",
-    whitelist: ["ru", "en"],
+    whitelist: ["ru", "en", "tur"],
     detection: {
       order: ["localStorage", "cookie"],
       caches: ["localStorage", "cookie"],

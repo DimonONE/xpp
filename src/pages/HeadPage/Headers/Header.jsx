@@ -145,12 +145,21 @@ export const Header = (props) => {
                       RU
                     </button>
                   </li>
+                  <li className="header__dropdown-list-item">
+                    <button
+                      onClick={() => CangleLanguage("tur")}
+                      className="header__dropdown-link"
+                    >
+                      TUR
+                    </button>
+                  </li>
                 </ul>
               </div>
             </span>
             <a
               href="https://wallet.xxp.group/"
               className="btn btn--bg-beige header__btn"
+              style={{ minWidth: "fit-content" }}
             >
               {t("headers.header.login_in")}
             </a>
@@ -228,6 +237,14 @@ export const Header = (props) => {
                       className="mobile-menu__switcher-item"
                     >
                       RU
+                    </button>
+                  </li>
+                  <li className="header__dropdown-list-item">
+                    <button
+                      onClick={() => CangleLanguage("tur")}
+                      className="mobile-menu__switcher-item"
+                    >
+                      TUR
                     </button>
                   </li>
                 </ul>
