@@ -51,7 +51,8 @@ export const SectionMedia = (props) => {
             breakpoints={{
               900: { slidesPerView: 6, spaceBetween: 60 },
               600: { slidesPerView: 4, spaceBetween: 40 },
-              300: { slidesPerView: 3, spaceBetween: 20 },
+              420: { slidesPerView: 3, spaceBetween: 40 },
+              300: { slidesPerView: 2, spaceBetween: 20 },
             }}
           >
             {localState.map((e) => (

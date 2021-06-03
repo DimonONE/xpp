@@ -106,6 +106,7 @@ export const SectionSteps = (props) => {
                           <SwiperSlide
                             key={texts_elements.id}
                             className="steps__slider-main-item d-flex"
+                            style={{ width: "auto" }}
                           >
                             <div
                               className={`steps__slider-main-item-icon-wrap grit ${texts_elements.grit_color_class}`}
