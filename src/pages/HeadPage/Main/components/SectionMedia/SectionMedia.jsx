@@ -43,7 +43,6 @@ export const SectionMedia = (props) => {
             </svg>
           </button>
           <Swiper
-            className="steps__slider swiper-container swiper_media"
             direction={"horizontal"}
             navigation={{
               nextEl: ".steps__arrow_media--next",
@@ -56,7 +55,11 @@ export const SectionMedia = (props) => {
             }}
           >
             {localState.map((e) => (
-              <SwiperSlide key={e.id} className={`${style.block_icon}`}>
+              <SwiperSlide
+                key={e.id}
+                className={`${style.block_icon}`}
+                style={{ height: 205 }}
+              >
                 <div className={`${style.block_icon__position}`}>
                   <div className={`${style.width_icons}`}>
                     <img src={e.icon} alt="icon" />
