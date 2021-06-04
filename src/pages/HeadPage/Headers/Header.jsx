@@ -14,6 +14,7 @@ export const Header = (props) => {
     i18n.changeLanguage(lang);
   };
   const [folowign, setFolowign] = useState(false);
+  const [focusLanguge, setFocusLanguge] = useState(1);
   const [actives, setActives] = useState(false);
   return (
     <>
@@ -210,44 +211,40 @@ export const Header = (props) => {
               className={`mobile-menu__switcher-item active ${style.cursor_pointer}`}
               onClick={() => setFolowign(!folowign && true)}
             >
-              <div
-                className={`header__dropdown-selected ${
-                  folowign ? "active" : " "
-                }`}
-              >
-                {t("headers.header.languages.active_language")}
-              </div>
-              <div
-                className={`header__dropdown-list-wrap ${
-                  !folowign ? style.folowing_language : " "
-                }`}
-              >
-                <ul className="header__dropdown-list">
-                  <li className="header__dropdown-list-item">
-                    <button
-                      onClick={() => CangleLanguage("en")}
-                      className="mobile-menu__switcher-item"
-                    >
-                      EN
-                    </button>
-                  </li>
-                  <li className="header__dropdown-list-item">
-                    <button
-                      onClick={() => CangleLanguage("ru")}
-                      className="mobile-menu__switcher-item"
-                    >
-                      RU
-                    </button>
-                  </li>
-                  <li className="header__dropdown-list-item">
-                    <button
-                      onClick={() => CangleLanguage("tur")}
-                      className="mobile-menu__switcher-item"
-                    >
-                      TUR
-                    </button>
-                  </li>
-                </ul>
+              <div class="mobile-menu__switcher" style={{ marginTop: 40 }}>
+                <span class={`mobile-menu__switcher-item active`}>
+                  <button
+                    onClick={() => CangleLanguage("en")}
+                    className={`mobile-menu__switcher-item ${
+                      focusLanguge === 1 && "active"
+                    }`}
+                    onFocus={(e) => setFocusLanguge(1)}
+                  >
+                    EN
+                  </button>
+                </span>
+                <span class="mobile-menu__switcher-item active">
+                  <button
+                    onClick={() => CangleLanguage("ru")}
+                    className={`mobile-menu__switcher-item ${
+                      focusLanguge === 2 && "active"
+                    }`}
+                    onFocus={(e) => setFocusLanguge(2)}
+                  >
+                    RU
+                  </button>
+                </span>
+                <span class="mobile-menu__switcher-item active">
+                  <button
+                    onClick={() => CangleLanguage("tur")}
+                    className={`mobile-menu__switcher-item ${
+                      focusLanguge === 3 && "active"
+                    }`}
+                    onFocus={(e) => setFocusLanguge(3)}
+                  >
+                    TUR
+                  </button>
+                </span>
               </div>
             </span>
           </div>
