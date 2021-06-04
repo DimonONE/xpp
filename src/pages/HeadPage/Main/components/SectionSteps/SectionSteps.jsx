@@ -90,6 +90,7 @@ export const SectionSteps = (props) => {
               slidesPerView={1}
               speed={500}
               style={{ overflow: "visible" }}
+              autoHeight={true}
             >
               {localState.map((e) => (
                 <SwiperSlide

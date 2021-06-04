@@ -118,8 +118,8 @@ export const SectionNews = (props) => {
               {stateNews.dataAllNews.map(
                 (e) =>
                   e.id <= 3 && (
-                    <div>
-                      <div key={e.id} className={style.news_item}>
+                    <div key={e.id}>
+                      <div className={style.news_item}>
                         <span className={style.news_item__img}>
                           <img src={stateNews.ilonMask} alt="NoN" />
                         </span>
