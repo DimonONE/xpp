@@ -5,12 +5,11 @@
 }
 
 .news_nav .block {
-  width: 380px;
-  height: 138px;
   padding: 14px 0 17px 0;
   border: 1px solid #eee8e0;
   box-sizing: border-box;
 }
+
 .block_head {
   display: flex;
   justify-content: center;
@@ -47,7 +46,7 @@
 }
 .infos .sum {
   width: 60px;
-  height: 21px;
+  height: auto;
   font-family: Open Sans;
   font-weight: bold;
   margin-right: 3px;
@@ -142,7 +141,6 @@
   display: block;
 }
 .section_right .all_news.block {
-  width: 505px;
   height: 80px;
   background: #fef9f3;
 }
@@ -190,4 +188,115 @@
   font-size: 16px;
   line-height: 150%;
   color: #292f45;
+}
+
+@media (min-width: 10px) and (max-width: 1160px) {
+  .block_content .nav {
+    margin-left: 0px;
+    justify-content: space-around;
+  }
+  .block_content .nav .nav__item {
+    margin-right: 0px;
+  }
+
+  .contents {
+    padding: 45px;
+    display: block;
+  }
+  .section_left .big_img {
+    width: auto;
+    height: auto;
+  }
+  .section_left .big_img img {
+    width: 100%;
+    border-radius: 31px;
+  }
+  .items__info {
+    display: none;
+  }
+  .items__info_mobile {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .info .block_link {
+    margin-bottom: 38px;
+  }
+  .section_right .news_item {
+    margin-bottom: 5px;
+  }
+  .all_news_mobile {
+    margin: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .news_nav,
+  .section_right .news_item {
+    display: block;
+  }
+  .infos .valute {
+    width: auto;
+    font-size: 14px;
+  }
+
+  .infos .arrival {
+    height: 15px;
+    font-size: 11px;
+  }
+
+  .infos .sum {
+    width: 60px;
+    margin-right: 2px;
+  }
+
+  .block {
+    width: auto;
+    height: auto;
+    display: block;
+  }
+  .contents {
+    padding: 25px;
+  }
+  .section_right .news_item {
+    margin-bottom: 0px;
+  }
+  .items__info_mobile {
+    margin-top: -8px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 1040px) {
+  .news_nav {
+    display: block;
+  }
+  .block {
+    display: block;
+    width: auto;
+    height: 138px;
+  }
+  .infos {
+    margin-left: 0px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1140px) {
+  .news_nav {
+    display: flex;
+  }
+  .news_nav .block {
+    width: 380px;
+    height: 138px;
+    margin: 0;
+  }
+  .items__info_mobile {
+    display: none;
+  }
+  .section_right .all_news.block {
+    width: 505px;
+  }
 }
