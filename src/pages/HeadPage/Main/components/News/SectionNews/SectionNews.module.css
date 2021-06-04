@@ -22,7 +22,7 @@
 .block_head .head_text {
   width: 74px;
   height: 31px;
-  font-family: Play;
+  font-family: "Play";
   font-weight: bold;
   font-size: 22px;
   color: #223344;
@@ -39,7 +39,7 @@
 }
 
 .infos .valute {
-  font-family: Play;
+  font-family: "Play";
   font-weight: bold;
   margin-left: 6px;
   margin-right: 7px;
@@ -47,13 +47,15 @@
 .infos .sum {
   width: 60px;
   height: auto;
-  font-family: Open Sans;
+  font-family: "OpenSans";
+
   font-weight: bold;
   margin-right: 3px;
 }
 .infos .arrival {
   height: 18px;
-  font-family: Open Sans;
+  font-family: "OpenSans";
+
   font-weight: normal;
   font-size: 14px;
   color: #26a33a;
@@ -92,7 +94,8 @@
 }
 
 .block_content .section_left {
-  font-family: Open Sans;
+  font-family: "OpenSans";
+
   font-style: normal;
   font-weight: normal;
 }
@@ -136,7 +139,7 @@
 }
 
 .section_right {
-  font-family: Open Sans;
+  font-family: "OpenSans";
   font-style: normal;
   display: block;
 }
@@ -209,6 +212,7 @@
   }
   .section_left .big_img img {
     width: 100%;
+    height: auto;
     border-radius: 31px;
   }
   .items__info {
