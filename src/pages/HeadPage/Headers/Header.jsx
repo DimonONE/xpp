@@ -14,7 +14,7 @@ export const Header = (props) => {
     i18n.changeLanguage(lang);
   };
   const [folowign, setFolowign] = useState(false);
-  const [focusLanguge, setFocusLanguge] = useState(1);
+  const [focusLanguge, setFocusLanguge] = useState(2);
   const [actives, setActives] = useState(false);
   return (
     <>

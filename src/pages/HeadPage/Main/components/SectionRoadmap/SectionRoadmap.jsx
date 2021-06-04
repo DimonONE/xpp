@@ -4,12 +4,12 @@ import "../../../../../utils/i18next";
 
 import style from "./SectionRoadmap.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper/core";
+import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper/core";
 import "swiper/swiper-bundle.css";
 
 import { localState } from "./State";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 export const SectionRoadmap = (props) => {
   const { t } = useTranslation();
@@ -47,7 +47,7 @@ export const SectionRoadmap = (props) => {
                 ></path>
               </svg>
             </button>
-            <div className="roadmap__pagination "></div>
+            <div className="roadmap__pagination"></div>
             <button className="arrow arrow--next roadmap__arrow roadmap__arrow--next ">
               <svg
                 width="38"
@@ -76,6 +76,9 @@ export const SectionRoadmap = (props) => {
           pagination={{
             el: ".roadmap__pagination",
             clickable: "true",
+          }}
+          scrollbar={{
+            el: ".roadmap__scrollbar",
           }}
           breakpoints={{
             620: {
@@ -129,6 +132,7 @@ export const SectionRoadmap = (props) => {
               </SwiperSlide>
             ))}
           </div>
+          <div className={`roadmap__scrollbar`}></div>
         </Swiper>
       </div>
     </section>

@@ -34,9 +34,9 @@ export const Main = (props) => {
           <Element name="Up">
             <main id="sections" className="sections">
               <SectionCover />
-              <Element name="news">
+              {/* <Element name="news">
                 <SectionNews />
-              </Element>
+              </Element> */}
               <Element name="currency">
                 <SectionCurrency {...props} />
               </Element>
