@@ -88,6 +88,7 @@ export const SectionRoadmap = (props) => {
           }}
           spaceBetween={75}
           onSlideChange={() => setHidden(!hidden)}
+          autoHeight={true}
           style={{ overflow: "visible" }}
         >
           <div className="swiper-wrapper ">
