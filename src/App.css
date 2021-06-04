@@ -9032,7 +9032,7 @@ iframe.wait-autoplay {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(./fonts/OpenSans-SemiBold.woff) format("woff"),
+  src: local("Sans") url(./fonts/OpenSans-SemiBold.woff) format("woff"),
     url(./fonts/OpenSans-SemiBold.woff2) format("woff2");
 }
 @font-face {
