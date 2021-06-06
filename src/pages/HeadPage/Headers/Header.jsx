@@ -176,6 +176,11 @@ export const Header = (props) => {
                 onClick={() => setActives(false)}
                 to="currency"
                 className="mobile-menu__list-link"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+                delay={500}
               >
                 {t("headers.header.nav_bar.cryptocurrency")}
               </Link>
@@ -185,6 +190,11 @@ export const Header = (props) => {
                 onClick={() => setActives(false)}
                 to="guide"
                 className="mobile-menu__list-link"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+                delay={500}
               >
                 {t("headers.header.nav_bar.how_to_buy")}
               </Link>
@@ -197,6 +207,11 @@ export const Header = (props) => {
                 onClick={() => setActives(false)}
                 to="advantages"
                 className="mobile-menu__list-link"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+                delay={500}
               >
                 {t("headers.header.nav_bar.advantages")}
               </Link>
@@ -206,6 +221,11 @@ export const Header = (props) => {
                 onClick={() => setActives(false)}
                 to="tokenomics"
                 className="mobile-menu__list-link"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+                delay={500}
               >
                 {t("headers.header.nav_bar.tokenomics")}
               </Link>
