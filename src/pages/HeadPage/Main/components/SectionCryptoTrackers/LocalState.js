@@ -19,6 +19,13 @@ import media__item_img_18 from "../../../../../img/media__item-img-18.png";
 import media__item_img_19 from "../../../../../img/media__item-img-19.png";
 import media__item_img_20 from "../../../../../img/media__item-img-20.png";
 import media__item_img_21 from "../../../../../img/media__item-img-21.png";
+import tracker__item_img_22 from "../../../../../img/trackera__item-img-22.png";
+import tracker__item_img_23 from "../../../../../img/trackera__item-img-23.png";
+import tracker__item_img_24 from "../../../../../img/trackera__item-img-24.png";
+import tracker__item_img_25 from "../../../../../img/trackera__item-img-25.png";
+import tracker__item_img_26 from "../../../../../img/trackera__item-img-26.png";
+import tracker__item_img_27 from "../../../../../img/trackera__item-img-27.png";
+import tracker__item_img_28 from "../../../../../img/trackera__item-img-28.png";
 
 import { createGlobalState } from "react-hooks-global-state";
 
@@ -27,144 +34,186 @@ const initialState = {
     {
       id: 1,
       delay: 100,
-      link: "https://finance.yahoo.com/news/xx-platform-advanced-trading-platform-174500642.html?.tsrc=fin-srch",
+      link: "https://www.coingecko.com/en/coins/xx-platform",
       icon: media__item_img_1,
     },
 
     {
       id: 2,
       delay: 200,
-      link: "https://www.benzinga.com/pressreleases/21/02/ac19568881/xx-platform-an-advanced-trading-platform-for-investors-and-stakers",
+      link: "https://coinpaprika.com/coin/xxp-xx-platform",
       icon: media__item_img_2,
     },
 
     {
       id: 3,
       delay: 300,
-      link: "http://www.digitaljournal.com/pr/4968984",
+      link: "https://coincodex.com/crypto/xx-platform/",
       icon: media__item_img_3,
     },
 
     {
       id: 4,
       delay: 400,
-      link: "https://icoholder.com/blog/safe-investments-myth-or-reality/",
+      link: "https://www.livecoinwatch.com/price/XXPlatform-XXP",
       icon: media__item_img_4,
     },
 
     {
       id: 5,
       delay: 500,
-      link: "https://www.lelezard.com/en/news-19642322.html",
+      link: "https://coinranking.com/coin/puao0rdQA+xxplatform-xxp",
       icon: media__item_img_5,
     },
 
     {
       id: 6,
       delay: 600,
-      link: "https://www.accesswire.com/628745/XX-Platform-An-Advanced-Trading-Platform-for-Investors-and-Stakers",
+      link: "https://coincheckup.com/coins/xx-platform",
       icon: media__item_img_6,
     },
 
     {
       id: 7,
       delay: 100,
-      link: "https://aboutyourmag.info/2021/02/09/xx-platform-an-advanced-trading-platform-for-investors-and-stakers-about-your-online-magazine/",
+      link: "https://coinlib.io/coin/XXP/XX+Platform",
       icon: media__item_img_7,
     },
 
     {
       id: 8,
       delay: 200,
-      link: "http://markets.post-gazette.com/postgazette/news/read/40966765/xx_platform_an_advanced_trading_platform_for_investors_and_stakers",
+      link: "https://coinpare.io/coin/xxp-xx-platform",
       icon: media__item_img_8,
     },
 
     {
       id: 9,
       delay: 300,
-      link: "https://apnews.com/press-release/accesswire/technology-business-financial-technology-deflation-computer-and-data-security-1a7cb1537d834cb8e179bb0bf0a9ab39",
+      link: "https://foundico.com/ru/ico/xx-platform.html",
       icon: media__item_img_9,
     },
 
     {
       id: 10,
       delay: 400,
-      link: "https://cryptoshib.com/xx-platform-advanced-trading/",
+      link: "https://icolink.com/ico-xx-platform.html",
       icon: media__item_img_10,
     },
 
     {
       id: 11,
       delay: 500,
-      link: "https://crymarket.org/2021/02/09/xx-platform-an-advanced-trading-platform-for-investors-and-stakers/",
+      link: "https://icolink.com/ico-xx-platform.html",
       icon: media__item_img_11,
     },
 
     {
       id: 12,
       delay: 600,
-      link: "http://markets.financialcontent.com/streetinsider/news/read/40966765",
+      link: "https://coincost.net/ru/currency/xx-platform",
       icon: media__item_img_12,
     },
 
     {
       id: 13,
       delay: 100,
-      link: "http://markets.financialcontent.com/startribune/news/read/40966765/XX_Platform_An_Advanced_Trading_Platform_for_Investors_and_Stakers",
+      link: "https://coindar.org/ru/coin/xx-platform",
       icon: media__item_img_13,
     },
 
     {
       id: 14,
       delay: 200,
-      link: "https://markets.financialcontent.com/ibtimes/news/read/40966765",
+      link: "https://coinmarketcal.com/ru/coin/xx-platform",
       icon: media__item_img_14,
     },
 
     {
       id: 15,
       delay: 300,
-      link: "https://markets.financialcontent.com/bostonherald/news/read/40966765",
+      link: "https://cryptonews.com/coins/xxp-xx-platform/",
       icon: media__item_img_15,
     },
 
     {
       id: 16,
       delay: 400,
-      link: "http://business.theantlersamerican.com/theantlersamerican/news/read/40966765/XX_Platform_An_Advanced_Trading_Platform_for_Investors_and_Stakers",
+      link: "https://coindataflow.com/en/currency/xx-platform",
       icon: media__item_img_16,
     },
 
     {
       id: 17,
       delay: 500,
-      link: "http://business.dailytimesleader.com/dailytimesleader/news/read/40966765/XX_Platform_An_Advanced_Trading_Platform_for_Investors_and_Stakers",
+      link: "https://www.bankomatfinder.at/fi/kryptowaehrungen/xx-platform",
       icon: media__item_img_17,
     },
     {
       id: 18,
       delay: 500,
-      link: "#",
+      link: "https://cryptopro.app/price/xx-platform/",
       icon: media__item_img_18,
     },
     {
       id: 19,
       delay: 500,
-      link: "#",
+      link: "https://nomics.com/assets/xxp-xx-platform",
       icon: media__item_img_19,
     },
     {
       id: 20,
       delay: 500,
-      link: "#",
+      link: "https://coincost.icu/en/crypto-ico/xx-platform",
       icon: media__item_img_20,
     },
     {
       id: 21,
       delay: 500,
-      link: "#",
+      link: "https://cryptfolio.com/currencies/xxp",
       icon: media__item_img_21,
+    },
+    {
+      id: 22,
+      delay: 500,
+      link: "https://www.hotbit.io/exchange?symbol=XXP_BTC",
+      icon: tracker__item_img_22,
+    },
+    {
+      id: 23,
+      delay: 500,
+      link: "https://www.hotbit.io/exchange?symbol=XXP_USDT",
+      icon: tracker__item_img_23,
+    },
+    {
+      id: 24,
+      delay: 500,
+      link: "https://crex24.com/ru/exchange/XXP-USDT",
+      icon: tracker__item_img_24,
+    },
+    {
+      id: 25,
+      delay: 500,
+      link: "https://thehedger.ru/xx-platform",
+      icon: tracker__item_img_25,
+    },
+    {
+      id: 26,
+      delay: 500,
+      link: "https://blockspot.io/coin/xx-platform/",
+      icon: tracker__item_img_26,
+    },
+    {
+      id: 27,
+      delay: 500,
+      link: "https://athcoinindex.com/coin/xx-platform",
+      icon: tracker__item_img_27,
+    },
+    {
+      id: 28,
+      delay: 500,
+      link: "https://coincap.icu/ru/crypto-ico/xx-platform",
+      icon: tracker__item_img_28,
     },
   ],
 };

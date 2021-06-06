@@ -57,6 +57,7 @@ export const SectionCryptoTrackers = (props) => {
               420: { slidesPerView: 3, spaceBetween: 40 },
               300: { slidesPerView: 2, spaceBetween: 20 },
             }}
+            loop={true}
           >
             {listElements.map((e) => (
               <SwiperSlide
