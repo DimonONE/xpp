@@ -14,7 +14,6 @@ SwiperCore.use([Navigation, Pagination, Scrollbar]);
 export const SectionRoadmap = (props) => {
   const { t } = useTranslation();
   const [hidden, setHidden] = useState(true);
-
   return (
     <section className="section roadmap">
       <div className="container roadmap__container">
@@ -112,16 +111,12 @@ export const SectionRoadmap = (props) => {
                   <div className="roadmap__slider-item-label">
                     {t(`section_roadmap.block_${e.id}.head`)}
                   </div>
-                  <ul
-                    className={`roadmap__slider-item-list ${
-                      e.id === 1 ? style.line_through : ""
-                    }`}
-                  >
+                  <ul className={`roadmap__slider-item-list`}>
                     {e.texts.map((c) => (
                       <li
                         key={c.id}
                         className={`roadmap__slider-item-list-item ${
-                          e.id === 2 && c.id === 1 ? style.line_through : ""
+                          c.isСrossed === true ? style.line_through : ""
                         }`}
                       >
                         {t(`section_roadmap.block_${e.id}.item_${c.id}`)}

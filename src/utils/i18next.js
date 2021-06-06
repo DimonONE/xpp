@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "ru",
+    fallbackLng: ["ru", "en", "tur"],
     whitelist: ["ru", "en", "tur"],
     detection: {
       order: ["localStorage", "cookie"],
