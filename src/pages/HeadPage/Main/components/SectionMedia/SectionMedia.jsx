@@ -5,17 +5,17 @@ import "../../../../../utils/i18next";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
-  Navigation,
   Pagination,
   EffectFade,
   Scrollbar,
+  Mousewheel,
 } from "swiper/core";
 import "swiper/swiper-bundle.css";
 
 import { Fade } from "react-awesome-reveal";
 import { useGlobalState } from "./LocalState.js";
 
-SwiperCore.use([Pagination, Scrollbar, EffectFade]);
+SwiperCore.use([Pagination, Scrollbar, Mousewheel, EffectFade]);
 
 export const SectionMedia = (props) => {
   const { t } = useTranslation();
@@ -44,6 +44,9 @@ export const SectionMedia = (props) => {
           }}
           spaceBetween={75}
           autoHeight={true}
+          mousewheel={{
+            sensitivity: 1,
+          }}
         >
           <div className="swiper-wrapper ">
             {listElements.map((e) => (
