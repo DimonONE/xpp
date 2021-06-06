@@ -13107,6 +13107,27 @@ a:hover {
     justify-content: flex-start;
   }
 }
+
+.roadmap__scrollbar,
+.media__pagination {
+  display: block;
+  margin-top: 32px;
+  height: 2px;
+  border-radius: 1px;
+  background: #ffe9d8;
+}
+
+.roadmap__scrollbar .swiper-scrollbar-drag,
+.media__pagination .swiper-scrollbar-drag {
+  height: 2px;
+  border-radius: 1px;
+  background-color: #ff8225;
+}
+
+.roadmap__scrollbar {
+  display: none;
+}
+
 @media (max-width: 767.98px) {
   .roadmap__header {
     margin-bottom: 35px;
@@ -13117,17 +13138,13 @@ a:hover {
   .roadmap__slider-item {
     height: auto;
   }
-  .roadmap__scrollbar {
+  .roadmap__scrollbar,
+  .media__pagination {
     display: block;
     margin-top: 32px;
     height: 2px;
     border-radius: 1px;
     background: #ffe9d8;
-  }
-  .roadmap__scrollbar .swiper-scrollbar-drag {
-    height: 2px;
-    border-radius: 1px;
-    background-color: #ff8225;
   }
 }
 @media (max-width: 767.98px) {
