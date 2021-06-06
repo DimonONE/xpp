@@ -35,10 +35,12 @@ export const Header = (props) => {
             </button>
             <Link
               to="Up"
+              className={`header__logo ${style.cursor_pointer}`}
               spy={true}
               smooth={true}
-              duration={500}
-              className={`header__logo ${style.cursor_pointer}`}
+              offset={50}
+              duration={1000}
+              delay={500}
             >
               <img
                 src={logo_svg}
@@ -51,10 +53,12 @@ export const Header = (props) => {
                 <li className="header__nav-list-item">
                   <Link
                     to="currency"
+                    className={`header__nav-link ${style.cursor_pointer}`}
                     spy={true}
                     smooth={true}
-                    duration={500}
-                    className={`header__nav-link ${style.cursor_pointer}`}
+                    offset={50}
+                    duration={1000}
+                    delay={500}
                   >
                     {t("headers.header.nav_bar.cryptocurrency")}
                   </Link>
@@ -62,10 +66,12 @@ export const Header = (props) => {
                 <li className="header__nav-list-item">
                   <Link
                     to="guide"
+                    className={`header__nav-link ${style.cursor_pointer}`}
                     spy={true}
                     smooth={true}
-                    duration={500}
-                    className={`header__nav-link ${style.cursor_pointer}`}
+                    offset={50}
+                    duration={1000}
+                    delay={500}
                   >
                     {t("headers.header.nav_bar.how_to_buy")}
                   </Link>
@@ -73,10 +79,12 @@ export const Header = (props) => {
                 <li className="header__nav-list-item">
                   <Link
                     to="advantages"
+                    className={`header__nav-link ${style.cursor_pointer}`}
                     spy={true}
                     smooth={true}
-                    duration={500}
-                    className={`header__nav-link ${style.cursor_pointer}`}
+                    offset={50}
+                    duration={1000}
+                    delay={500}
                   >
                     {t("headers.header.nav_bar.advantages")}
                   </Link>
@@ -84,10 +92,12 @@ export const Header = (props) => {
                 <li className="header__nav-list-item">
                   <Link
                     to="tokenomics"
+                    className={`header__nav-link ${style.cursor_pointer}`}
                     spy={true}
                     smooth={true}
-                    duration={500}
-                    className={`header__nav-link ${style.cursor_pointer}`}
+                    offset={50}
+                    duration={1000}
+                    delay={500}
                   >
                     {t("headers.header.nav_bar.tokenomics")}
                   </Link>
@@ -95,10 +105,12 @@ export const Header = (props) => {
                 <li className="header__nav-list-item">
                   <Link
                     to="team"
+                    className={`header__nav-link ${style.cursor_pointer}`}
                     spy={true}
                     smooth={true}
-                    duration={500}
-                    className={`header__nav-link ${style.cursor_pointer}`}
+                    offset={50}
+                    duration={1000}
+                    delay={500}
                   >
                     {t("headers.header.nav_bar.team")}
                   </Link>
