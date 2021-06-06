@@ -45,7 +45,7 @@ export const SectionMedia = (props) => {
           spaceBetween={75}
           autoHeight={true}
           mousewheel={{
-            sensitivity: 1,
+            sensitivity: 3,
           }}
         >
           <div className="swiper-wrapper ">
