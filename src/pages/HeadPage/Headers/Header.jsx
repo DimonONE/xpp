@@ -103,14 +103,14 @@ export const Header = (props) => {
                     {t("headers.header.nav_bar.team")}
                   </Link>
                 </li>
-                <li className="header__nav-list-item">
+                {/* <li className="header__nav-list-item">
                   <NavLink
                     to="/news"
                     className={`header__nav-link ${style.cursor_pointer}`}
                   >
                     {t("headers.header.nav_bar.news")}
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </nav>
             <span
@@ -129,7 +129,7 @@ export const Header = (props) => {
                   !folowign ? style.folowing_language : " "
                 }`}
               >
-                <ul className="header__dropdown-list">
+                <ul className={`header__dropdown-list ${style.lng_list}`}>
                   <li className="header__dropdown-list-item">
                     <button
                       onClick={() => CangleLanguage("en")}
@@ -169,52 +169,79 @@ export const Header = (props) => {
       </header>
 
       <div className={`mobile-menu ${actives ? "active" : ""}`}>
-        <div className="container mobile-menu__container">
+        <span className="container mobile-menu__container">
           <ul className="mobile-menu__list">
             <li className="mobile-menu__list-item">
-              <Link to="currency" className="mobile-menu__list-link">
+              <Link
+                onClick={() => setActives(false)}
+                to="currency"
+                className="mobile-menu__list-link"
+              >
                 {t("headers.header.nav_bar.cryptocurrency")}
               </Link>
             </li>
             <li className="mobile-menu__list-item">
-              <Link to="guide" className="mobile-menu__list-link">
+              <Link
+                onClick={() => setActives(false)}
+                to="guide"
+                className="mobile-menu__list-link"
+              >
                 {t("headers.header.nav_bar.how_to_buy")}
               </Link>
             </li>
-            <li className="mobile-menu__list-item">
-              <Link to="advantages" className="mobile-menu__list-link">
+            <li
+              onClick={() => setActives(false)}
+              className="mobile-menu__list-item"
+            >
+              <Link
+                onClick={() => setActives(false)}
+                to="advantages"
+                className="mobile-menu__list-link"
+              >
                 {t("headers.header.nav_bar.advantages")}
               </Link>
             </li>
             <li className="mobile-menu__list-item">
               <Link
-                to="Tokenomics"
-                data-href="tokenomics"
+                onClick={() => setActives(false)}
+                to="tokenomics"
                 className="mobile-menu__list-link"
               >
                 {t("headers.header.nav_bar.tokenomics")}
               </Link>
             </li>
             <li className="mobile-menu__list-item">
-              <Link to="team" className="mobile-menu__list-link">
+              <Link
+                onClick={() => setActives(false)}
+                to="team"
+                className="mobile-menu__list-link"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000}
+                delay={500}
+              >
                 {t("headers.header.nav_bar.team")}
               </Link>
             </li>
-            <li className="header__nav-list-item">
+            {/* <li className="header__nav-list-item">
               <NavLink to="/news" className={`${style.cursor_pointer}`}>
                 {t("headers.header.nav_bar.news")}
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           <div className="mobile-menu__switcher">
             <span
               className={`mobile-menu__switcher-item active ${style.cursor_pointer}`}
               onClick={() => setFolowign(!folowign && true)}
             >
-              <div class="mobile-menu__switcher" style={{ marginTop: 40 }}>
-                <span class={`mobile-menu__switcher-item active`}>
+              <div className="mobile-menu__switcher" style={{ marginTop: 40 }}>
+                <span className={`mobile-menu__switcher-item active`}>
                   <button
-                    onClick={() => CangleLanguage("en")}
+                    onClick={() => {
+                      CangleLanguage("en");
+                      setActives(false);
+                    }}
                     className={`mobile-menu__switcher-item ${
                       focusLanguge === 1 && "active"
                     }`}
@@ -223,9 +250,12 @@ export const Header = (props) => {
                     EN
                   </button>
                 </span>
-                <span class="mobile-menu__switcher-item active">
+                <span className="mobile-menu__switcher-item active">
                   <button
-                    onClick={() => CangleLanguage("ru")}
+                    onClick={() => {
+                      CangleLanguage("ru");
+                      setActives(false);
+                    }}
                     className={`mobile-menu__switcher-item ${
                       focusLanguge === 2 && "active"
                     }`}
@@ -234,9 +264,12 @@ export const Header = (props) => {
                     RU
                   </button>
                 </span>
-                <span class="mobile-menu__switcher-item active">
+                <span className="mobile-menu__switcher-item active">
                   <button
-                    onClick={() => CangleLanguage("tur")}
+                    onClick={() => {
+                      CangleLanguage("tur");
+                      setActives(false);
+                    }}
                     className={`mobile-menu__switcher-item ${
                       focusLanguge === 3 && "active"
                     }`}
@@ -248,7 +281,7 @@ export const Header = (props) => {
               </div>
             </span>
           </div>
-        </div>
+        </span>
       </div>
     </>
   );
