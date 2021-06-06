@@ -533,7 +533,14 @@
         "media_item_18": "Cryptopro",
         "media_item_19": "Nomics",
         "media_item_20": "Coincost",
-        "media_item_21": "Cryptfolio"
+        "media_item_21": "Cryptfolio",
+        "media_item_22": "Cryptoinzicht",
+        "media_item_23": "Coingolive",
+        "media_item_24": "Bitcademy",
+        "media_item_25": "Thehedger",
+        "media_item_26": "Blockspot",
+        "media_item_27": "Athcoinindex",
+        "media_item_28": "Coincap"
     },
     "section_media": {
         "header": "Mass media",
