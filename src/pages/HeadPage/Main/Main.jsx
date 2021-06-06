@@ -10,6 +10,7 @@ import { SectionDelegates } from "./components/SectionDelegates/SectionDelegates
 import { SectionFounder } from "./components/SectionFounder/SectionFounder";
 import { SectionGuide } from "./components/SectionGuide/SectionGuide";
 import { SectionMedia } from "./components/SectionMedia/SectionMedia";
+import { SectionCryptoTrackers } from "./components/SectionCryptoTrackers/SectionCryptoTrackers";
 import { SectionNews } from "./components/News/SectionNews/SectionNews";
 import { SectionRoadmap } from "./components/SectionRoadmap/SectionRoadmap";
 import { SectionRounds } from "./components/SectionRounds/SectionRounds";
@@ -59,6 +60,7 @@ export const Main = (props) => {
               </Element>
               <SectionRounds />
               <SectionDelegates />
+              <SectionCryptoTrackers />
               <SectionMedia />
             </main>
           </Element>
