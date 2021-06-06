@@ -512,7 +512,7 @@
         },
         "delegates_img_text": "Делегат, являясь создателем своего стейкинг-пула, имеет право самостоятельно устанавливать размер комиссий с выплат, процент которых может варьироваться от 1% до 10%."
     },
-    "section_media": {
+    "section_crypto_trackers": {
         "header": "Криптотрекеры",
         "media_item_1": "Coingecko",
         "media_item_2": "Coinpaprika",
@@ -535,6 +535,30 @@
         "media_item_19": "Nomics",
         "media_item_20": "Coincost",
         "media_item_21": "Cryptfolio"
+    },
+    "section_media": {
+        "header": "СМИ о нас",
+        "media_item_1": "Читать",
+        "media_item_2": "Читать",
+        "media_item_3": "Читать",
+        "media_item_4": "Читать",
+        "media_item_5": "Читать",
+        "media_item_6": "Читать",
+        "media_item_7": "Читать",
+        "media_item_8": "Читать",
+        "media_item_9": "Читать",
+        "media_item_10": "Читать",
+        "media_item_11": "Читать",
+        "media_item_12": "Читать",
+        "media_item_13": "Читать",
+        "media_item_14": "Читать",
+        "media_item_15": "Читать",
+        "media_item_16": "Читать",
+        "media_item_17": "Читать",
+        "media_item_18": "Читать",
+        "media_item_19": "Читать",
+        "media_item_20": "Читать",
+        "media_item_21": "Читать"
     },
     "footer": {
         "footer_link_1": "Web-wallet",

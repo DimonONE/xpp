@@ -511,7 +511,7 @@
         },
         "delegates_img_text": "The Delegate, being the creator of his staking pool, has the right to independently set the size of commissions on payments, the percentage of which can vary from 1% to 10%."
     },
-    "section_media": {
+    "section_crypto_trackers": {
         "header": "Crypto trackers",
         "media_item_1": "Coingecko",
         "media_item_2": "Coinpaprika",
@@ -534,6 +534,30 @@
         "media_item_19": "Nomics",
         "media_item_20": "Coincost",
         "media_item_21": "Cryptfolio"
+    },
+    "section_media": {
+        "header": "Mass media",
+        "media_item_1": "Read",
+        "media_item_2": "Read",
+        "media_item_3": "Read",
+        "media_item_4": "Read",
+        "media_item_5": "Read",
+        "media_item_6": "Read",
+        "media_item_7": "Read",
+        "media_item_8": "Read",
+        "media_item_9": "Read",
+        "media_item_10": "Read",
+        "media_item_11": "Read",
+        "media_item_12": "Read",
+        "media_item_13": "Read",
+        "media_item_14": "Read",
+        "media_item_15": "Read",
+        "media_item_16": "Read",
+        "media_item_17": "Read",
+        "media_item_18": "Read",
+        "media_item_19": "Read",
+        "media_item_20": "Read",
+        "media_item_21": "Read"
     },
     "footer": {
         "footer_link_1": "Web-wallet",
