@@ -71,7 +71,11 @@ export const SectionCryptoTrackers = (props) => {
                   </div>
                 </div>
 
-                <a href={e.link} className={`media__item-link `}>
+                <a
+                  href={e.link}
+                  className={`media__item-link `}
+                  target="_blank"
+                >
                   {t(`section_crypto_trackers.media_item_${e.id}`)}
                 </a>
               </SwiperSlide>

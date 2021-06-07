@@ -29,12 +29,14 @@ export const SectionCover = (props) => {
                 <a
                   href="https://wallet.xxp.group/buy"
                   className="btn cover__btn"
+                  target="_blank"
                 >
                   {t("section_cover.buttons.buy")}
                 </a>
                 <a
                   href="https://wallet.xxp.group/"
                   className="btn btn--bg-beige cover__btn"
+                  target="_blank"
                 >
                   {t("section_cover.buttons.wallet")}
                 </a>

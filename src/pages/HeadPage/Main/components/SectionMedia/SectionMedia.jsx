@@ -61,7 +61,11 @@ export const SectionMedia = (props) => {
                   </div>
                 </div>
 
-                <a href={e.link} className={`media__item-link `}>
+                <a
+                  href={e.link}
+                  className={`media__item-link `}
+                  target="_blank"
+                >
                   {t(`section_media.media_item_${e.id}`)}
                 </a>
               </SwiperSlide>
