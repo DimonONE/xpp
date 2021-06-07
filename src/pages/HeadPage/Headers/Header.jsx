@@ -16,6 +16,7 @@ export const Header = (props) => {
   const [folowign, setFolowign] = useState(false);
   const [focusLanguge, setFocusLanguge] = useState(2);
   const [actives, setActives] = useState(false);
+  let listLanguage = ["EN", "RU", "TUR"];
   return (
     <>
       <header
@@ -142,30 +143,19 @@ export const Header = (props) => {
                 }`}
               >
                 <ul className={`header__dropdown-list ${style.lng_list}`}>
-                  <li className="header__dropdown-list-item">
-                    <button
-                      onClick={() => CangleLanguage("en")}
-                      className="header__dropdown-link"
-                    >
-                      EN
-                    </button>
-                  </li>
-                  <li className="header__dropdown-list-item">
-                    <button
-                      onClick={() => CangleLanguage("ru")}
-                      className="header__dropdown-link"
-                    >
-                      RU
-                    </button>
-                  </li>
-                  <li className="header__dropdown-list-item">
-                    <button
-                      onClick={() => CangleLanguage("tur")}
-                      className="header__dropdown-link"
-                    >
-                      TUR
-                    </button>
-                  </li>
+                  {listLanguage.map(
+                    (i) =>
+                      i !== t("headers.header.languages.active_language") && (
+                        <li key={i} className="header__dropdown-list-item">
+                          <button
+                            onClick={() => CangleLanguage(i.toLowerCase())}
+                            className="header__dropdown-link"
+                          >
+                            {i}
+                          </button>
+                        </li>
+                      )
+                  )}
                 </ul>
               </div>
             </span>
