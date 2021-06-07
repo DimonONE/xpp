@@ -32,7 +32,7 @@ export const Main = (props) => {
           <PageNews />
         </Route>
         <Route path="/">
-          <Element name="Up">
+          <Element name="head">
             <main id="sections" className="sections">
               <SectionCover />
               {/* <Element name="news">

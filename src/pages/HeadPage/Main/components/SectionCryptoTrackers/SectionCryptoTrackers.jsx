@@ -75,6 +75,7 @@ export const SectionCryptoTrackers = (props) => {
                   href={e.link}
                   className={`media__item-link `}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   {t(`section_crypto_trackers.media_item_${e.id}`)}
                 </a>
