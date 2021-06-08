@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../SectionCryptoTrackers/SectionCryptoTrackers.module.css";
+import style from "./SectionMedia.module.css";
 import { useTranslation } from "react-i18next";
 import "../../../../../utils/i18next";
 
@@ -38,11 +38,10 @@ export const SectionMedia = (props) => {
           }}
           breakpoints={{
             900: { slidesPerView: 6, spaceBetween: 60 },
-            600: { slidesPerView: 4, spaceBetween: 40 },
-            420: { slidesPerView: 3, spaceBetween: 40 },
-            300: { slidesPerView: 2, spaceBetween: 20 },
+            600: { slidesPerView: 6, spaceBetween: 40 },
+            420: { slidesPerView: 3.5, spaceBetween: 20 },
+            300: { slidesPerView: 3.5, spaceBetween: 10 },
           }}
-          spaceBetween={75}
           autoHeight={true}
           mousewheel={{
             sensitivity: 3,
@@ -53,11 +52,11 @@ export const SectionMedia = (props) => {
               <SwiperSlide
                 key={e.id}
                 className={`${style.block_icon}`}
-                style={{ height: 205 }}
+                // style={{ height: 185 }}
               >
                 <div className={`${style.block_icon__position}`}>
                   <div className={`${style.width_icons}`}>
-                    <img src={e.icon} alt="icon" />
+                    <img src={e.icon} alt="icon" className={`${style.icon}`} />
                   </div>
                 </div>
 

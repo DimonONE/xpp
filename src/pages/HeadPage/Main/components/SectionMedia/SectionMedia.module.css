@@ -1,0 +1,36 @@
+.tokenomics__chart_info_icon {
+  background-image: url(../../../../../img/tokenomics__chart-info-icon.svg);
+}
+@media (min-width: 600px) {
+  .tokenomics__container {
+    padding-left: 45px;
+  }
+}
+.block_icon {
+  padding: auto;
+  align-items: center;
+  text-align: center;
+}
+.block_icon__position {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .block_icon__position {
+    max-width: 100px;
+    max-height: 80px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .block_icon {
+    padding: auto;
+  }
+
+  .width_icons .icon {
+    width: 100%;
+  }
+}

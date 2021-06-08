@@ -63,17 +63,17 @@ export const SectionCryptoTrackers = (props) => {
               <SwiperSlide
                 key={e.id}
                 className={`${style.block_icon}`}
-                style={{ height: 205 }}
+                style={{ height: 185 }}
               >
                 <div className={`${style.block_icon__position}`}>
                   <div className={`${style.width_icons}`}>
-                    <img src={e.icon} alt="icon" />
+                    <img src={e.icon} alt="icon" className={`${style.icon}`} />
                   </div>
                 </div>
 
                 <a
                   href={e.link}
-                  className={`media__item-link `}
+                  className={`media__item-link ${style.link}`}
                   target="_blank"
                   rel="noreferrer"
                 >
