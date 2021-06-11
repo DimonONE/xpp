@@ -6,7 +6,6 @@ import style from "./Header.module.css";
 import { Link } from "react-scroll";
 
 import logo_svg from "../../../img/logo.svg";
-import { NavLink } from "react-router-dom";
 
 export const Header = (props) => {
   const { t, i18n } = useTranslation();
@@ -16,7 +15,11 @@ export const Header = (props) => {
   const [folowign, setFolowign] = useState(false);
   const [focusLanguge, setFocusLanguge] = useState(2);
   const [actives, setActives] = useState(false);
-  let listLanguage = ["EN", "RU", "TUR"];
+  let listLanguage = [
+    { id: 1, lng: "EN" },
+    { id: 2, lng: "RU" },
+    { id: 3, lng: "TUR" },
+  ];
   return (
     <>
       <header
@@ -132,13 +135,17 @@ export const Header = (props) => {
                 <ul className={`header__dropdown-list ${style.lng_list}`}>
                   {listLanguage.map(
                     (i) =>
-                      i !== t("headers.header.languages.active_language") && (
-                        <li key={i} className="header__dropdown-list-item">
+                      i.lng !==
+                        t("headers.header.languages.active_language") && (
+                        <li key={i.id} className="header__dropdown-list-item">
                           <button
-                            onClick={() => CangleLanguage(i.toLowerCase())}
+                            onClick={() => {
+                              CangleLanguage(i.lng.toLowerCase());
+                              setFocusLanguge(i.id);
+                            }}
                             className="header__dropdown-link"
                           >
-                            {i}
+                            {i.lng}
                           </button>
                         </li>
                       )
@@ -228,7 +235,6 @@ export const Header = (props) => {
           <div className="mobile-menu__switcher">
             <span
               className={`mobile-menu__switcher-item active ${style.cursor_pointer}`}
-              onClick={() => setFolowign(!folowign && true)}
             >
               <div className="mobile-menu__switcher" style={{ marginTop: 40 }}>
                 <span className={`mobile-menu__switcher-item active`}>

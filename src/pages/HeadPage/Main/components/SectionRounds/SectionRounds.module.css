@@ -2,6 +2,10 @@
   width: 0%;
   animation: widthFrom 2.5s ease-in-out 1;
 }
+.widthFrom0to100_2 {
+  width: 0%;
+  animation: widthFrom 2.9s ease-in-out 1;
+}
 
 .head_status_completed {
   font-size: 2em;
@@ -16,6 +20,7 @@
   }
 }
 
-.widthFrom0to100 {
+.widthFrom0to100,
+widthFrom0to100_2 {
   width: 1000%;
 }

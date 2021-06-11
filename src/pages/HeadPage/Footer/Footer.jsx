@@ -9,6 +9,7 @@ import style from "./Footer.module.css";
 import logo_footer from "../../../img/logo-footer.svg";
 import policy_en__pdf from "../../../PDF/policy_en.pdf";
 import paper_en_pdf from "../../../PDF/paper_en.pdf";
+import paper_tur_pdf from "../../../PDF/paper_tur.pdf";
 import policy_ru__pdf from "../../../PDF/policy_ru.pdf";
 import paper_ru_pdf from "../../../PDF/paper_ru.pdf";
 
@@ -49,7 +50,11 @@ export const Footer = (props) => {
                 {t("footer.footer_link_1")}
               </a>
               <a
-                href={t("footer.lng") === "ru" ? paper_ru_pdf : paper_en_pdf}
+                href={
+                  (t("footer.lng") === "ru" && paper_ru_pdf) ||
+                  (t("footer.lng") === "tur" && paper_tur_pdf) ||
+                  (t("footer.lng") === "en" && paper_en_pdf)
+                }
                 className="footer__link"
                 target="_blank"
                 rel="noreferrer"

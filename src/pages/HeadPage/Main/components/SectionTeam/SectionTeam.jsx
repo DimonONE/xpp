@@ -53,7 +53,7 @@ export const SectionTeam = (props) => {
             <div className="row">
               <div className="col-6 team__item-wrap wow">
                 <Fade direction="right" triggerOnce="true" delay={100}>
-                  <a href={"/"} className="team__item">
+                  <div className="team__item">
                     <div className="team__item-img-wrap">
                       <img
                         src={team__item_img_2}
@@ -67,7 +67,7 @@ export const SectionTeam = (props) => {
                     <div className="team__item-text">
                       {t("section_team.item_1.p")}
                     </div>
-                  </a>
+                  </div>
                 </Fade>
               </div>
               <div className="col-6 team__item-wrap wow">

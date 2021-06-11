@@ -10,7 +10,7 @@ import { SectionDelegates } from "./components/SectionDelegates/SectionDelegates
 import { SectionFounder } from "./components/SectionFounder/SectionFounder";
 import { SectionMedia } from "./components/SectionMedia/SectionMedia";
 import { SectionCryptoTrackers } from "./components/SectionCryptoTrackers/SectionCryptoTrackers";
-import { SectionNews } from "./components/News/SectionNews/SectionNews";
+// import { SectionNews } from "./components/News/SectionNews/SectionNews";
 import { SectionRoadmap } from "./components/SectionRoadmap/SectionRoadmap";
 import { SectionRounds } from "./components/SectionRounds/SectionRounds";
 import { SectionSteps } from "./components/SectionSteps/SectionSteps";

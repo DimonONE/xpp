@@ -103,7 +103,9 @@ export const SectionRounds = (props) => {
               </div>
               <div className="rounds__info-item-progress">
                 <div
-                  className="rounds__info-item-progress-line wow animate__animated widthFrom0to60"
+                  className={`rounds__info-item-progress-line wow animate__animated widthFrom0to60 ${
+                    isAnimation ? style.widthFrom0to100_2 : ""
+                  }`}
                   style={{ width: "100%" }}
                 ></div>
               </div>
