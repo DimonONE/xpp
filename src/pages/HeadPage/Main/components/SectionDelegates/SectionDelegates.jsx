@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import "../../../../../utils/i18next";
 
@@ -15,7 +15,6 @@ import delegates__img from "../../../../../img/delegates__img.png";
 
 export const SectionDelegates = (props) => {
   const { t } = useTranslation();
-  const [folowing, setFolowing] = useState(false);
   return (
     <section className="section delegates">
       <div className="container delegates__container">
@@ -39,18 +38,8 @@ export const SectionDelegates = (props) => {
             <div className="delegates__cards" data-mobile-tabs>
               <Fade direction="left" delay={400} triggerOnce="true">
                 <div className={`delegates__cards-item`}>
-                  <span
-                    onClick={() => setFolowing(true)}
-                    className={`delegates__cards-type ${
-                      folowing ? "active" : " "
-                    }`}
-                  >
-                    {t("section_delegates.delegates_cards.head")}
-                  </span>
                   <div
-                    className={`delegates__cards-row row delegates__cards-row__hiden ${
-                      folowing ? "active" : " "
-                    }`}
+                    className={`delegates__cards-row row delegates__cards-row_mobile`}
                   >
                     <ul className="delegates__cards-list col-auto">
                       <li className="delegates__cards-list-item">

@@ -12617,7 +12617,7 @@ a:hover {
   z-index: 2;
 }
 .delegates__main-texts {
-  margin-bottom: 75px;
+  margin-bottom: 35px;
 }
 .delegates__img {
   position: relative;
@@ -12713,7 +12713,6 @@ a:hover {
 }
 .delegates__cards-item {
   position: relative;
-  padding: 80px 50px 30px 50px;
   margin-bottom: 45px;
   border-radius: 15px;
   background: #fff;
@@ -12743,7 +12742,7 @@ a:hover {
 }
 @media (max-width: 991.98px) {
   .delegates__main-texts {
-    margin-bottom: 32px;
+    margin-bottom: 2px;
   }
   .delegates__img {
     display: block;
@@ -12779,17 +12778,12 @@ a:hover {
     padding: 50px 45px 30px;
   }
 
-  .delegates__cards-row__hiden {
-    display: none;
-  }
-
-  .delegates__cards-row__hiden.active {
+  .delegates__cards-row_mobile {
     margin-top: 8px;
-    display: block;
   }
 
   .delegates__cards-item:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 }
 @media (max-width: 767.98px) {
