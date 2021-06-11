@@ -16,10 +16,20 @@ export const SectionRounds = (props) => {
           <div className="pattern__img pattern__img--9"></div>
           <div className="pattern__img pattern__img--12"></div>
         </div>
-        <h2 className="heading font-size-40 text-center rounds__heading">
-          <b className="font-weight-700"> {t("section_rounds.header.b")}</b>
-          {t("section_rounds.header.right_text")}
-        </h2>
+        <div className="heading text-center rounds__heading">
+          <h2
+            className="heading font-size-40 text-center"
+            style={{ marginBottom: 0 }}
+          >
+            <b className="font-weight-700">{t("section_rounds.header.b")}</b>{" "}
+            {t("section_rounds.header.right_text")}
+          </h2>
+          <p
+            className={`rounds__info-item-caption ${style.head_status_completed}`}
+          >
+            {t("section_rounds.rounds__info_item_1.right_text")}
+          </p>
+        </div>
         <div className="row rounds__row">
           <div className="col-lg-5 rounds__chart-wrap">
             <svg
@@ -94,7 +104,7 @@ export const SectionRounds = (props) => {
               <div className="rounds__info-item-progress">
                 <div
                   className="rounds__info-item-progress-line wow animate__animated widthFrom0to60"
-                  style={{ width: "60%" }}
+                  style={{ width: "100%" }}
                 ></div>
               </div>
               <div className="d-flex rounds__info-item-footer">

@@ -3,6 +3,10 @@
   animation: widthFrom 2.5s ease-in-out 1;
 }
 
+.head_status_completed {
+  font-size: 2em;
+}
+
 @keyframes widthFrom {
   0% {
     width: 0%;
