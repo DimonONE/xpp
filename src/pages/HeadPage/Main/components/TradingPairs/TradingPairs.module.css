@@ -1,0 +1,134 @@
+.news_nav,
+.infos {
+  display: flex;
+}
+
+.news_nav .block {
+  padding: 14px 0 17px 0;
+  border: 1px solid #eee8e0;
+  box-sizing: border-box;
+}
+
+.block_head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.block_head .news_nav__icon {
+  margin-right: 16px;
+}
+.block_head .head_text {
+  width: 74px;
+  height: 31px;
+  font-family: "Play";
+  font-weight: bold;
+  font-size: 22px;
+  color: #223344;
+}
+
+.infos {
+  margin: auto;
+  width: max-content;
+  text-align: center;
+  align-items: center;
+  font-style: normal;
+  color: #292f45;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.infos .valute {
+  font-family: "Play";
+  font-weight: bold;
+  margin-left: 6px;
+  margin-right: 7px;
+}
+.infos .sum {
+  width: 60px;
+  height: auto;
+  font-family: "OpenSans";
+
+  font-weight: bold;
+  margin-right: 3px;
+}
+.infos .arrival {
+  height: 18px;
+  font-family: "OpenSans";
+
+  font-weight: normal;
+  font-size: 14px;
+  color: #26a33a;
+}
+.infos .arrow {
+  margin: 0 4px;
+}
+
+@media (max-width: 420px) {
+  .news_nav,
+  .section_right .news_item {
+    display: block;
+  }
+  .infos .valute {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .infos .arrival {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 15px;
+    font-size: 10px;
+  }
+
+  .infos .sum {
+    width: 60px;
+    font-size: 12px;
+    margin-right: 0px;
+  }
+
+  .block {
+    width: auto;
+    height: auto;
+    display: block;
+  }
+  .contents {
+    padding: 25px;
+  }
+  .section_right .news_item {
+    margin-bottom: 8px;
+  }
+  .items__info_mobile {
+    margin-top: -8px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 1040px) {
+  .news_nav {
+    display: block;
+  }
+  .block {
+    display: block;
+    width: auto;
+    height: 138px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .news_nav {
+    display: flex;
+  }
+  .news_nav .block {
+    width: 380px;
+    height: 138px;
+    margin: 0;
+  }
+}
+
+.section_left .info .text_info,
+.section_right .news_item .text_info,
+.contents .data p,
+.block_link .link {
+  font-family: "OpenSans";
+}

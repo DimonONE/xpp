@@ -19,6 +19,7 @@ import { SectionTokenomics } from "./components/SectionTokenomics/SectionTokenom
 import { SectionWork } from "./components/SectionWork/SectionWork";
 import { PageNews } from "./components/News/PageNews/PageNews";
 import { PageArticle } from "./components/News/PageArticle/PageArticle";
+import { TradingPairs } from "./components/TradingPairs/TradingPairs";
 
 export const Main = (props) => {
   return (
@@ -34,6 +35,7 @@ export const Main = (props) => {
           <Element name="head">
             <main id="sections" className="sections">
               <SectionCover />
+              <TradingPairs />
               {/* <Element name="news">
                 <SectionNews />
               </Element> */}
