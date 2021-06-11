@@ -9899,8 +9899,13 @@ a:hover {
     margin-left: auto;
   }
   .header__dropdown {
-    display: none;
+    margin-left: 0;
   }
+  .header__dropdown-selected,
+  .header__dropdown-link {
+    font-size: 12px;
+  }
+
   .header__btn {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30px;
