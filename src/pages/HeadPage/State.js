@@ -45,7 +45,7 @@ const initialState = {
     ilonMask: ilonMask,
     countPage: 0,
   },
-  Trading: {
+  trading: {
     navBlockHeadPage: [
       {
         id: 1,
@@ -56,6 +56,7 @@ const initialState = {
         schedule: vector_1,
         arrowUp: arrowUp,
         arrowDown: arrowDown,
+        link: "https://www.hotbit.io/exchange?symbol=XXP_BTC",
       },
       {
         id: 2,
@@ -66,6 +67,7 @@ const initialState = {
         schedule: vector_2,
         arrowUp: arrowUp,
         arrowDown: arrowDown,
+        link: "https://www.hotbit.io/exchange?symbol=XXP_USDT",
       },
       {
         id: 3,
@@ -76,6 +78,7 @@ const initialState = {
         schedule: vector_3,
         arrowUp: arrowUp,
         arrowDown: arrowDown,
+        link: "https://crex24.com/ru/exchange/XXP-USDT",
       },
     ],
   },

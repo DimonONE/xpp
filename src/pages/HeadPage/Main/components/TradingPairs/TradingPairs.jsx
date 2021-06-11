@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React from "react";
 // import style from "../News/SectionNews/SectionNews.module.css";
 import style from "./TradingPairs.module.css";
 // import { useTranslation } from "react-i18next";
@@ -8,7 +7,7 @@ import { useGlobalState } from "../../../State";
 
 export const TradingPairs = (props) => {
   // const { t } = useTranslation();
-  const [trading] = useGlobalState("Trading");
+  const [trading] = useGlobalState("trading");
   return (
     <div className="container media__container">
       <h2 className="heading font-size-40 media__heading text-center wow animate__animated animate__fadeInDown">
@@ -17,12 +16,17 @@ export const TradingPairs = (props) => {
       <div className={`${style.news_nav}`}>
         {trading.navBlockHeadPage.map((e) => (
           <span key={e.id} className={`${style.block}`}>
-            <div className={`${style.block_head}`}>
+            <a
+              href={e.link}
+              className={`${style.block_head}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className={`${style.news_nav__icon}`}>
                 <img src={e.icon} alt="non" />
               </div>
               <p className={`${style.head_text}`}>HotBit</p>
-            </div>
+            </a>
             <div className={`${style.infos}`}>
               <img src={e.litl_ico} alt="NoN" />
               <p className={`${style.valute}`}>XXP / BTC</p>
