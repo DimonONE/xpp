@@ -53,7 +53,7 @@ export const SectionTeam = (props) => {
             <div className="row">
               <div className="col-6 team__item-wrap wow">
                 <Fade direction="right" triggerOnce="true" delay={100}>
-                  <div className="team__item">
+                  <a href={"/"} className="team__item">
                     <div className="team__item-img-wrap">
                       <img
                         src={team__item_img_2}
@@ -67,7 +67,7 @@ export const SectionTeam = (props) => {
                     <div className="team__item-text">
                       {t("section_team.item_1.p")}
                     </div>
-                  </div>
+                  </a>
                 </Fade>
               </div>
               <div className="col-6 team__item-wrap wow">
@@ -91,7 +91,12 @@ export const SectionTeam = (props) => {
               </div>
               <div className="col-6 team__item-wrap wow">
                 <Fade direction="right" triggerOnce="true" delay={300}>
-                  <div className="team__item">
+                  <a
+                    href={"https://qwertydesign.ru/"}
+                    className="team__item"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div className="team__item-img-wrap">
                       <img
                         src={team__item_img_4}
@@ -105,12 +110,17 @@ export const SectionTeam = (props) => {
                     <div className="team__item-text">
                       {t("section_team.item_3.p")}
                     </div>
-                  </div>
+                  </a>
                 </Fade>
               </div>
               <div className="col-6 team__item-wrap wow">
                 <Fade direction="right" triggerOnce="true" delay={400}>
-                  <div className="team__item">
+                  <a
+                    href={"https://www.mediaband.ru/"}
+                    className="team__item"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <div className="team__item-img-wrap">
                       <img
                         src={team__item_img_5}
@@ -124,7 +134,7 @@ export const SectionTeam = (props) => {
                     <div className="team__item-text">
                       {t("section_team.item_4.p")}
                     </div>
-                  </div>
+                  </a>
                 </Fade>
               </div>
             </div>
