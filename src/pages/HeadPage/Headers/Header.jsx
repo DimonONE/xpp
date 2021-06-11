@@ -66,19 +66,6 @@ export const Header = (props) => {
                 </li>
                 <li className="header__nav-list-item">
                   <Link
-                    to="guide"
-                    className={`header__nav-link ${style.cursor_pointer}`}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={1000}
-                    delay={500}
-                  >
-                    {t("headers.header.nav_bar.how_to_buy")}
-                  </Link>
-                </li>
-                <li className="header__nav-list-item">
-                  <Link
                     to="advantages"
                     className={`header__nav-link ${style.cursor_pointer}`}
                     spy={true}
@@ -185,20 +172,6 @@ export const Header = (props) => {
                 delay={500}
               >
                 {t("headers.header.nav_bar.cryptocurrency")}
-              </Link>
-            </li>
-            <li className="mobile-menu__list-item">
-              <Link
-                onClick={() => setActives(false)}
-                to="guide"
-                className="mobile-menu__list-link"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={1000}
-                delay={500}
-              >
-                {t("headers.header.nav_bar.how_to_buy")}
               </Link>
             </li>
             <li

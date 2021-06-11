@@ -8,7 +8,6 @@ import { SectionCover } from "./components/SectionCover/SectionCover";
 import { SectionCurrency } from "./components/SectionCurrency/SectionCurrency";
 import { SectionDelegates } from "./components/SectionDelegates/SectionDelegates";
 import { SectionFounder } from "./components/SectionFounder/SectionFounder";
-import { SectionGuide } from "./components/SectionGuide/SectionGuide";
 import { SectionMedia } from "./components/SectionMedia/SectionMedia";
 import { SectionCryptoTrackers } from "./components/SectionCryptoTrackers/SectionCryptoTrackers";
 import { SectionNews } from "./components/News/SectionNews/SectionNews";
@@ -43,9 +42,6 @@ export const Main = (props) => {
               </Element>
               <SectionSteps />
               <SectionWork />
-              <Element name="guide">
-                <SectionGuide />
-              </Element>
               <SectionCompare />
               <Element name="advantages">
                 <SectionAdvantages />
