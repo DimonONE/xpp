@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.news_nav {
+  justify-content: center;
+}
+
 .news_nav .block {
   padding: 14px 0 17px 0;
   border: 1px solid #eee8e0;
